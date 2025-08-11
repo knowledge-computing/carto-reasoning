@@ -1,0 +1,235 @@
+﻿Map Count,Relation,Question,Answer,Folder,General Folder
+Single,Within,1,Lower Cretaceous,C___docs_221231alturasMineralsAFSaif_220629alturasMineralsTR_cwm,NI43-101
+Single,Within,6,Nucleo Agrario: SAN ANTONIO DEl CERRO,C__SEDAR_FILINGS_CENTTechnicalReport,NI43-101
+Single,Within,2,4,C__KC_SEDAR_4811101_LABTechnicalReport,NI43-101
+Single,Within,3,1088616,C__KosterDamTechReportISM,NI43-101
+Single,Within,4,112,C__SEDAR_FILINGS_3_Amend_43101_Jul122023_esign,NI43-101
+Single,Within,5,S-110271,C__RedWillow_TechnicalReport,NI43-101
+Single,Within,7,2022 Magnetics,C__SEDAR_FILINGS_2023_Mulatos_Tech_Rep_Mar_27_2023,NI43-101
+Single,Within,8,JMS,C__AA-SEDAR_VELVET-PEA-2023,NI43-101
+Single,Within,9,Great Divide Basin,z__PUBLIC_Consolidated-Uranium-Inc_2023_AN-SPMeeting_CUR-Cyclone-Rim-TR,NI43-101
+Single,Within,10,Noche Buena,z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed,NI43-101
+Single,Within,11,MUL,C__SEDAR_FILINGS_2023_Mulatos_Tech_Rep_Mar_27_2023,NI43-101
+Multi,Within,1,Main Zone,C__SEDAR_1-TR,NI43-101
+Multi,Within,2,Mafic Volcanic,C__Filings_Yaramoko_43_101_Yaramoko_43101,NI43-101
+Multi,Within,3,4,C__MS_SEDAR_Technical_Report_MAC_Project,NI43-101
+Multi,Within,4,MLCC Exploitation MCs,z__PUBLIC_Lundin-Mining-Corporation_2023_technical-reports_Caserones_Lundin-NI43-101-TR-Caserones,NI43-101
+Multi,Within,5,7km^2,C__SEDAR_FILINGS_2023_Mulatos_Tech_Rep_Mar_27_2023,NI43-101
+Single,Border,22,UT31; UT32,C__AA-SEDAR_VELVET-PEA-2023,NI43-101
+Single,Border,23,AMATAVA 41KS,C__Data_zbnitrjul17,NI43-101
+Single,Orientation,20,Huracan 4 R1A; T.246910,C__SEDAR_01SEDARFilings_AvinoTCHRPT03302023JA,NI43-101
+Single,Border,4,Wells property,C__DATA_tmc43101mar21,NI43-101
+Single,Border,5,ML-10670,n__SEDAR_WRLG_NI43-101_Report_Update_v20230619,NI43-101
+Single,Border,6,2.5km,s__SEDAR_Onyx_43101TechnicalReport,NI43-101
+Single,Border,7,Jack’s Crack,s__SEDAR_Onyx_43101TechnicalReport,NI43-101
+Single,Border,8,MC00014559,C___docs_230404catStrategicTR_230404catStrategicTR_cwm,NI43-101
+Multi,Border,9,SEV14,C__SEDAR_FILINGS_20230711LithiumChileNI43101,NI43-101
+Single,Intersect,10,TN165; TN167; TN169; TN170; TN172; TN174,C__FILINGS_Tearlach_Tearlach_TechnicalReport,NI43-101
+Multi,Intersect,13,MCT 4; MCT 6; MCT 8,C___docs_230404catStrategicTR_230404catStrategicTR_cwm,NI43-101
+Multi,Intersect,14,Russet,C__SEDAR_1-TR,NI43-101
+Multi,Equal,7,Los Reyes Seis,z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed,NI43-101
+Multi,Equal,8,Patent,s__SEDAR_Onyx_43101TechnicalReport,NI43-101
+Single,Distance,31,Dos Banderas,C___docs_221231alturasMineralsAFSaif_220629alturasMineralsTR_cwm,NI43-101
+Single,Distance,32,6 km,C__DATA_tmc43101mar21,NI43-101
+Single,Distance,3,1.5 km,C__SEDAR_FILINGS_CENTTechnicalReport,NI43-101
+Single,Distance,4,3 km,z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed,NI43-101
+Single,Distance,5,25 km,C__SEDAR_01SEDARFilings_AvinoTCHRPT03302023JA,NI43-101
+Multi,Distance,1,900 m,s__SEDAR_Onyx_43101TechnicalReport,NI43-101
+Multi,Distance,2,10 km,s__SEDAR_Onyx_43101TechnicalReport,NI43-101
+Single,Orientation,19,South East,C__SEDAR_FILINGS_ESGold_TechnicalReport_Montauban,NI43-101
+Single,Orientation,21,North West,C__AA-SEDAR_VELVET-PEA-2023,NI43-101
+Multi,Orientation,6,North West,C__SEDAR_1-TR,NI43-101
+Multi,Orientation,8,South East,C___docs_230404catStrategicTR_230404catStrategicTR_cwm,NI43-101
+Single,Border,27,C-SR-13,C__AA-SEDAR_VELVET-PEA-2023,NI43-101
+Single,Within,12,16,C__Data_zbnitrjul17,NI43-101
+Single,Intersect,11,Z19,C__Data_zbnitrjul17,NI43-101
+Single,Orientation,24,North / North East,,NI43-101
+Single,Orientation,25,North West,C__FILINGS_SEDAR-OTC-CSE_1_TechReport_2022_FINAL,NI43-101
+Single,Intersect,12,Waterfall Creek,C__FILINGS_SEDAR-OTC-CSE_1_TechReport_2022_FINAL,NI43-101
+Multi,WIthin,6,Moira Sound Unit - Ordovician to Lower Silurian,C__FILINGS_SEDAR-OTC-CSE_1_TechReport_2022_FINAL,NI43-101
+Single,Border,24,0.5 miles,C__FILINGS_Tearlach_Tearlach_TechnicalReport,NI43-101
+Single,Distance,6,1500 m,C__FILINGS_SEDAR-OTC-CSE_722031_AAGBerenTR,NI43-101
+Single,Distance,7,Lagunillas 01-04,C__FILINGS_SEDAR-OTC-CSE_722031_AAGBerenTR,NI43-101
+Multi,Within,7,Berenguela 04-09,C__FILINGS_SEDAR-OTC-CSE_722031_AAGBerenTR,NI43-101
+Multi,Within,8,Ts,C__FILINGS_Tearlach_Tearlach_TechnicalReport,NI43-101
+Multi,Distance,3,S15,C__Jul_14_Reunion_TR,NI43-101
+Multi,Within,9,1099378,C__MS_SEDAR_Technical_Report_MAC_Project,NI43-101
+Multi,Border,2,Denison,C__RedWillow_TechnicalReport,NI43-101
+Multi,Within,13,1,C__SEDAR_FILINGS__doc__SEDAR_NewOriginGoldTR_pp,NI43-101
+Multi,Equal,3,2011-01-07; 2012-01-26,C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9,NI43-101
+Multi,Within,10,1083728,C__SEDAR_FILINGS_20230628collectivetech,NI43-101
+Multi,Equal,4,17946; 17947; 17948,C__SEDAR_filings_Alpha_TechReport_July13,NI43-101
+Multi,Within,11,Exploration Agreement-Rural Community Santa Cruz de Andamarca,C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101,NI43-101
+Single,Distance,8,Tramposa,C__SEDAR_FILINGS_CENTTechnicalReport,NI43-101
+Multi,Border,3,Los Reyes Tres; Los Reyes Fracc Norte,"C__SEDAR_FILINGS_CENTTechnicalReport, z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed",NI43-101
+Single,Within,14,Guadalupe de los Reyes,z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed,NI43-101
+Single,Within,15,2,z__Manuela_TechnicalR,NI43-101
+Single,Orientation,16,North,z__AgnicoEagle_Techreport_TechReport-221231_TechReport-LaRonde,NI43-101
+Multi,Border,12,2579161; 2579162; 2579163,z__AgnicoEagle_Techreport_TechReport-221231_TechReport-LaRonde,NI43-101
+Multi,Border,13,Ganfeng Lithium Co.,y__PUBLIC_Lithium-Americas-Corp_2023_technical-reports_Pastos-Grandes-Project_TR-pastos-grandes-update,NI43-101
+Multi,Distance,4,76 km,y__PUBLIC_Lithium-Americas-Corp_2023_technical-reports_Pastos-Grandes-Project_TR-pastos-grandes-update,NI43-101
+Multi,Within,12,1,p__BC_Securities_and_MA_SEDAR_DOWNLOAD_ARIS_20230331TR,NI43-101
+Multi,Distance,5,8.5 km,n__SEDAR_WRLG_NI43-101_Report_Update_v20230619,NI43-101
+Multi,Distance,6,Town of Bowden,k__filings_livework_wkout_71561_E3Lithium_TechReport,NI43-101
+Multi,Within,13,2454254,i__Soco_Sedar_2023_ST_Fokus_Technical_Report_FOKUS_techreport_NI43-101,NI43-101
+Single,Within,16,EOlv,C__KosterDamTechReportISM,NI43-101
+Single,Intersect,26,Disappointment Syncline,C__AA-SEDAR_VELVET-PEA-2023,NI43-101
+Single,Within,17,MJKFgr,C__MS_SEDAR_Technical_Report_MAC_Project,NI43-101
+Single,Within,18,Layered Series,C__SEDAR_1-TR,NI43-101
+Multi,Distance,7,Sienna Resources Inc,C__SEDAR_1-TR,NI43-101
+Multi,Intersect,1,1082066,C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA,NI43-101
+Single,Distance,9,0.75 km,C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA,NI43-101
+Multi,Within,14,1078867,C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA,NI43-101
+Single,Intersect,28,6,C__SEDAR_FILINGS_2023_Technical_Report_COZ_TR_20230502,NI43-101
+Multi,Within,15,8,C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9,NI43-101
+Single,Distance,1,15.75 km,C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9,NI43-101
+Single,Within,19,6,C__SEDAR_FILINGS_HighTideTR04062023,NI43-101
+Single,Border,16,Barrick Gold Inc.,C__SEDAR_FILINGS_LEK_TechReport_2023_v3_5,NI43-101
+Multi,Intersect,11,867407/2008,C__SEDAR_FILINGS_Meridian_2023_TechRpt2023_MNOTechRpt2023,NI43-101
+Single,Intersect,3,4,C__SEDAR_FILINGS_NKGTechnicalRpt,NI43-101
+Single,Border,17,I-80 Gold,C__SEDAR_FILINGS_North-Peaks_43-101_NPR-NI-43-101-Tech-Report,NI43-101
+Multi,Within,16,Teresita T-220210,C__SEDAR_FILINGS_SGOTechRep20230324,NI43-101
+Single,Within,20,Rainbow,C__SEDAR_FILINGS_Volt_230523TechReport,NI43-101
+Single,Border,18,La Zarza,C__SEDAR_LUG_2023LUGTechnicalReport,NI43-101
+Single,Intersect,29,Camarioca Norte,C__SEDAR_Sherritt-Technicals_NI43-101_TechnicalReport,NI43-101
+Single,Within,21,LEA-107822,w__McFarlaneLakeMining_SEDAR_1210098_tech_Jul04_2023_mcfarlaneTR-july42023,NI43-101
+Single,Intersect,5,6,w__GalianoGold_SEDAR_1194039_tech_Mar28_2023_galiano_techreport,NI43-101
+Single,Border,29,2145325,g__Sayona_2023_NAL_Refiling_20230420_NAL_Report,NI43-101
+Multi,Intersect,3,EPeMK,i__Securities_SEDAR_ToFile_Level14_Level14_Tech_Rept_May_2023,NI43-101
+Single,Distance,2,0.7 km,i__Securities_SEDAR_ToFile_Level14_Level14_Tech_Rept_May_2023,NI43-101
+Single,Intersect,6,8,i__Soco_Sedar_2023_ST_Fokus_Technical_Report_FOKUS_techreport_NI43-101,NI43-101
+Single,Distance,10,4.3 km,k__filings_livework_wkout_71400_Karora_TechReport,NI43-101
+Single,Distance,11,55 m,k__filings_livework_wkout_72043_MAS_TechReport,NI43-101
+Single,Distance,12,Meg,C__SEDAR_FILINGS_BenzMining_2023_TechReport_BZTechRpt,NI43-101
+Single,Within,35,Richard M. Colgate,C__SEDAR_FILINGS_AAAA_Viscount_2023-KSR-43-101F,NI43-101
+Single,Distance,13,3.2 km,C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9,NI43-101
+Single,Distance,14,TFS21-07,C__SEDAR_FILINGS_2023-06-09_NHK_NHK-NI43-101_REPORT_Jun9,NI43-101
+Single,Orientation,1,South East,C__SEDAR_43101 (1),NI43-101
+Single,Distance,15,1.1 km,C__SEDAR_01SEDARFilings_TrailbreakerTECHRPT05102023JA,NI43-101
+Single,Distance,16,0.8 km,C__RedWillow_TechnicalReport,NI43-101
+Single,Distance,17,OSP22-08; OSP22-09,C__RedWillow_TechnicalReport,NI43-101
+Single,Within,23,3,C__RedWillow_TechnicalReport,NI43-101
+Single,Intersect,7,6,C__RedWillow_TechnicalReport,NI43-101
+Single,Within,24,221000 m^2,C__RedWillow_TechnicalReport,NI43-101
+Single,Intersect,30,Gravity Survey - 2007,C__RedWillow_TechnicalReport,NI43-101
+Multi,Intersect,4,0.185,y__filings_livework_wkout_71500_HopeMining_TechReport,NI43-101
+Single,Within,25,5,w__StrataboundMinerals_SEDAR_1194765_tech_Mar31_2023_file_strata_tr_03312023,NI43-101
+Single,Orientation,32,North East,w__StrataboundMinerals_SEDAR_1194765_tech_Mar31_2023_file_strata_tr_03312023,NI43-101
+Single,Within,26,3,w__StrataboundMinerals_SEDAR_1194765_tech_Mar31_2023_file_strata_tr_03312023,NI43-101
+Single,Intersect,9,CDE; Grid F; A-2; A-1; Grid G,C__SEDAR_FILINGS_BenzMining_2023_TechReport_BZTechRpt,NI43-101
+Single,Within,27,9,C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101,NI43-101
+Multi,Equal,15,Worker camp,C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101,NI43-101
+Multi,Border,1,Lower Cretaceous Cu-Fe-Au (IOGG) deposits,C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101,NI43-101
+Single,Within,28,9,C__SEDAR_FILINGS_HighTideTR04062023,NI43-101
+Multi,Intersect,5,3,C__SEDAR_FILINGS_LEK_TechReport_2023_v3_5,NI43-101
+Multi,Border,14,4,C__SEDAR_FILINGS_RMCTechnicalReport,NI43-101
+Single,Within,29,Exiro Minerals corp.,C__SEDAR_FILINGS_RMCTechnicalReport,NI43-101
+Single,Within,30,2,C__SEDAR_FILINGS_rokcrsourcesTECH05082023CA,NI43-101
+Multi,Distance,8,Canning Prospect,C__SEDAR_FILINGS_RushraremetalsTECH03282023CA,NI43-101
+Single,Intersect,13,9214 g/t,C__SEDAR_FILINGS_SantaAna2023,NI43-101
+Multi,Distance,9,El Zorrillo,C__SEDAR_FILINGS_SGOTechRep20230324,NI43-101
+Single,Within,31,11,C__SEDAR_FILINGS_SRG_REPORT,NI43-101
+Single,Orientation,2,6,C__SEDAR_Sherritt-Technicals_NI43-101_TechnicalReport,NI43-101
+Single,Intersect,14,Jasperoide 41,C__SEDAR_TechnicalReport,NI43-101
+Multi,Intersect,6,SCIF; LIF,C__SEDAR_TechnicalReport (1),NI43-101
+Multi,Intersect,7,Cementos Interoceanicos,C__SEDARDocs_ASC-LaPrincesa_TechRep,NI43-101
+Single,Within,32,18,C__SEDARDocs_FLO-Tech_Report,NI43-101
+Single,Distance,18,525 m,C__SEDARFilings_Atha_ARPreProspectus_TechRepGoldenRose,NI43-101
+Single,Orientation,8,South West,C__SEDARFILINGS_Banyan-TR_BanyanTR_ss,NI43-101
+Single,Intersect,15,Roberto Verde 149672,C__SF_TECHREPORT,NI43-101
+Single,Distance,19,Evergold Corp.,C__TK_SEDAR_4847_102_7TECHREPORT,NI43-101
+Multi,Intersect,12,5,C__Upload_Denarius_2023_Apr14_Denarius_TechRep_0414,NI43-101
+Single,Orientation,3,North West,C__SEDARDocs_ASC-LaPrincesa_TechRep,NI43-101
+Multi,Border,8,Newmont East (1078227); Newmont East 1 (1078228),C__Users_cxw_Desktop_SEDAR_Temp_Copperhead_IPO_Preliminary_04_TechnicalReport,NI43-101
+Multi,Intersect,8,Géant Dormant-SO,C__Users_Nathalie_Documents_RappTech,NI43-101
+Single,Distance,20,215 m,d__AYM-NI43-101-PEA-Feb21-2023,NI43-101
+Single,Distance,30,6 km,d__SEDAR_Boston_23june3585143_Tech_Report_Robex,NI43-101
+Multi,Distance,10,CBS,d__SEDAR_Boston_23june3585143_Tech_Report_Robex,NI43-101
+Single,Orientation,9,North East,d__SEDAR_Boston_23june3585143_Tech_Report_Robex,NI43-101
+Single,Border,31,Mines Agnico-Eagle Limitee,d__SEDAR_Montreal_Radisson_TechReport_0417,NI43-101
+Single,Intersect,16,30,d__SEDAR_Montreal_Radisson_TechReport_0417,NI43-101
+Single,Distance,21,384 km,d__SEDAR_Montreal_Will_EMO_TR,NI43-101
+Single,Distance,22,0.25 km,g__Sayona_2023_Moblan_20230414_Moblan_Report,NI43-101
+Multi,Border,7,Sumitomo,g__Sayona_2023_Moblan_20230414_Moblan_Report,NI43-101
+Single,Distance,23,7,g__Sayona_2023_NAL_Refiling_20230420_NAL_Report,NI43-101
+Single,Distance,24,3.3 km,g__Sayona_2023_NAL_Refiling_20230420_NAL_Report,NI43-101
+Single,Intersect,17,2,i__Securities_SEDAR_ToFile_Level14_Level14_Tech_Rept_May_2023,NI43-101
+Multi,Distance,11,7.8 km,i__Securities_SEDAR_ToFile_Level14_Level14_Tech_Rept_May_2023,NI43-101
+Multi,Intersect,9,CBS 8027; S-101722,i__SEDAR_DenisonMines_2023_DenisonTRVol,NI43-101
+Multi,Distance,12,Lac Sanies Est,i__Soco_Sedar_2023_ST_Fokus_Technical_Report_FOKUS_techreport_NI43-101,NI43-101
+Multi,Distance,13,Storheden K nr 1,k__filings_livework_wkout_71392_Mandalay_TechReport,NI43-101
+Multi,Orientation,7,South East,k__PROJECTS_ILC_NewsReleases_2023_2023-04-13-Raleigh-43101_22141-01-ILC-MinResEstNI-43101,NI43-101
+Single,Orientation,10,Acidic Reagent Store,l__SEDAR_Osino_DFSTechReportJuly132023_OsinoDFSJuly132023,NI43-101
+Multi,Equal,16,Waste Rock Dump C,l__SEDAR_Osino_DFSTechReportJuly132023_OsinoDFSJuly132023,NI43-101
+Multi,Distance,14,Ouro Fino,m__SEDAR_Jaguar_NI43-101-TechnicalReport,NI43-101
+Multi,Equal,6,Unpatented single-cell mining claim,s__SEDAR_Onyx_43101TechnicalReport,NI43-101
+Single,Orientation,11,North West,t__SEDAR_Mineros_2023_TechnicalReport_TechReport,NI43-101
+Single,Distance,25,Slough Lake,u__TreasuryMetals_TechnicalReport_TML-TR-Mar27-2023,NI43-101
+Multi,Equal,5,Cronin Capital Claims,C__Filings_Alchemist_Technical_report_alchemist,NI43-101
+Single,Border,13,2607225; 2607230; 2607229; 2607226; 2607227; 2607228,C__FILINGS_DarkStar_FinalProspectus_DarkStar_TechnicalReport,NI43-101
+Single,Intersect,18,5,C__FILINGS_Tearlach_Tearlach_TechnicalReport,NI43-101
+Single,Intersect,19,Vale de Noudar,C__SEDAR_01SEDARFilings_EuropacTECHRPT01312023JA,NI43-101
+Single,Intersect,20,12,z__nou-43101-PEA-ang,NI43-101
+Multi,Orientation,4,South West,y__PUBLIC_Discovery-Silver-Corp_2023_technical-reports_DSV-Cordero-technical-report,NI43-101
+Single,Border,14,B96-1,w__P2Gold_SEDAR_1187436_tech_Feb17_2023_02172023p2gold-tr,NI43-101
+Single,Within,34,0.76,w__Iamgold_SEDAR_1188221_tech_Feb22_2023_iag_tr_022323,NI43-101
+Single,Border,30,10,l__55954_1_TECHRPT_SilverCloud-2023-01-27_BRCTechReport,NI43-101
+Single,Intersect,21,Porvenir Dos,l__49926_1_TechReports2023_Guanacevi_Guanacevi_TechReport_2023,NI43-101
+Single,Distance,26,21 km,i__SEDAR_TrilogyMetals(NovaCopper)_2023_TechReportBornite_021423,NI43-101
+Single,Orientation,12,North West,d__SEDAR_Montreal_JEAN-LUC_Osisko_Technical_Report_Osisko_NI-43-101-Report_Jan27,NI43-101
+Single,Border,15,Huascar,C__Users_silve_Downloads_Sedar_PEATR,NI43-101
+Multi,Orientation,9,South West,C__Users_silve_Downloads_Sedar_PEATR,NI43-101
+Single,Distance,29,1.375 km,C__Users_sedar.LAW_Desktop_Hermonie_WhistlerTR,NI43-101
+Single,Border,25,"1,069,245; 1,059,243",C__1SEDARFilings_CascadeTechnicalPriJan24,NI43-101
+Single,Distance,27,Mosaic Minerals,C__DEPOTSEDAR_VANSTAR_RAPPORTTECHNIQUE_43101,NI43-101
+Single,Intersect,22,Deep Min deposit,C__SEDAR_FILINGS_BravadaTechR_TOGO_WINDMTN_PEA_20JAN23,NI43-101
+Multi,Equal,9,Alluvial Deposits,C__SEDAR_FILINGS_BravadaTechR_TOGO_WINDMTN_PEA_20JAN23,NI43-101
+Single,Orientation,13,South West,C__SEDAR_01SEDARFilings_EuropacTECHRPT01312023JA,NI43-101
+Multi,Intersect,10,Lucero Del Sur 12,C__SEDAR_FILINGS_Element79_43-101_LuceroNI43-101-Final,NI43-101
+Single,Intersect,23,466151; 466340; 466150,C__SEDAR_FILINGS_Jerico-Cumberland_TR-ST-ANT-FINAL,NI43-101
+Multi,Border,10,NORONT South Block,C__SEDAR_FILINGS_OSK_TchRpt_WindfallProjectJan2023,NI43-101
+Multi,Equal,10,Windfall SW,C__SEDAR_FILINGS_OSK_TchRpt_WindfallProjectJan2023,NI43-101
+Multi,Border,11,1042713,C__SEDAR_FILINGS_SEDAR_filings_3_1_SKY_TechReport_20221207,NI43-101
+Multi,Distance,15,7,C__SEDAR_FILINGS_SEM_PROSPECTUS_FINAL_4SEMTechReportMurdockMtn,NI43-101
+Multi,Equal,11,mc,C__SEDAR_FILINGS_StamperOil_2023_STMP2301170550_STMP2301170550TR,NI43-101
+Multi,Distance,16,562 m,C__SEDAR_FILINGS_StamperOil_2023_STMP2301170550_STMP2301170550TR,NI43-101
+Single,Orientation,14,South West,C__SEDAR_FILINGS_TR-FordingRiver-2023TR,NI43-101
+Multi,Within,17,383282,C__SEDAR_FILINGS_TR-FordingRiver-2023TR,NI43-101
+Single,Within,22,SWFLK1,C__SEDAR_FILINGS_TR-FordingRiver-2023TR,NI43-101
+Single,Distance,28,La Ramada Shaft,f__Arabella_SEDAR_KNGTechReport,NI43-101
+Single,Intersect,24,2,C__SEDAR_FILINGS_Jerico-Cumberland_TR-ST-ANT-FINAL,NI43-101
+Multi,Within,18,3,C__SEDAR_FILINGS_Jerico-Cumberland_TR-ST-ANT-FINAL,NI43-101
+Single,Orientation,18,South East,C__SEDAR_FILINGS_OSK_TchRpt_WindfallProjectJan2023,NI43-101
+Single,Border,26,Bonterra Resources,C__SEDAR_FILINGS_OSK_TchRpt_WindfallProjectJan2023,NI43-101
+Multi,Equal,12,0.02,C__SEDAR_FILINGS_OSK_TchRpt_WindfallProjectJan2023,NI43-101
+Single,Within,33,Tartan Rd; Vann Dr; Stirling Dr,fema_bric-ema-2020-br-100-0009-nc-lumbertonloop-fea-signedfonsi-20240731,FEMA
+Multi,Distance,17,5763-04-91-7009,fema_bric-ema-2021-br-005-0044-nc-salisburywatersupplyresilency-fea-signed_fonsi-20240715,FEMA
+Multi,Within,19,Cr,fema_dr-4559-st-louis-hs-appendix,FEMA
+Multi,Equal,1,Northern Lakes and Forests,fema_ehp_il-in-oh-mi-mn-wi-floodcontrol-revdpea_03252025,FEMA
+Multi,Within,20,Zone X,fema_ehp-bric-emd-2021-br-063-0016-ut-citycreekwtp-dea-20240318,FEMA
+Single,Orientation,4,East,lfs-test-case-memorandum,Seattle-Planning
+Single,Border,32,C1-75; LR3,OneSeattlePlanDEIS,Seattle-Planning
+Multi,Within,21,8,OneSeattlePlanDEIS,Seattle-Planning
+Multi,Border,4,M From 85’ to 125’/160’m,,Seattle-Planning
+Multi,Intersect,2,Neighborhood Commercial,130th145thFinalDraftPlan,Seattle-Planning
+Single,Orientation,27,South,507SeattleStudio_Web,Seattle-Planning
+Single,Distance,33,0.18 mile,fema_bric-emb-2021-br-002-0005-ct-newhaven-fea-signedfonsi-20240904,FEMA
+Multi,Equal,13,Marsh Creation Area,fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702,FEMA
+Multi,Within,22,MCA Cell 1,fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702,FEMA
+Single,Border,1,Oroville,fema_ehp-hmgp-dr-4407-ca-buttecountywildfiremitigation-dea-20240411,FEMA
+Multi,Within,23,Developed Area,fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412,FEMA
+Single,Distance,34,1523 feet,fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202,FEMA
+Multi,Within,24,15,fema_nepa_pa-dr-4085-4458-ny-tompkinsville-esplanade-dea-202547_042025,FEMA
+Single,Orientation,31,North East,fema-oehp_hmgp-dr-4489-0041-il-peoria-borrow-fsea-fonsi-07022025,FEMA
+Multi,Within,25,PEM1A; PEM1C; PSS1A,hmgp-dr-4332-hmgp-4332-0197-tx_1-a3adetention-dea-2025225,FEMA
+Multi,Distance,18,"Bombus vosnesenskii Radoszkowski, 1862",HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729,FEMA
+Multi,Orientation,1,East,LPDM-PJ-05-IL-2022-002-North_Chicago-FEA-11202024,FEMA
+Single,Distance,35,2800’,507SeattleStudio_Web,Seattle-Planning
+Multi,Orientation,2,South West,fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217,FEMA
+Multi,Orientation,3,North East,fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217,FEMA
+Multi,Within,26,31,fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217,FEMA
+Multi,Equal,14,CSX Transportation Soo Line,fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217,FEMA
+Multi,Distance,19,17 miles,fema_pa-dr-4611-3143-la-southterrebonnemiddleschool-fea-20250311,FEMA
+Multi,Distance,20,0.3 mi,fema_pa-dr-4611-3143-la-southterrebonnemiddleschool-fea-20250311,FEMA
+Multi,Equal,17,CbA; CdA,fema_pa-dr-4611-3143-la-southterrebonnemiddleschool-fea-20250311,FEMA
+Multi,Equal,18,ShA; CdA,fema_pa-dr-4611-3143-la-southterrebonnemiddleschool-fea-20250311,FEMA
