@@ -43,7 +43,7 @@ Multi,Orientation,8,South East,C___docs_230404catStrategicTR_230404catStrategicT
 Single,Border,27,C-SR-13,C__AA-SEDAR_VELVET-PEA-2023,NI43-101
 Single,Within,12,16,C__Data_zbnitrjul17,NI43-101
 Single,Intersect,11,Z19,C__Data_zbnitrjul17,NI43-101
-Single,Orientation,24,North / North East,,NI43-101
+Single,Orientation,24,North / North East,C__SEDAR_1-TR,NI43-101
 Single,Orientation,25,North West,C__FILINGS_SEDAR-OTC-CSE_1_TechReport_2022_FINAL,NI43-101
 Single,Intersect,12,Waterfall Creek,C__FILINGS_SEDAR-OTC-CSE_1_TechReport_2022_FINAL,NI43-101
 Multi,WIthin,6,Moira Sound Unit - Ordovician to Lower Silurian,C__FILINGS_SEDAR-OTC-CSE_1_TechReport_2022_FINAL,NI43-101
@@ -207,12 +207,12 @@ Multi,Distance,17,5763-04-91-7009,fema_bric-ema-2021-br-005-0044-nc-salisburywat
 Multi,Within,19,Cr,fema_dr-4559-st-louis-hs-appendix,FEMA
 Multi,Equal,1,Northern Lakes and Forests,fema_ehp_il-in-oh-mi-mn-wi-floodcontrol-revdpea_03252025,FEMA
 Multi,Within,20,Zone X,fema_ehp-bric-emd-2021-br-063-0016-ut-citycreekwtp-dea-20240318,FEMA
-Single,Orientation,4,East,lfs-test-case-memorandum,Seattle-Planning
-Single,Border,32,C1-75; LR3,OneSeattlePlanDEIS,Seattle-Planning
-Multi,Within,21,8,OneSeattlePlanDEIS,Seattle-Planning
-Multi,Border,4,M From 85’ to 125’/160’m,,Seattle-Planning
-Multi,Intersect,2,Neighborhood Commercial,130th145thFinalDraftPlan,Seattle-Planning
-Single,Orientation,27,South,507SeattleStudio_Web,Seattle-Planning
+Single,Orientation,4,East,lfs-test-case-memorandum,seattle-planning
+Single,Border,32,C1-75; LR3,OneSeattlePlanDEIS,seattle-planning
+Multi,Within,21,8,OneSeattlePlanDEIS,seattle-planning
+Multi,Border,4,M From 85’ to 125’/160’m,UptownDirectorsReport2017,seattle-planning
+Multi,Intersect,2,Neighborhood Commercial,130th145thFinalDraftPlan,seattle-planning
+Single,Orientation,27,South,507SeattleStudio_Web,seattle-planning
 Single,Distance,33,0.18 mile,fema_bric-emb-2021-br-002-0005-ct-newhaven-fea-signedfonsi-20240904,FEMA
 Multi,Equal,13,Marsh Creation Area,fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702,FEMA
 Multi,Within,22,MCA Cell 1,fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702,FEMA
@@ -224,7 +224,7 @@ Single,Orientation,31,North East,fema-oehp_hmgp-dr-4489-0041-il-peoria-borrow-fs
 Multi,Within,25,PEM1A; PEM1C; PSS1A,hmgp-dr-4332-hmgp-4332-0197-tx_1-a3adetention-dea-2025225,FEMA
 Multi,Distance,18,"Bombus vosnesenskii Radoszkowski, 1862",HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729,FEMA
 Multi,Orientation,1,East,LPDM-PJ-05-IL-2022-002-North_Chicago-FEA-11202024,FEMA
-Single,Distance,35,2800’,507SeattleStudio_Web,Seattle-Planning
+Single,Distance,35,2800’,507SeattleStudio_Web,seattle-planning
 Multi,Orientation,2,South West,fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217,FEMA
 Multi,Orientation,3,North East,fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217,FEMA
 Multi,Within,26,31,fema_bric-emc-2022-br-012-0015-il-harveystormwater-fea-signedfonsi-20241217,FEMA
