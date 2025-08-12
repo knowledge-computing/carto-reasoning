@@ -1,0 +1,9 @@
+question_text,expected_answer,map_count,spatial_relationship,response_internvl3,response_gpt5
+What is the name and acquisition year (as shown on the map) of the Cabacal Option Agreement block whose part of its southernmost edge crosses Tertiary Cover area?,867407/2008,Multi,Intersect,"The Cabacal Option Agreement block whose part of its southernmost edge crosses Tertiary Cover area is ""867407/2008.""",867407/2008
+Which claim block(s) and number(s) of Slick Rock Project Area does the Northern edge of DOE legacy site pass through?,MCT 4; MCT 6,Multi,Intersect,Claim block 370; numbers 4; 5,SR-70; Burro 70
+How many Asanko tenement blocks does the Haul Road intersect?,6,Single,Intersect,3,8
+How many claim blocks of the O'Brien Project does the power line pass through?,30,Single,Intersect,9,10
+How many unique assessment file reference areas intersect the boundary of the Wesley Lithium Property?,5,Single,Intersect,4,6
+"The Uatnan property is divided into multiple claim blocks associated with a unique number (e.g., 1040933). How many claim blocks are crossed by forestry road R0928?",12,Single,Intersect,8,7
+What is the name of the line that runs through the Slick Rock Project area from the northwest to the southeast?,Disappointment Syncline,Single,Intersect,Dry Creek,Zone of Faults
+How many claim blocks of Capstone Mining Concession does the northeastern border of Resource Limit pass through?,6,Single,Intersect,3,5

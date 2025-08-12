@@ -13,8 +13,8 @@
         "question_text":"What is the position of the New 2B2 Pegmatite relative to Pegmatite #2 within the Raleigh Lake Project claim boundary?",
         "expected_answer":"South",
         "image_urls":[
-            "NI43-101\/k__PROJECTS_ILC_NewsReleases_2023_2023-04-13-Raleigh-43101_22141-01-ILC-MinResEstNI-43101\/image37_1.jpeg",
-            "NI43-101\/k__PROJECTS_ILC_NewsReleases_2023_2023-04-13-Raleigh-43101_22141-01-ILC-MinResEstNI-43101\/image33_1.jpeg"
+            "NI43-101\/k__PROJECTS_ILC_NewsReleases_2023_2023-04-13-Raleigh-43101_22141-01-ILC-MinResEstNI-43101\/image37_1.png",
+            "NI43-101\/k__PROJECTS_ILC_NewsReleases_2023_2023-04-13-Raleigh-43101_22141-01-ILC-MinResEstNI-43101\/image33_1.png"
         ],
         "map_count":"Multi",
         "spatial_relationship":"Orientation"
