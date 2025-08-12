@@ -32,7 +32,7 @@
         "question_text":"What is the orientation of La Pista in relation to population center (centro poblado) Bonanza within the Bonanza concession area?",
         "expected_answer":"North West",
         "image_urls":[
-            "NI43-101\/t__SEDAR_Mineros_2023_TechnicalReport_TechReport\/image350_1.jpeg"
+            "NI43-101\/t__SEDAR_Mineros_2023_TechnicalReport_TechReport\/image350_1.png"
         ],
         "map_count":"Single",
         "spatial_relationship":"Orientation"
