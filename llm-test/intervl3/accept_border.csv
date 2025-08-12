@@ -1,15 +1,12 @@
-question_text,expected_answer,map_count,spatial_relationship,response_internvl3
-What SEV point lies on the border of project concession TOLAR05 and SALARI07?,SEV14,Multi,Border,SEV17
-Which mining tile(s) of Agnico Eagle LaRonde Property shares border with the mining tile consisting LZ5 Portal?,2579161; 2579162; 2579163; 2579164; BM-698,Multi,Border,"The mining tiles of Agnico Eagle LaRonde Property that share a border with the mining tile Consisting LZ5 Portal are:
-
-- BM-698
-- BM-796"
-Île du Refuge lies on the border of two Simard NE lithium property claim blocks. How many lithium rock samples were collected on these two blocks?,4,Multi,Border,10
-Which mineral disposition of South Preston Project shares boundary with MC00014575,MC00014559,Single,Border,MC00014577
-Which 1996 drill collar is located on the boundary of claim block 1069754 within the BAM property?,B96-1,Single,Border,E; 265000 m
-The Lekcin claim block that contains the Swede showing partially shares a border with the claim block of which tenure?,Barrick Gold Inc,Single,Border,Barrick Gold Inc.
-"Each claim block of Lundin Gold Concession is associated with a unique name (e.g., Matcu 2). What is the 'Aurelian Ecuador S.A.' claim block that shares its border with the northernmost edge of 'Aurelianmenor S.A.'.",La Zarza,Single,Border,Lara Zaita
-Which claim block(s) and number(s) of Wood Project area borders the state mining lease?,UT31; UT32,Single,Border,The state mining lease borders the Wood Project Area claim blocks 5 and 6.
-Which farm parcel of Zebediela project area shares the longest single straight-line boundary with UITLOOP 3KS?,AMATAVA 41KS,Single,Border,Bloemhof 4KS
-"Roger Creek claim consists of multiple claim blocks associated with unique numbers (e.g., 1,069,255). Which two claim blocks share a boundary with Claim Block 1,069,242?","1,069,245; 1,059,243",Single,Border,"1,069,259; 1,069,261"
-Which DOE uranium lease tract shares the longest border with Slick Rock Project?,C-SR-13,Single,Border,C-SR-13A
+question_text,expected_answer,map_count,spatial_relationship,response_internvl3,response_gpt5
+What SEV point lies on the border of project concession TOLAR05 and SALARI07?,SEV14,Multi,Border,SEV17,SEV14
+Which mining tile(s) of Agnico Eagle LaRonde Property shares border with the mining tile consisting LZ5 Portal?,2579161; 2579162; 2579163; 2579164; BM-698,Multi,Border,"BM-698; BM-796",2429627; 2429628
+Île du Refuge lies on the border of two Simard NE lithium property claim blocks. How many lithium rock samples were collected on these two blocks?,4,Multi,Border,10,4
+Which mineral disposition of South Preston Project shares boundary with MC00014575,MC00014559,Single,Border,MC00014577,MC00014558
+Which 1996 drill collar is located on the boundary of claim block 1069754 within the BAM property?,B96-1,Single,Border,E; 265000 m,B96-2
+The Lekcin claim block that contains the Swede showing partially shares a border with the claim block of which tenure?,Barrick Gold Inc,Single,Border,Barrick Gold Inc.,"Delorme, Christopher Normand"
+"Each claim block of Lundin Gold Concession is associated with a unique name (e.g., Matcu 2). What is the 'Aurelian Ecuador S.A.' claim block that shares its border with the northernmost edge of 'Aurelianmenor S.A.'.",La Zarza,Single,Border,Lara Zaita,Condado
+Which claim block(s) and number(s) of Wood Project area borders the state mining lease?,UT31; UT32,Single,Border,Block5; Block6.,"UT 31; UT 32; UT 33; UT 34; WOOD 4; WOOD 5"
+Which farm parcel of Zebediela project area shares the longest single straight-line boundary with UITLOOP 3KS?,AMATAVA 41KS,Single,Border,Bloemhof 4KS,BLOEMHOF 4KS
+"Roger Creek claim consists of multiple claim blocks associated with unique numbers (e.g., 1,069,255). Which two claim blocks share a boundary with Claim Block 1,069,242?","1,069,245; 1,059,243",Single,Border,"1,069,259; 1,069,261","1,069,245; 1,069,247"
+Which DOE uranium lease tract shares the longest border with Slick Rock Project?,C-SR-13,Single,Border,C-SR-13A,C-SR-13

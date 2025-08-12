@@ -1,4 +1,4 @@
 question_text,expected_answer,map_count,spatial_relationship,response_internvl3
-"On the 'Arizona Lithium Corp Claims Map' dated August 2022, what alternative name or designation is used to represent 'Rhodes Marsh Lithium Brine Project' claim location?",Cronin Capital Claims,Multi,Equal,02
-Which Los Reyes Claim block equals the 1 percent royalty block?,Los Reyes Seis,Multi,Equal,The 4 percent (3pct CTSL & 1pct DMSL) royalty block is the same as the 5 Percent (3pct DMSL + 2pct Gaitan) block.
-What is the Land Tenure status of the area equal to Windser NSR of Munro-Croesus property?,Patent,Multi,Equal,Surface Rights Only
+"On the 'Arizona Lithium Corp Claims Map' dated August 2022, what alternative name or designation is used to represent 'Rhodes Marsh Lithium Brine Project' claim location?",Cronin Capital Claims,Multi,Equal,02,Arizona Lithium Corp Claims
+Which Los Reyes Claim block equals the 1 percent royalty block?,Los Reyes Seis,Multi,Equal,The 4 percent (3pct CTSL & 1pct DMSL) royalty block is the same as the 5 Percent (3pct DMSL + 2pct Gaitan) block.,El Favor
+What is the Land Tenure status of the area equal to Windser NSR of Munro-Croesus property?,Patent,Multi,Equal,Surface Rights Only,Lease
