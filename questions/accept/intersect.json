@@ -10,16 +10,6 @@
         "spatial_relationship":"Intersect"
     },
     {
-        "question_text":"Which deposit(s)\/exploration area(s) of Marathon PGM Property has the highest NSR Royalty?",
-        "expected_answer":"MCT 4; MCT 6",
-        "image_urls":[
-            "NI43-101\/C___docs_230404catStrategicTR_230404catStrategicTR_cwm\/image10_1.png",
-            "NI43-101\/C___docs_230404catStrategicTR_230404catStrategicTR_cwm\/image26_1.jpeg"
-        ],
-        "map_count":"Multi",
-        "spatial_relationship":"Intersect"
-    },
-    {
         "question_text":"Which claim block(s) and number(s) of Slick Rock Project Area does the Northern edge of DOE legacy site pass through?",
         "expected_answer":"MCT 4; MCT 6",
         "image_urls":[
@@ -75,7 +65,7 @@
         "spatial_relationship":"Intersect"
     },
     {
-        "question_text":"How many claim blocks of Capstone Mining Concession does the northern border of Resource Limit pass through?",
+        "question_text":"How many claim blocks of Capstone Mining Concession does the northeastern border of Resource Limit pass through?",
         "expected_answer":"6",
         "image_urls":[
             "NI43-101\/C__SEDAR_FILINGS_2023_Technical_Report_COZ_TR_20230502\/image53_2.png"

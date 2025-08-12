@@ -1,0 +1,6 @@
+question_text,expected_answer,map_count,spatial_relationship,response_internvl3
+Which town located within Bashaw Reef Complex is closest to 'E3 Metals Davey 4-27-33-28'?,Town of Bowden,Multi,Distance,E3 METALS DAWEY 4-27-33-28
+Which Prospector’s Permit polygon is located closest to the W4 dozer trench within the Murdock Mountain Phosphate Deposit area? Respond with just the polygon number.,7,Multi,Distance,Polygo
+What is La Preciosa Area concession’s east-west width? Unit is not required.,25000,Single,Distance,12500
+What is the approximate distance between the two points where the boundary of 'Swan Zone' meets the Alteration 'Phyllic' boundary?,1 km,Single,Distance,0.7 km
+Which mineral deposit lies closest to the western edge of the Resguardo mining concession?,Dos Banderas,Single,Distance,Tres Amigos

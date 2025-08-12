@@ -154,7 +154,8 @@
     {
         "question_text": "Identify the Noise-sensitive Area with the smallest area size. In which Industrial Lands Subareas is this area located within?",
         "expected_answer": "SoDo Stadium",
-        "image_urls": ["seattle-planning/IndustrialMaritimeStrategyFinalEIS/image354_1.png", "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image352_1.png"],
+        "image_urls": ["seattle-planning/IndustrialMaritimeStrategyFinalEIS/image354_1.png", 
+        "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image352_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Within"
     },
