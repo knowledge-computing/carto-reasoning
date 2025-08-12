@@ -2,7 +2,7 @@ Form,Relation,Map Count,Question,Form-Q-Num,Answer,Folder,General Folder
 Form 2,Border,Multi,1,6,Lower Cretaceous Cu-Fe-Au (IOGG) deposits,C__SEDAR_FILINGS_CDPR_2023_Santander_Pipe_Technical_Report_Santander_Piper_NI43-101,NI43-101
 Form 3,Border,Multi,2,26,Denison,C__RedWillow_TechnicalReport,NI43-101
 Form 4,Border,Multi,3,11,Los Reyes Tres; Los Reyes Fracc Norte,"C__SEDAR_FILINGS_CENTTechnicalReport, z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed",NI43-101
-Form 5,Border,Multi,4,13,M From 85’ to 125’/160’m,,Seattle-Planning
+Form 5,Border,Multi,4,13,M From 85’ to 125’/160’m,UptownDirectorsReport2017,Seattle-Planning
 Form 8,Border,Multi,7,2,Sumitomo,g__Sayona_2023_Moblan_20230414_Moblan_Report,NI43-101
 Form 7,Border,Multi,8,24,Newmont East (1078227); Newmont East 1 (1078228),C__Users_cxw_Desktop_SEDAR_Temp_Copperhead_IPO_Preliminary_04_TechnicalReport,NI43-101
 Form 1,Border,Multi,9,7,SEV14,C__SEDAR_FILINGS_20230711LithiumChileNI43101,NI43-101
@@ -169,7 +169,7 @@ Form 1,Orientation,Single,20,14,Huracan 4 R1A; T.246910,C__SEDAR_01SEDARFilings_
 Form 1,Orientation,Single,21,18,North West,C__AA-SEDAR_VELVET-PEA-2023,NI43-101
 Form 2,Orientation,Single,24,25,North / North East,,NI43-101
 Form 3,Orientation,Single,25,4,North West,C__FILINGS_SEDAR-OTC-CSE_1_TechReport_2022_FINAL,NI43-101
-Form 4,Orientation,Single,26,6,,,
+Form 4,Orientation,Single,26,6,North,z__AgnicoEagle_Techreport_TechReport-221231_TechReport-LaRonde,NI43-101
 Form 5,Orientation,Single,27,10,South,507SeattleStudio_Web,Seattle-Planning
 Form 7,Orientation,Single,31,28,North East,fema-oehp_hmgp-dr-4489-0041-il-peoria-borrow-fsea-fonsi-07022025,FEMA
 Form 4,Orientation,Single,32,13,North East,w__StrataboundMinerals_SEDAR_1194765_tech_Mar31_2023_file_strata_tr_03312023,NI43-101
@@ -179,7 +179,7 @@ Form 2,Within,Multi,2,16,Mafic Volcanic,C__Filings_Yaramoko_43_101_Yaramoko_4310
 Form 3,Within,Multi,3,11,4,C__MS_SEDAR_Technical_Report_MAC_Project,NI43-101
 Form 1,Within,Multi,4,11,MLCC Exploitation MCs,z__PUBLIC_Lundin-Mining-Corporation_2023_technical-reports_Caserones_Lundin-NI43-101-TR-Caserones,NI43-101
 Form 1,Within,Multi,5,20,7km^2,C__SEDAR_FILINGS_2023_Mulatos_Tech_Rep_Mar_27_2023,NI43-101
-Form 4,Within,Multi,6,3,,,
+Form 4,Within,Multi,6,3,Moira Sound Unit - Ordovician to Lower Silurian,C__FILINGS_SEDAR-OTC-CSE_1_TechReport_2022_FINAL,NI43-101
 Form 5,Within,Multi,7,22,Berenguela 04-09,C__FILINGS_SEDAR-OTC-CSE_722031_AAGBerenTR,NI43-101
 Form 6,Within,Multi,8,17,Ts,C__FILINGS_Tearlach_Tearlach_TechnicalReport,NI43-101
 Form 7,Within,Multi,9,15,1099378,C__MS_SEDAR_Technical_Report_MAC_Project,NI43-101
@@ -213,7 +213,7 @@ Form 5,Within,Single,9,21,Great Divide Basin,z__PUBLIC_Consolidated-Uranium-Inc_
 Form 2,Within,Single,10,30,Noche Buena,z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed,NI43-101
 Form 2,Within,Single,11,8,MUL,C__SEDAR_FILINGS_2023_Mulatos_Tech_Rep_Mar_27_2023,NI43-101
 Form 3,Within,Single,12,19,16,C__Data_zbnitrjul17,NI43-101
-Form 4,Within,Single,13,16,,,
+Form 4,Within,Single,13,16,1,C__SEDAR_FILINGS__doc__SEDAR_NewOriginGoldTR_pp,NI43-101
 Form 5,Within,Single,14,12,Guadalupe de los Reyes,z__PUBLIC_Prime-Mining-Corp_2023_Tech-Report_PRYM-LosReyes-TR-conformed,NI43-101
 Form 6,Within,Single,15,30,2,z__Manuela_TechnicalR,NI43-101
 Form 7,Within,Single,16,17,EOlv,C__KosterDamTechReportISM,NI43-101
