@@ -1,0 +1,8 @@
+question_text,expected_answer,map_count,spatial_relationship,response_internvl3
+What direction is Needles Park located in relation to the Proposed Detention Basin of the City of Harvey Stormwater Management Project?,North East,Multi,Orientation,South
+What is the position of the New 2B2 Pegmatite relative to Pegmatite #2 within the Raleigh Lake Project claim boundary?,South,Multi,Orientation,south
+What is the position of Coronation N in relation to Trimbles in Hyde-Macraes Shear Zone,South East,Single,Orientation,South
+What is the orientation of La Pista in relation to population center (centro poblado) Bonanza within the Bonanza concession area?,North West,Single,Orientation,Southeast
+What is the position of MARCOR Zone in relation to TETRAULT Zone of Montauban Project?,South East,Single,Orientation,south
+What is the position of Velvet-Wood Project in relation to Slick Rock Project Area?,North West,Single,Orientation,West
+What is the position of Stream 3 catch basin in relation to stream catch 2 basin?,North,Single,Orientation,Southeast
