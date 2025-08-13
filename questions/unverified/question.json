@@ -1,6 +1,6 @@
 [
     {
-        "question_text": "The 23rd Ave and E Union St Rezone (Draft) classifies each area into four distinct Rezone Areas. The rezone area that includes the “Midtown Center” and the Post Office overlaps with which four streets forming its borders?",
+        "question_text": "The 23rd Ave and E Union St Rezone (Draft) classifies each area into four distinct Rezone Areas. The rezone area that includes the 'Midtown Center' and the 'Post Office' overlaps with which four streets forming its borders?",
         "expected_answer": "23RD AVE; 24TH AVE; E PIKE ST, E SPRING ST",
         "image_urls": ["seattle-planning/23rdAvenueUDF/image25_m0.png"],
         "map_count": "Single",
@@ -230,7 +230,7 @@
     },
 
     {
-        "question_text": "Which Fire Battalions in the City of Seattle do not contain any hospitals within their boundaries. Answer in form Bttalion #.",
+        "question_text": "Which Fire Battalions in the City of Seattle do not contain any hospitals within their boundaries. Answer in form Battalion #.",
         "expected_answer": "Battalion 7",
         "image_urls": ["seattle-planning/IndustrialMaritimeStrategyFinalEIS/image742_1.png"],
         "map_count": "Single",
