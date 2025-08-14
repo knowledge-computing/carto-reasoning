@@ -133,8 +133,8 @@
         "question_text": "In the zoning category of 130th/145th, what is the approximate distance from the northwestmost corner of the Urban Village's NC2-55 to the easternmost point of the Neighborhood Anchor on NE 123RD ST?",
         "expected_answer": "6500Feet",
         "image_urls": [
-            "seattle_filtered/130_145_Alternatives__2022_1202/image7_2.png",
-            "seattle_filtered/130_145_Alternatives__2022_1202/image8_2.png"
+            "seattle-planning/130_145_Alternatives__2022_1202/image7_2.png",
+            "seattle-planning/130_145_Alternatives__2022_1202/image8_2.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Distance"
@@ -143,8 +143,8 @@
         "question_text": "In Seattle, in which direction is the area of elevation between 121-166 feet within the 5-min walkshed boundary located relative to Lake Union?",
         "expected_answer": "South",
         "image_urls": [
-            "seattle_filtered/507SeattleStudio_Web/image10_m1.png",
-            "seattle_filtered/507SeattleStudio_Web/image11_1.png"
+            "seattle-planning/507SeattleStudio_Web/image10_m1.png",
+            "seattle-planning/507SeattleStudio_Web/image11_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Orientation"
@@ -153,8 +153,8 @@
         "question_text": "In Seattle's proposed lid surroundings, the majority of publicly accessible plazas and green setbacks are located in neighborhoods with which level of access to opportunity (answer with 1-6, where 1 represents the lowest and 6 the highest)?",
         "expected_answer": "6",
         "image_urls": [
-            "seattle_filtered/507SeattleStudio_Web/image12_1.png",
-            "seattle_filtered/507SeattleStudio_Web/image22_1.png"
+            "seattle-planning/507SeattleStudio_Web/image12_1.png",
+            "seattle-planning/507SeattleStudio_Web/image22_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Within"
@@ -163,8 +163,8 @@
         "question_text": "In Seattle's proposed lid area, how many Closed Highway Ramps have their centers not located within the Green Space?",
         "expected_answer": "1",
         "image_urls": [
-            "seattle_filtered/507SeattleStudio_Web/image49_1.png",
-            "seattle_filtered/507SeattleStudio_Web/image50_1.png"
+            "seattle-planning/507SeattleStudio_Web/image49_1.png",
+            "seattle-planning/507SeattleStudio_Web/image50_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Within"
@@ -173,8 +173,8 @@
         "question_text": "Seattle's proposed lid area is divided into three functional zones: NORTH - 'MOVE', SOUTH - 'PLAY', and CENTER - 'STAY'. Which of these zones is disjoint from all Local Bus Routes?",
         "expected_answer": "NORTH - 'MOVE'",
         "image_urls": [
-            "seattle_filtered/507SeattleStudio_Web/image48_1.png",
-            "seattle_filtered/507SeattleStudio_Web/image52_1.png"
+            "seattle-planning/507SeattleStudio_Web/image48_1.png",
+            "seattle-planning/507SeattleStudio_Web/image52_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
@@ -183,8 +183,8 @@
         "question_text": "In Seattle's proposed lid area, how many Gathering Spaces have their centers located within the Proposed Buildings?",
         "expected_answer": "2",
         "image_urls": [
-            "seattle_filtered/507SeattleStudio_Web/image47_1.png",
-            "seattle_filtered/507SeattleStudio_Web/image51_1.png"
+            "seattle-planning/507SeattleStudio_Web/image47_1.png",
+            "seattle-planning/507SeattleStudio_Web/image51_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Within"
@@ -193,8 +193,8 @@
         "question_text": "In the area surrounding Seattle's Potential Lid Area, what is the approximate straight-line distance from the westernmost Affordable Housing to the westernmost Construction?",
         "expected_answer": "2900'",
         "image_urls": [
-            "seattle_filtered/507SeattleStudio_Web/image79_1.png",
-            "seattle_filtered/507SeattleStudio_Web/image80_1.png"
+            "seattle-planning/507SeattleStudio_Web/image79_1.png",
+            "seattle-planning/507SeattleStudio_Web/image80_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Distance"
@@ -203,8 +203,8 @@
         "question_text": "In the Aurora Ave and 97th Residential Urban Village of Seattle, which Safety Audit Team's route is intersected by N. 105 Ave. (answer with the team number)?",
         "expected_answer": "3",
         "image_urls": [
-            "seattle_filtered/Aurora-Liction-Plan/image71_1.png",
-            "seattle_filtered/Aurora-Liction-Plan/image72_1.png"
+            "seattle-planning/Aurora-Liction-Plan/image71_1.png",
+            "seattle-planning/Aurora-Liction-Plan/image72_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
@@ -213,8 +213,8 @@
         "question_text": "In the Aurora Ave and 97th Residential Urban Village of Seattle, which Safety Audit Team's route is intersected by N. 100 Ave. (answer with the team number)?",
         "expected_answer": "1",
         "image_urls": [
-            "seattle_filtered/Aurora-Liction-Plan/image69_1.png",
-            "seattle_filtered/Aurora-Liction-Plan/image70_1.png"
+            "seattle-planning/Aurora-Liction-Plan/image69_1.png",
+            "seattle-planning/Aurora-Liction-Plan/image70_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
@@ -223,8 +223,8 @@
         "question_text": "In the surrounding area of Seattle's Bitter Lake Hub Urban Village, which Rezone area is disjoint from all bicycle routes or lanes?",
         "expected_answer": "Rezone from C1-65 to C2-65",
         "image_urls": [
-            "seattle_filtered/BitterLakeDirectorsReport/image5_1.png",
-            "seattle_filtered/BitterLakeDirectorsReport/image6_1.png"
+            "seattle-planning/BitterLakeDirectorsReport/image5_1.png",
+            "seattle-planning/BitterLakeDirectorsReport/image6_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
@@ -233,8 +233,8 @@
         "question_text": "In Seattle, WA, which types of Urban Villages border the Park areas?",
         "expected_answer": "Urban Center; Hub Urban Village; Residential Urban Village; Manufacturing / Industrial Center",
         "image_urls": [
-            "seattle_filtered/ComprehensivePlanRacialEquityAnalysisPresentation2021/image8_4.png",
-            "seattle_filtered/ComprehensivePlanRacialEquityAnalysisPresentation2021/image14_3.png"
+            "seattle-planning/ComprehensivePlanRacialEquityAnalysisPresentation2021/image8_4.png",
+            "seattle-planning/ComprehensivePlanRacialEquityAnalysisPresentation2021/image14_3.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Border"
@@ -243,8 +243,8 @@
         "question_text": "In Seattle, WA, which type of urban village area contains the least amount of people in any race?",
         "expected_answer": "Manufacturing / Industrial Center",
         "image_urls": [
-            "seattle_filtered/CouncilAdopted2020/image10_1.png",
-            "seattle_filtered/CouncilAdopted2020/image17_1.png"
+            "seattle-planning/CouncilAdopted2020/image10_1.png",
+            "seattle-planning/CouncilAdopted2020/image17_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Within"
@@ -253,8 +253,8 @@
         "question_text": "What is the approximate distance from the Ames Lake of Seattle to the northeastmost end point of Transmission Pipeline in Seattle Regional Water Supply System?",
         "expected_answer": "12.5Miles",
         "image_urls": [
-            "seattle_filtered/CouncilAdopted2020/image578_1.png",
-            "seattle_filtered/CouncilAdopted2020/image579_1.png"
+            "seattle-planning/CouncilAdopted2020/image578_1.png",
+            "seattle-planning/CouncilAdopted2020/image579_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Distance"
@@ -263,8 +263,8 @@
         "question_text": "In Seattle, WA, how many Very Good Transit locations are situated within areas of the Future Land Use type known as Major Institutions?",
         "expected_answer": "0",
         "image_urls": [
-            "seattle_filtered/CouncilAdopted2020/image36_1.png",
-            "seattle_filtered/CouncilAdopted2020/image46_1.png"
+            "seattle-planning/CouncilAdopted2020/image36_1.png",
+            "seattle-planning/CouncilAdopted2020/image46_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Within"
@@ -273,8 +273,8 @@
         "question_text": "In Seattle, WA, which type of Existing Land Use is covered by the highest Employment Density by Census Tract?",
         "expected_answer": "Commercial/Mixed-Use",
         "image_urls": [
-            "seattle_filtered/CouncilAdopted2020/image435_1.png",
-            "seattle_filtered/CouncilAdopted2020/image436_1.png"
+            "seattle-planning/CouncilAdopted2020/image435_1.png",
+            "seattle-planning/CouncilAdopted2020/image436_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Within"
@@ -283,8 +283,8 @@
         "question_text": "In Seattle, in which direction is the area of SW NSC located relative to Green Lake?",
         "expected_answer": "South West",
         "image_urls": [
-            "seattle_filtered/CouncilAdopted2020/image433_1.png",
-            "seattle_filtered/CouncilAdopted2020/image549_1.png"
+            "seattle-planning/CouncilAdopted2020/image433_1.png",
+            "seattle-planning/CouncilAdopted2020/image549_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Orientation"
@@ -293,8 +293,8 @@
         "question_text": "Which segments of Level of Service Screenline intersect the Airport Boundary area in Seattle, WA?",
         "expected_answer": "3.12; 4.13",
         "image_urls": [
-            "seattle_filtered/CouncilAdopted2020/image459_1.png",
-            "seattle_filtered/CouncilAdopted2020/image462_1.png"
+            "seattle-planning/CouncilAdopted2020/image459_1.png",
+            "seattle-planning/CouncilAdopted2020/image462_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
@@ -303,8 +303,8 @@
         "question_text": "In Seattle, WA, which type of shoreline area borders the southwestern boundary of UW?",
         "expected_answer": "Other Shoreline Areas",
         "image_urls": [
-            "seattle_filtered/CouncilAdopted2020/image189_1.png",
-            "seattle_filtered/CouncilAdopted2020/image560_1.png"
+            "seattle-planning/CouncilAdopted2020/image189_1.png",
+            "seattle-planning/CouncilAdopted2020/image560_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Border"
@@ -313,20 +313,10 @@
         "question_text": "What type of 'Alternative 1 - No Action' is the SoDo Stadium Industrial Lands Subareas located in Seattle, WA?",
         "expected_answer": "Industrial General",
         "image_urls": [
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image128_1.png",
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image151_1.png"
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image128_1.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image151_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Within"
     }
 ]
-//         {
-//     "question_text": "",
-//     "expected_answer": "",
-//     "image_urls": [
-//         "FEMA//image.png",
-//         "FEMA//image.png"
-//     ],
-//     "map_count": "Multi",
-//     "spatial_relationship": ""
-// },
