@@ -1,0 +1,306 @@
+[
+    {
+        "question_text": "In the Hancock County Flood Risk Reduction Project, which Flood Hazard type does the PROP MAJOR 5\" CONTOUR cross?",
+        "expected_answer": "Zone AE - Regulatory Floodway",
+        "image_urls": ["FEMA/fema_oehp_hancock-county-flood-risk-reduction-program_050925/image30_1.png",
+        "FEMA/fema_oehp_hancock-county-flood-risk-reduction-program_050925/image123_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "The Hancock County Flood Risk Reduction Program identifies two wetland types, in addition to Freshwater Pond, Lake, and River areas. Which wetland type is located within the 'Zone AE – Regulatory Floodway' in the Eagle Creek Basin?",
+        "expected_answer": "Freshwater Forested/Shrub Wetland",
+        "image_urls": ["FEMA/fema_oehp_hancock-county-flood-risk-reduction-program_050925/image25_1.png",
+        "FEMA/fema_oehp_hancock-county-flood-risk-reduction-program_050925/image31_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "What is the approximate distance, in miles, between the two Dam Embankments in the Hancock County Flood Risk Reduction Project?",
+        "expected_answer": "0.62 Miles",
+        "image_urls": ["FEMA/fema_oehp_hancock-county-flood-risk-reduction-program_050925/image125_m0.png",
+        "FEMA/fema_oehp_hancock-county-flood-risk-reduction-program_050925/image165_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "What is the orientation of Interstate 75 (the line labled \"75\") in relation to Township Road 49 within the Eagle Creek Basin?",
+        "expected_answer": "North West",
+        "image_urls": ["FEMA/fema_oehp_hancock-county-flood-risk-reduction-program_050925/image9_1.png",
+        "FEMA/fema_oehp_hancock-county-flood-risk-reduction-program_050925/image16_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "What is the orientation of the Hoover’s Spurge CNDDB Occurrence in relation to the Slender Orcutt Grass CNDDB Occurrence in the area surrounding Butte County?",
+        "expected_answer": "North West",
+        "image_urls": ["FEMA/HMGP-DR-4407-CA-ButteCountyWildfireMitigation-FEA-FONSI-20241010/image144_1.png",
+        "FEMA/HMGP-DR-4407-CA-ButteCountyWildfireMitigation-FEA-FONSI-20241010/image145_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Within the Project Area (Sub Lots) of Medford City, which districts or areas (e.g., Southeast Medford) does the Bear Creek Greenway cross within the Medford City limits?",
+        "expected_answer": "Liberty Park; Geneva Minnesota Historic District; South Oakdale Historic District",
+        "image_urls": ["FEMA/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729/image55_1.png", 
+        "FEMA/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729/image141_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "The Vegetation Removal area within the Project Area border of the Westador Stormwater Detention Basin is separated into two areas. Among the Concrete Pilot Channels (CPCs) within the Project Area, which one touches both Vegetation Removal areas? Provide only the associated alphabet.",
+        "expected_answer": "A",
+        "image_urls": ["FEMA/fema_oehp_lpdm-pj-06-tx-2022-006-westador-stormwater-dea-07022025/image36_1.png",
+        "FEMA/fema_oehp_lpdm-pj-06-tx-2022-006-westador-stormwater-dea-07022025/image41_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "The Concrete Pilot Channel C (CPC C) area in the Westador Stormwater Detention Basin corresponds to which two ‘Inflow Weirs’-related areas? Provide the names exactly as given on the map, excluding the portions in parentheses.",
+        "expected_answer": "Weir C; Channel",
+        "image_urls": ["FEMA/fema_oehp_lpdm-pj-06-tx-2022-006-westador-stormwater-dea-07022025/image31_1.png",
+        "FEMA/fema_oehp_lpdm-pj-06-tx-2022-006-westador-stormwater-dea-07022025/image382_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "Which Physiographic Division contains the 'Mille Lacs Sole Source Aquifer SSA' area?",
+        "expected_answer": "Western Lake",
+        "image_urls": ["FEMA/fema_ehp_il-in-oh-mi-mn-wi-floodcontrol-revdpea_03252025/image37_1.png",
+        "FEMA/fema_ehp_il-in-oh-mi-mn-wi-floodcontrol-revdpea_03252025/image25_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Which 'Flood Hazard Zones' area contains the 'Estuarine and Marine Wetland' region, as shown in the City of New Haven Inland and Coastal Flood Resiliency Project? Provide the name, excluding the 'Hazard Zone' portion.",
+        "expected_answer": "1% Annual Chance",
+        "image_urls": ["FEMA/fema_bric-emb-2021-br-002-0005-ct-newhaven-fea-signedfonsi-20240904/image31_1.png",
+        "FEMA/fema_bric-emb-2021-br-002-0005-ct-newhaven-fea-signedfonsi-20240904/image34_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the area within Oregon where the point labeled ‘Roseburg’ is located. How many Historic Observations of Franklin's Bumble Bee are found within this area?",
+        "expected_answer": "2",
+        "image_urls": ["FEMA/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729/image169_1.png",
+        "FEMA/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729/image158_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "What is the orientation of the Communications Tower within Prescott Park, Medford, OR, in relation to the Bear Creek Greenway within Medford city limits?",
+        "expected_answer": "East",
+        "image_urls": ["FEMA/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729/image30_1.png",
+        "FEMA/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729/image19_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "In Jackson County, what is the orientation of Ashland in relation to the southwest corner of the Rogue Wolf Use Area border?",
+        "expected_answer": "South",
+        "image_urls": ["FEMA/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729/image163_1.png",
+        "FEMA/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729/image168_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Identify the county in which the area labeled 'Centrol Point' is located. What is the orientation of 'Centrol Point' in relation to the Known Wolf Use Area that intersects this county?",
+        "expected_answer": "South West",
+        "image_urls": ["FEMA/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729/image164_1.png",
+        "FEMA/HMGP-DR-4562-24-OR-MedfordHazFuels-FEA-SignedFONSI-20250729/image167_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Lorraine Hwy crosses through the northern region of the Gillespie Corners Flood Mitigation and Reconstruction Project Area. Which Zoning categories does Lorraine Hwy pass through? Provide only the zoning category codes (in {alphabet}{number} form).",
+        "expected_answer": "E40; F2",
+        "image_urls": ["FEMA/fema_ehp-hmgp-dr-4562-27-or-gillespiecorners-fea-signedfonsi-20240603/image21_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "The Lake Lery Marsh Creation and Rim Restoration Phase III divides the Project Area into three categories, each named in the form of ‘{NAME} Area’. Which categories correspond to the Site Outline shown in Lake Lery Phase III? Provide only the NAME portion.",
+        "expected_answer": "Borrow; Project",
+        "image_urls": ["FEMA/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702/image8_1.png",
+        "FEMA/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702/image113_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "What is the label of the 'Water Depth' at the northwest corner of the 'Estuarine and Marine Deepwater' within the Project Area of the Lake Lery Marsh Creation and Rim Restoration Phase III?",
+        "expected_answer": "-4'",
+        "image_urls": ["FEMA/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702/image21_1.png",
+        "FEMA/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702/image115_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "Identify the area referred to as the Marsh Creation Borrow Area (MCBA) in the Project Proposed Action. What is this area called in the Proposed Impacts of the Lake Lery Marsh Creation and Rim Restoration Phase III?",
+        "expected_answer": "Dredge Area",
+        "image_urls": ["FEMA/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702/image14_1.png",
+        "FEMA/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702/image23_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "The 'Perimeter Line ~ 16.984′' in Lake Lery Phase III corresponds to which line bordering the Marsh Creation Area (MCA) as indicated in the legend?",
+        "expected_answer": "EARTHEN CONTAINMENT DIKE BORROW AREA (ECD-BA)",
+        "image_urls": ["FEMA/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702/image114_1.png",
+        "FEMA/fema_ehp-emt-2020-fm-053-0007-la-lakelery-sdea-20240702/image118_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "Identify the 'Wetland Area' of size 0.9 acres in the Wetland Delineation Proposed St. Louis School. What is the 'Sample Plot & ID' number located within this area?",
+        "expected_answer": "2",
+        "image_urls": ["FEMA/fema_dr-4559-st-louis-hs-appendix/image136_1.png",
+        "FEMA/fema_dr-4559-st-louis-hs-appendix/image132_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the 'Water Tank' point within the Search Buffer of Corbina Rd Tract. What is the ZIP code of the region where the Water Tank point is located?",
+        "expected_answer": "70607",
+        "image_urls": ["FEMA/fema_dr-4559-st-louis-hs-appendix/image235_1.png",
+        "FEMA/fema_dr-4559-st-louis-hs-appendix/image247_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Which Flood Hazard Zone is disjoint from the 'Freshwater Forested/Shrub Wetland' in the Lumberton Loop Project Area?",
+        "expected_answer": "Area With Reduced Flood Risk Due to Levee",
+        "image_urls": ["FEMA/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614/image37_1.png",
+        "FEMA/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614/image44_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "The Lumberton Loop Project Area consists of multiple components named in the format '{NAME} Component'. Which of these components intersect with the Natural Surface Trail? Provide only the names, excluding the word 'Component'.",
+        "expected_answer": "Meadow Branch; Walnut Street",
+        "image_urls": ["FEMA/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614/image11_1.png",
+        "FEMA/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614/image15_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "In the Lumberton Loop Project Area, what is the orientation of the 'Crosswalk Stripping' in relation to the 'Walnut Street Component'?",
+        "expected_answer": "West",
+        "image_urls": ["FEMA/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614/image"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Which ‘Flood Hazard Zone’ overlaps the majority of the ‘Freshwater Pond’ in the Lumberton Loop Project Area?",
+        "expected_answer": "Regulatory Floodway",
+        "image_urls": ["FEMA/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614/image36_1.png",
+        "FEMA/BRIC-EMA-2020-BR-100-0009-NC-LumbertonLoop-DEA-2024614/image43_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["FEMA//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["FEMA//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["FEMA//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["FEMA//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["FEMA//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["FEMA//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["FEMA//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["FEMA//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["FEMA//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+    
+]
+
+
+{
+    "question_text": "",
+    "expected_answer": "",
+    "image_urls": ["FEMA//image"],
+    "map_count": "",
+    "spatial_relationship": ""
+},
