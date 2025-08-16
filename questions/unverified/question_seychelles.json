@@ -24,20 +24,115 @@
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["seychelles//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "In the East Coast area of Seychelles, each CADASTRAL parcel is assigned a unique code in the format S#. Based on the map, how many CADASTRAL parcels share a boundary with the Area_Coral region?",
+        "expected_answer": "14",
+        "image_urls": ["seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image15_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
     },
 
+    {
+        "question_text": "Île Aurore Nouvelle consists of five rectangular sub-regions associated with a number. Which rectangular region has the largest 'Unmapped Benthic Habitat (1-8m depth)' area? Give just the number associated with the region.",
+        "expected_answer": "1",
+        "image_urls": ["seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image80_1.png",
+        "seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image83_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "Identify the westernmost extent of the Mangrove Forest and the southeastern extent of the Coral Reefs in Providence Laguna. What is the orientation of the identified Coral Reef area in relation to the identified Mangrove Forest area?",
+        "expected_answer": "East",
+        "image_urls": ["seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image106_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "There are multiple numbered points along the boundary of the 181925 Sqm region of Seychelles. The area and the surroundings are classified into four habitant categories: Macroalgae meadows, Sand banks, Rock/Rubble beds, and Coral Reefs. Identify Point 6 and 7 and specify which habitat category lies between them.",
+        "expected_answer": "Sand bank",
+        "image_urls": ["seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image22_1.png",
+        "seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image193_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Locate the 'Rafia Clump' Tree Losses point in the ARIA Seychelles site map. What is the name of the room situated directly to the south of this point?",
+        "expected_answer": "Grand Ball Room",
+        "image_urls": ["seychelles/ESIA-Report-ARIA-Eco-Sol-11.07.25/image8_1.png",
+        "seychelles/ESIA-Report-ARIA-Eco-Sol-11.07.25/image72_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Identify the two 'Upper Canopy' regions that are intersected by the '25m Setback Line'. What are the percentage values shown in parentheses for each regions?",
+        "expected_answer": "10.49; 7.41",
+        "image_urls": ["seychelles/ESIA-Report-ARIA-Eco-Sol-11.07.25/image67_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+    
+    {
+        "question_text": "The Fisherman’s Cove / H Resort area is divided into 9 Vegetation–Habitat regions. Under the Phase 1/3 Demolition, which Vegetation–Habitat regions fall within the demolition boundary?",
+        "expected_answer": "Hedge - Exotic; Ornamental Garden; Mixed Woodland",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image18_1.png",
+        "seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image13_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "The Fisherman’s Cove Project is divided into two areas: J67 and J146, while the H Resort Project area is divided into three regions: V576, V577, and V10116. Estimate the horizontal (east–west) distance between the westernmost 'Native Plants' point in V576 and the easternmost 'Endemic Plants' point in J146.",
+        "expected_answer": "55 m",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image20_1.png",
+        "seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image22_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+    
+    {
+        "question_text": "The Fisherman’s Cove Project is divided into two areas: J67 and J146, while the H Resort Project area is divided into three regions: V576, V577, and V10116. Estimate the horizontal (east–west) distance between the westernmost 'Native Plants' point in V576 and the easternmost 'Endemic Plants' point in J146.",
+        "expected_answer": "55 m",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image20_1.png",
+        "seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image22_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "In the Fisherman’s Cove / H Resort area, there are four regions categorized as 'Land-birds Feeding Zones'. Identify the one that lies along the shoreline. What fraction of the 'Observed Nests' lie within this shoreline zone? Express your answer in the form X/Y.",
+        "expected_answer": "3/6",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image69_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "In the 'Fisherman’s Cove / H Resort' area, the 'Mixed Woodland' region corresponds to the area categorized under which legend label in the 'H Resort' area?",
+        "expected_answer": "Riparian Woodland",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image77_1.png",
+        "seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image78_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "In the New Construction Plan, each building is labeled with a number, and multiple buildings may share the same number. How many buildings are within the 'Story Hotel Under Construction' area in Phase 2/3 Construction?",
+        "expected_answer": "12",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image47_1.png",
+        "seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image14_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+    
+    {
+        "question_text": "In the Fisherman's Cove / H Resort map, one of the 'Other bird species – Flight paths' arrows originates from the sea area. What is the orientation of this arrow?",
+        "expected_answer": "South West",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image70_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    }
+
 ]
-
-{
-    "question_text": "",
-    "expected_answer": "",
-    "image_urls": ["seychelles//image"],
-    "map_count": "",
-    "spatial_relationship": ""
-},
-

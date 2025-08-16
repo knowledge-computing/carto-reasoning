@@ -1,0 +1,43 @@
+[
+    {
+        "question_text": "Each 'Critical Location' point in the AIIB Selected Landslide Sites is associated with a two-digit or three-digit number. Identify the 'Critical Location' point numbers within MATARA that are intersected by a Major Road.",
+        "expected_answer": "19; 21; 22",
+        "image_urls": ["aiib/P000124-SL-Landslide/image35_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "In the AIIB Project, the Critical Landslide Sites are divided into two regions: RE North and RE South. The Other Sites are grouped into three 'Group's, each consisting of multiple 'Pack's. Which Group is located entirely within the 'RE South' region, and what are the Pack numbers (with leading zeros) included in this Group?",
+        "expected_answer": "05; 07; 08; 09",
+        "image_urls": ["aiib/P000124-SL-Landslide/image36_2.png",
+        "aiib/P000124-SL-Landslide/image37_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "What is the shortest distance between the Initiation Point (145) and the Project Impact Boundary as given in AIIB's Integrated Landslide Hazard Zoning?",
+        "expected_answer": "40 m",
+        "image_urls": ["aiib/P000124-SL-Landslide/image51_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["aiib//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+]
+
+
+{
+    "question_text": "",
+    "expected_answer": "",
+    "image_urls": ["aiib//image"],
+    "map_count": "",
+    "spatial_relationship": ""
+},
