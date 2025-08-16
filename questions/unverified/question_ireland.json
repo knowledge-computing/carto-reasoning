@@ -88,6 +88,59 @@
         "image_urls": ["ireland/EPA_Irelands_Environment_2020/image183_1.png", "ireland/EPA_Irelands_Environment_2020/image207_m0.png"],
         "map_count": "Multi",
         "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the 'Drogheda' Smoke and SO₂ Monitoring Station in Ireland. Which 'COUNCIL' contains the monitoring station in Dublin that is located closest to it? Provide the council name exactly as labeled. Include the word 'Council' in the answer.",
+        "expected_answer": "Fingal County Council",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image45_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image47_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "TEAGASC identifies 11 'Great Soil Groups' in Ireland. What is the dominant 'Great Soil Group' in the Mid Western region of Ireland?",
+        "expected_answer": "Gleys",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image60_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image100_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the two aquaculture points closest to the northernmost Purple Hairstreak distribution point. For these two points, list the sea-animals under intensive shellfish famrning (each represented by a single alphabet in the legend), as recorded by the Ireland Seafood Development Agency (BIM). Give the names of the sea-animals.",
+        "expected_answer": "Mussels; Oysters",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image122_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image192_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the westernmost '>40,000 tonnes p.a.' Municipal Landfill point. For the area in which this point is located, which 'Rivers Draining in Excess of 2,000 km^2' feature shares its boundary? Provide the name exactly as labeled.",
+        "expected_answer": "Blackwater [Munster]",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image57_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image245_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Identify the easternmost 'C: Requires relaying over a long period (at least 2 months) in clean water prior to sale for human consumption' point as designated by DCMNR (Department of Communications, Marine and Natural Resources in Ireland). Which major 'Estuaries and Bays' is located closest to this point? Give the name exactly as it appears on the map.",
+        "expected_answer": "Broadmeadow",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image79_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image84_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the area in which the air quality assessment zone 'Sligo' is located. Within this area, how many bathing areas are classified as 'Compliant with EC Guide and Mandatory Values'? Include the ones if they lie on the border.",
+        "expected_answer": "2",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image44_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image85_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
     }
 ]
-

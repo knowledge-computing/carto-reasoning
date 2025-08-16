@@ -1,0 +1,43 @@
+[
+    {
+        "question_text": "On the Seychelles Water and Sanitation Project Wastewater Treatment Plant site layout, every building door is represented as a quarter-circle region indicating the door's swing (either inward or outward). What is the orientation of the Transformer Building's door relative to the Guardhouse's door?",
+        "expected_answer": "North East",
+        "image_urls": ["seychelles/91346907/image27_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Identify the 'Wetland' adjacent to the 'Soupape Marsh' area. What are the names of the 'Trial Sites' located on the boundary of this Wetland?",
+        "expected_answer": "IAS, Waste; Animal waste",
+        "image_urls": ["seychelles/91346907/image56_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Identify the ‘Moulded Concrete Gutter’ at the Seychelles Water and Sanitation Project Wastewater Treatment Plant. What is the ‘Elevation’ indicated on the map at the point where it intersects the ‘Drainage Ditch’? Give just the number.",
+        "expected_answer": "1.80",
+        "image_urls": ["seychelles/91346907/image71_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["seychelles//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+]
+
+{
+    "question_text": "",
+    "expected_answer": "",
+    "image_urls": ["seychelles//image"],
+    "map_count": "",
+    "spatial_relationship": ""
+},
+
