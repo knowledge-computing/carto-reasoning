@@ -1,12 +1,45 @@
 [
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "The Military Lease Area in Tinian is divided into multiple 'Proposed Training Areas' (coded with a 'TA' prefix). In which Proposed Training Area is the 'Explosives Training Range' located?",
+        "expected_answer": "TA B2",
+        "image_urls": ["eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image9_m0.png",
+        "eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image38_m0.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
     },
+
+    {
+        "question_text": "Each 'Landing Zone' within the Tinian Military Lease Area is labeled with a number. Identify the 'Existing Restricted Area' located nearest to 96th Street. Which Landing Zone is closest to this area. Provide only the Landing Zone number.",
+        "expected_answer": "6",
+        "image_urls": ["eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image39_m0.png",
+        "eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image53_m0.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "'Surface Radar Sites' are labeled in the format 'Surface Radar Site #'. How many of these sites are located within the Composite SDZ boundary?",
+        "expected_answer": "1",
+        "image_urls": ["eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image50_m0.png",
+        "eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image55_m0.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the 'New CJMT Road' that intersects with '8th Ave', and then the 'Repurposed Existing Communication Tower' closest to this road. What is the orientation of this tower relative to 'AHA 2'?",
+        "expected_answer": "South",
+        "image_urls": ["eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image65_m0.png",
+        "eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image57_m0.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+
 ]
+
+
+
 
 {
     "question_text": "",
