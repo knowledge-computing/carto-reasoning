@@ -74,13 +74,169 @@
         "spatial_relationship": "Intersect"
     },
 
-    
-]
+    {
+        "question_text": "Identify the 'Polder System or Embankment' line that forms the boundary of 'Ou Ta Paong'. Which 'Commune Center' is located closest to this line?",
+        "expected_answer": "Russei Krang",
+        "image_urls": ["aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image13_1.png",
+        "aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image29_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
 
-{
-    "question_text": "",
-    "expected_answer": "",
-    "image_urls": ["aiib//image"],
-    "map_count": "",
-    "spatial_relationship": ""
-},
+    {
+        "question_text": "Within the 'Ou Ta Paong – OPT Canal' boundary, identify the two 'Elongated Tortoise' points and the two 'Black Marsh Turtle' points. What is the orientation of the two 'Elongated Tortoise' points in relation to the 'Black Marsh Turtle' points?",
+        "expected_answer": "South",
+        "image_urls": ["aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image170_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Within the 'Ou Tapaong OPT_Canals' boundar (red outline), identify the three bird species points: 'Bengal Florican', 'Greater Adjutant', and 'Milky Stork'. Which bird species point is located closest to the boundary?",
+        "expected_answer": "Bengal Florican",
+        "image_urls": ["aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image172_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the two types of 'Mammal Species at OTP' and the two types of 'Fish Species at OTP'. Which species has the greatest number of points within the 'Out Ta Paong - OPT Canal' boundary? Answer with the specific species name.",
+        "expected_answer": "Siamese Tiger Perch",
+        "image_urls": ["aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image176_1.png",
+        "aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image177_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the 'National Road' that crosses the 'Ou Ta Paong' area. This road serves as a border separating which two 'Irrigation Schemes'? Provide the names without the word 'Area'.",
+        "expected_answer": "Svay Donkaev; Extension Dmnak Ampil",
+        "image_urls": ["aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image138_m0.png",
+        "aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image138_m1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Identify the 'Environmental Monitoring Locations' near Km 60/4–6 Virar FOB. Within the '100m Radius Study Area', which 'Sensitive Features' is located closest to this monitoring location?",
+        "expected_answer": "Virar Flyover",
+        "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image192_1.png",
+        "aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image198_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify all sensitive features located within the '100m Radius Study Area's of both 'Km 59/37-39 Ambernath (KJT end)' and 'Km 35/3-4 Kalwa FOB'. Among these features, which one is located closest to the railway line?",
+        "expected_answer": "Kalwa Rail Yard",
+        "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image191_1.png",
+        "aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image189_1.png,"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Within the '100 m Radius Study Areas' of Km 67/3, Km 67/20, and Km 67/16–18, identify all sensitive features. Among these features, what is the name of the one located in a 'Landuse/Landcover Class' different from the others?",
+        "expected_answer": "Parking Lot",
+        "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image193_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Maharashtra State is divided into multiple districts, and each district is further divided into multiple tahsils. Identify the district named 'Thane'. How many 'Drought Affected Tahsil's are located within this district?",
+        "expected_answer": "1",
+        "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image51_1.png",
+        "aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image52_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the 'Lineament' line that runs through the horizontal center of the Greater Mumbai District, Maharashtra. Part of this line acts as a border between which two Hydrogeology areas as indicated by the legend. Exclude any name portions written in parentheses.",
+        "expected_answer": "Hilly Area; Soft Rock",
+        "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image47_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Every 'Tower' point within the project location proposed by EQMS is associated with a code in the form 'TT-{NUMBER}'. Identify the 'Flood Prone Zone' where the tower point labeled 'TT-1/1' is located.",
+        "expected_answer": "Not Flood Prone",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image234_1.png",
+        "aiib/Environmental-and-Social-Impact-Assessment/image155_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "There are 19 different types of Important Environmental Features (e.g., Brick Field) within the 5 km buffer of the project boundary proposed by EQMS. Identify the boundary shared between the 'Project Boundary' and the 'Amin Bazar Waste Disposal Area'. Which important environmental feature is located on this boundary?",
+        "expected_answer": "Primary School",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image72_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Identify the location of the 'NL3' Point receiver situated near the Project Boundary. Then, determine which 'Exit' point is located nearest to this 'NL3' point. What is the orientation of this identified 'Exit' point in relation to the 'Risk Area' point?",
+        "expected_answer": "South East",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image408_1.png",
+        "aiib/Environmental-and-Social-Impact-Assessment/image483_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Each Plankton Sample point is labeled with a code in the format ‘Q#’, and each Ground Water Well point is labeled with a code in the format ‘GT_#’. Which Ground Water Well point is located closest to the Plankton Sample point Q2? Give the code.",
+        "expected_answer": "GT_2650011",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image225_m0.png",
+        "aiib/Environmental-and-Social-Impact-Assessment/image271_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "All Surface Water Sampling locations are associated with a unique code in the format 'SW #'. The two Surface Water Sampling locations lie on the boundary between which two Soil Categories?",
+        "expected_answer": "Jamuna,Karatoya-Bengali and Lakhya floodplain; Madhupur Soils",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image246_1.png",
+        "aiib/Environmental-and-Social-Impact-Assessment/image219_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "All Ambient Air Quality Monitoring Locations are labeled with a code in the format 'AQ #', and all Noise Level Monitoring Locations are labeled with a code in the format 'NL #'. Identify the Air Quality Monitoring Location closest to the Noise Level Monitoring Location 'NL 5'. What is the orientation of this point in relation to 'NL 5'.",
+        "expected_answer": "North East",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image236_m0.png",
+        "aiib/Environmental-and-Social-Impact-Assessment/image255_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Sri Lanka is divided into multiple districts (e.g., Ampara). Identify the district that contains the highest number of 'Landslides occurred within May, 2003'. What is the dominant 'Elevation-FEET' range of that district? Answer with the maximum elevation range value.",
+        "expected_answer": "2000",
+        "image_urls": ["aiib/environmental-and-social-management-framework-English/image13_1.png",
+        "aiib/environmental-and-social-management-framework-English/image8_m0.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "All Wedda’s Settlements are associated with a GN Division name (GND Name). Which two GN Divisions of Wedda’s Settlements overlap with the Forest Area in the Landslide Prone Districts of Sri Lanka?",
+        "expected_answer": "Dambana; Rathugala Henebedda",
+        "image_urls": ["aiib/environmental-and-social-management-framework-English/image30_1.png",
+        "aiib/environmental-and-social-management-framework-English/image15_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Areas of the West Imphal District are classified under 6 geomorphology types and 4 soil types. The area classified as 'Piedmot Slope' is within which soil type? (If the soil type name includes an '&', give only the part that comes after the '&'.)",
+        "expected_answer": "Fine, Ruptic Ultic Dystrochrepts",
+        "image_urls": ["aiib/IEE-20240306-iee-report/image91_1.png", 
+        "aiib/IEE-20240306-iee-report/image98_2.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    }
+]
