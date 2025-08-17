@@ -25,14 +25,57 @@
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["aiib//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Each 'Quarries' are labled with a unit code that consists of either a number or a number-alphabet combination. Within the 1000m Area of Influence between Sorbulak Station and Moyiunkum Station, there are 5 Quarries. Identify which of these Quarries touch the Almaty Railway Bypass. Give their unit codes.",
+        "expected_answer": "6; 7A; 8; 9",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image97_1.png",
+        "aiib/2.-Supplementary-ESIA_23042025-EN/image116_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
     },
-]
 
+    {
+        "question_text": "Each Noise Sampling Location along the Almaty Railway Bypass is marked with a unit code (e.g., N02). Identify the Noise Sampling Location that is closest to 'Sorbulak Station'. Give only the unit code as your answer.",
+        "expected_answer": "N04",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image30_1.png",
+        "aiib/2.-Supplementary-ESIA_23042025-EN/image140_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Every 'Zhetygen-scatter' point is associated with a number. Which 'Zhetygen-scatter' point is located closest to the 'Zhetygen Proposed Barrier' line. Give just the number.",
+        "expected_answer": "3",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image175_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the southern portion of the Alternative Route labled 'Sub-option 4.2' in the legend. How many ‘Settlements’ does this route crosses through? Do not include any settlements that are touched by the route.",
+        "expected_answer": "2",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image55_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Identify the point where all three Alternative Routes from China to Europe (i.e., 'Norther Corridor', 'Middle Corridor', and 'Ocean Route') meet. Which country is this point located in?",
+        "expected_answer": "China",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image27_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "How many times does the line labeled ‘Existing Railway Infrastructure’ cross the 'Other Country's Boundary'? Do not include cases where the railway runs along or touches the border without crossing.",
+        "expected_answer": "3",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image20_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    
+]
 
 {
     "question_text": "",
