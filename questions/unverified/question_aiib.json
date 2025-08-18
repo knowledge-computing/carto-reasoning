@@ -109,7 +109,7 @@
     },
 
     {
-        "question_text": "Identify the 'National Road' that crosses the 'Ou Ta Paong' area. This road serves as a border separating which two 'Irrigation Schemes'? Provide the names without the word 'Area'.",
+        "question_text": "Identify the 'National Road' that crosses the 'Ou Ta Paong' area. Which two 'Irrigation Schemes' does this road serve as a border? Provide the names without the word 'Area'.",
         "expected_answer": "Svay Donkaev; Extension Dmnak Ampil",
         "image_urls": ["aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image138_m0.png",
         "aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image138_m1.png"],
@@ -136,8 +136,8 @@
     },
 
     {
-        "question_text": "Within the '100 m Radius Study Areas' of Km 67/3, Km 67/20, and Km 67/16–18, identify all sensitive features. Among these features, what is the name of the one located in a 'Landuse/Landcover Class' different from the others?",
-        "expected_answer": "Parking Lot",
+        "question_text": "Within the '100 m Radius Study Areas' of Km 67/3, Km 67/20, and Km 67/16–18, identify all 'Sensitive Features' point. Among these points, identify the one located in a different 'Landuse/Landcover Class' from the others. What is the 'Landuse/Landcover Class' of this point?",
+        "expected_answer": "Vegetation",
         "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image193_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Within"
@@ -153,7 +153,7 @@
     },
 
     {
-        "question_text": "Identify the 'Lineament' line that runs through the horizontal center of the Greater Mumbai District, Maharashtra. Part of this line acts as a border between which two Hydrogeology areas as indicated by the legend. Exclude any name portions written in parentheses.",
+        "question_text": "Identify the 'Lineament' line that runs through the horizontal center of the Greater Mumbai District, Maharashtra. Which two Hydrogeology areas does this line separate? Exclude any name portions written in parentheses.",
         "expected_answer": "Hilly Area; Soft Rock",
         "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image47_1.png"],
         "map_count": "Single",
@@ -161,7 +161,7 @@
     },
 
     {
-        "question_text": "Every 'Tower' point within the project location proposed by EQMS is associated with a code in the form 'TT-{NUMBER}'. Identify the 'Flood Prone Zone' where the tower point labeled 'TT-1/1' is located.",
+        "question_text": "Every 'Tower' point within the project location proposed by EQMS is associated with a code in the form 'TT-{NUMBER}'. Which 'Flood Prone Zone' is the tower point labeled 'TT-1/1' located?",
         "expected_answer": "Not Flood Prone",
         "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image234_1.png",
         "aiib/Environmental-and-Social-Impact-Assessment/image155_1.png"],
@@ -196,7 +196,7 @@
     },
 
     {
-        "question_text": "All Surface Water Sampling locations are associated with a unique code in the format 'SW #'. The two Surface Water Sampling locations lie on the boundary between which two Soil Categories?",
+        "question_text": "All Surface Water Sampling locations are associated with a unique code in the format 'SW #'. Which two Soil Categories form the boundary where the two Surface Water Sampling locations lie?",
         "expected_answer": "Jamuna,Karatoya-Bengali and Lakhya floodplain; Madhupur Soils",
         "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image246_1.png",
         "aiib/Environmental-and-Social-Impact-Assessment/image219_1.png"],
@@ -232,7 +232,7 @@
     },
 
     {
-        "question_text": "Areas of the West Imphal District are classified under 6 geomorphology types and 4 soil types. The area classified as 'Piedmot Slope' is within which soil type? (If the soil type name includes an '&', give only the part that comes after the '&'.)",
+        "question_text": "Areas of the West Imphal District are classified under 6 geomorphology types and 4 soil types. Which soil type contains the area classified as 'Piedmot Slope'? (If the soil type name includes an '&', give only the part that comes after the '&'.)",
         "expected_answer": "Fine, Ruptic Ultic Dystrochrepts",
         "image_urls": ["aiib/IEE-20240306-iee-report/image91_1.png", 
         "aiib/IEE-20240306-iee-report/image98_2.png"],

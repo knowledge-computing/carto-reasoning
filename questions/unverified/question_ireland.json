@@ -8,7 +8,7 @@
     },
 
     {
-        "question_text": "Within the region, all islands are labeled in the format 'Island name (country code)'. Identify the country codes of the islands that have an Annual mean BaP concentration 'ng/m^3' point in 2017",
+        "question_text": "Within the region, all islands are labeled in the format 'Island name (country code)'. What are the country codes of the islands that have an Annual mean BaP concentration 'ng/m^3' point in 2017?",
         "expected_answer": "FR; NO",
         "image_urls": ["ireland/EPA_Irelands_Environment_2020/image79_1.png"],
         "map_count": "Single",
@@ -16,7 +16,7 @@
     },
 
     {
-        "question_text": "The Ordnance Survey Ireland records each 'Bathing Water Quality Status' with a unique number. Identify the numbers of the points classified as having 'Sufficient' Bathing Water Quality Status within the 'Dublin Area'.",
+        "question_text": "The Ordnance Survey Ireland records each 'Bathing Water Quality Status' with a unique number. What are the numbers of the points classified as having 'Sufficient' Bathing Water Quality Status within the 'Dublin Area'?",
         "expected_answer": "6; 14; 17",
         "image_urls": ["ireland/EPA_Irelands_Environment_2020/image364_1.png"],
         "map_count": "Single",
@@ -59,7 +59,7 @@
     },
 
     {
-        "question_text": "The Ordnance Survey Ireland divides the country into counties, each labeled with either a number or a number–letter combination. Identify the county labeled '03' and list all counties that border it.",
+        "question_text": "The Ordnance Survey Ireland divides the country into counties, each labeled with either a number or a number–letter combination. Identify the county labeled '03'. Which counties border it?",
         "expected_answer": "26; 06",
         "image_urls": ["ireland/EPA_Irelands_Environment_2020/image176_m0.png"],
         "map_count": "Single",

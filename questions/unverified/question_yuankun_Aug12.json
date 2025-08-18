@@ -1,6 +1,6 @@
 [
     {
-        "question_text": "Which evacuation zone is the Fort Myers Beach Fire Station #32 located in the Lee County Emergency Management?",
+        "question_text": "Which 'Evacuation Zones' is the Fort Myers Beach Fire Station #32 located in the Lee County Emergency Management?",
         "expected_answer": "A",
         "image_urls": [
             "FEMA/fema_rm-hurriance-ian-mat-report-12-2023/image331_1.png",
@@ -10,7 +10,7 @@
         "spatial_relationship": "Within"
     },
     {
-        "question_text": "Which Hurricane category intersects Hardee County, Florida?",
+        "question_text": "Both the Hurricane Charley line and the Hurricane Ian line are divided into multiple categories. Which category intersects with Hardee County, Florida?",
         "expected_answer": "Category4",
         "image_urls": [
             "FEMA/fema_rm-hurriance-ian-mat-report-12-2023/image53_1.png",
@@ -20,7 +20,7 @@
         "spatial_relationship": "Equal"
     },
     {
-        "question_text": "What is the approximate distance from the 140-Year lan MAT Survey Point to the northwestmost 0.0-3.0 ft elevation lan USGS High Water Mark in the Bokeelia city?",
+        "question_text": "What is the approximate distance from the '140-Year' Ian MAT Survey Point to the northwesternmost '0.0–3.0' Elevation (ft NAVD88) point of Ian USGS High Water Mark in Bokeelia?",
         "expected_answer": "18Miles",
         "image_urls": [
             "FEMA/fema_rm-hurriance-ian-mat-report-12-2023/image49_1.png",
