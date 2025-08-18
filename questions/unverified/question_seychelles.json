@@ -49,7 +49,7 @@
     },
 
     {
-        "question_text": "There are multiple numbered points along the boundary of the '181925 Sqm' region of Seychelles. The area and the surroundings are classified into four habitant categories: Macroalgae meadows, Sand banks, Rock/Rubble beds, and Coral Reefs. Which habitat category lies between Point 6 and 7.",
+        "question_text": "There are multiple numbered points along the boundary of the '181925 Sqm' region of Seychelles. The area and the surroundings are classified into four habitant categories: Macroalgae meadows, Sand banks, Rock/Rubble beds, and Coral Reefs. Which habitat category lies between Point 6 and 7?",
         "expected_answer": "Sand bank",
         "image_urls": ["seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image22_1.png",
         "seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image193_1.png"],
