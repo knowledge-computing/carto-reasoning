@@ -35,7 +35,92 @@
         "spatial_relationship": "Orientation"
     },
 
+    {
+        "question_text": "Within the Tinian Military Lease Area, identify the 30 ft Transects Terrestrial Survey Area located between 'Runway Able' and 'Runway Charlie'. What is the dominant 'Vegetation Type' in this area?",
+        "expected_answer": "Leucaena Forest",
+        "image_urls": ["eis/Appendices A through L_CJMT_RDEIS/image147_1.png",
+        "eis/Appendices A through L_CJMT_RDEIS/image148_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
 
+    {
+        "question_text": "In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} and has an associated name (e.g., code 'T1' corresponds to 'Tinian High School'). What are the names of the two Noise Sensitive Receptors intersected by the 'Primary Utility Corridor'.",
+        "expected_answer": "North Field National Historic Landmark; Unai Babui",
+        "image_urls": ["eis/Appendices A through L_CJMT_RDEIS/image277_1.png",
+        "eis/Appendices A through L_CJMT_RDEIS/image150_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} and has an associated name (e.g., code 'T1' corresponds to 'Tinian High School'). Among the receptors with codes beginning with 'S', which one is located closest to the '115 dB' boundary of Explosives Training Range 40lb Cratering Charge (PK15) Noise Contours? Give just the name",
+        "expected_answer": "Coral Ocean Point Resort",
+        "image_urls": ["eis/Appendices A through L_CJMT_RDEIS/image303_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "In Tinian, each 'Heritiera longipetiolata' species observation area is associated with a name (e.g., Pina-10). Which observation area is located closest to the Noise Sensitive Receptor labeled 'T15'?",
+        "expected_answer": "Masalok-1",
+        "image_urls": ["eis/Appendices A through L_CJMT_RDEIS/image162_1.png",
+        "eis/Appendices A through L_CJMT_RDEIS/image280_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} (e.g., T18). Which Noise Sensitive Receptors are located within both the '115 dBP' Explosive Equipment boundary and the '87 dBP' M2 boundary?",
+        "expected_answer": "T16; T22; T20",
+        "image_urls": ["eis/Appendices A through L_CJMT_RDEIS/image297_1.png",
+        "eis/Appendices A through L_CJMT_RDEIS/image299_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "The mines 'Mine No. 4 - ALES-055797' and 'Blue Creek Mine No. 1 - ALES-056519' are divided into multiple smaller blocks. What is the orientation of the southernmost block(s) of Blue Creek Mine No. 1 relative to the northernmost block(s) of Mine No. 4?",
+        "expected_answer": "South West",
+        "image_urls": ["eis/Appendix D - Biological Assessment/image10_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Within the Tinian Military Lease Area, how many 'CJMT Modeled Pumping Wells' are not along the 'CJMT Water Mains' line?",
+        "expected_answer": "9",
+        "image_urls": ["eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image36_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Within the Tinian Military Lease Area, what is the orientation of the 'General Groundwater Directional Flow' arrow that passes through the 'North Lowland' Physiographic Area?",
+        "expected_answer": "North East",
+        "image_urls": ["eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image16_1.png",
+        "eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image73_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "How many 'Existing Water Storage Tanks' are located within the 'Low-Permeability Tinian Pyroclastic Rocks at Sea Level' area in Tinian?",
+        "expected_answer": "2",
+        "image_urls": ["eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image17_1.png",
+        "eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image65_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Which numbered 'Electrical/Comm Routing Segment' crosses both the 'Tt' and 'ATm' geologic unit areas in Tinian?",
+        "expected_answer": "4",
+        "image_urls": ["eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image75_1.png",
+        "eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image155_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
 ]
 
 
