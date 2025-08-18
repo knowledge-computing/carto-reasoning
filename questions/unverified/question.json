@@ -1,6 +1,6 @@
 [
     {
-        "question_text": "The 23rd Ave and E Union St Rezone (Draft) classifies each area into four distinct Rezone Areas. The rezone area that includes the 'Midtown Center' and the 'Post Office' overlaps with which four streets forming its borders?",
+        "question_text": "The 23rd Ave and E Union St Rezone (Draft) classifies each area into four distinct Rezone Areas. Which four streets form the border of the rezone area that includes the 'Midtown Center' and the 'Post Office'?",
         "expected_answer": "23RD AVE; 24TH AVE; E PIKE ST, E SPRING ST",
         "image_urls": ["seattle-planning/23rdAvenueUDF/image25_m0.png"],
         "map_count": "Single",
@@ -8,7 +8,7 @@
     },
   
     {
-        "question_text": "The 23rd Ave and E Union St Rezone (Draft) classifies each area into four distinct Rezone Areas. With which Rezone Area does 'Rezone Area 4' share its westernmost boundary. Give the name of the area in form Rezone Area #.",
+        "question_text": "The 23rd Ave and E Union St Rezone (Draft) classifies each area into four distinct Rezone Areas. With which Rezone Area does 'Rezone Area 4' share its westernmost boundary? Give the name of the area in form Rezone Area #.",
         "expected_answer": "Rezone Area 5",
         "image_urls": ["seattle-planning/23rdAvenueUDF/image31_m0.png"],
         "map_count": "Single",
@@ -32,7 +32,7 @@
     },
   
     {
-        "question_text": "In the current zoning of 130th/145th, all areas are assigned to one of the city’s ten Zoning Categories. The area labeled NC3P-55 shares border with which other Zoning Categories?",
+        "question_text": "In the current zoning of 130th/145th, all areas are assigned to one of the city’s ten Zoning Categories. Which Zoning Categories shares border with the area labeled NC3P-55?",
         "expected_answer": "Lowrise 1; Lowrise 3",
         "image_urls": ["seattle-planning/130_145_Alternatives__2022_1202/image6_2.png"],
         "map_count": "Single",
@@ -40,7 +40,7 @@
     },
   
     {
-        "question_text": "In the Combined zoning of 130th/145th, the area labeled NC2-55 shares its border with which zoning category. Provide the unit code exactly as shown on the map.",
+        "question_text": "In the Combined zoning of 130th/145th, which zoning cateogry shares its border with the area labeled NC2-55. Provide the unit code exactly as shown on the map.",
         "expected_answer": "LR1",
         "image_urls": ["seattle-planning/130_145_Alternatives__2022_1202/image8_2.png"],
         "map_count": "Single",
@@ -254,14 +254,6 @@
         "spatial_relationship": "Border"
     },
   
-    {
-        "question_text": "In the Yesler Terrace Redevelopment, how many buildings are located within the boundary of 'The Green Loop'. (All buildings are associated with a Building Key.)",
-        "expected_answer": "5",
-        "image_urls": ["seattle-planning/lfs-existing-conditions-and-context-memorandum/image68_m0.png"],
-        "map_count": "Single", 
-        "spatial_relationship": "Orientation"
-    },
-
     {
         "question_text": "In the Yesler Terrace Redevelopment, how many buildings are located within the boundary of 'The Green Loop'. (All buildings are associated with a Building Key.)",
         "expected_answer": "5",
