@@ -205,7 +205,7 @@
     },
 
     {
-        "question_text": "All Ambient Air Quality Monitoring Locations are labeled with a code in the format 'AQ #', and all Noise Level Monitoring Locations are labeled with a code in the format 'NL #'. Identify the Air Quality Monitoring Location closest to the Noise Level Monitoring Location 'NL 5'. What is the orientation of this point in relation to 'NL 5'.",
+        "question_text": "All Ambient Air Quality Monitoring Locations are labeled with a code in the format 'AQ #', and all Noise Level Monitoring Locations are labeled with a code in the format 'NL #'. Identify the Air Quality Monitoring Location closest to the Noise Level Monitoring Location 'NL 5'. What is the orientation of this point in relation to 'NL 5'?",
         "expected_answer": "North East",
         "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image236_m0.png",
         "aiib/Environmental-and-Social-Impact-Assessment/image255_1.png"],
