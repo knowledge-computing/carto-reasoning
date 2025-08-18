@@ -121,8 +121,43 @@
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
     },
-]
 
+    {
+        "question_text": "What is the orientation of the 'Delta Substation' in relation to 'Launch Complex 39A'?",
+        "expected_answer": "South East",
+        "image_urls": ["eis/Draft SpaceX Starship-Super Heavy CCSFS Environmental Impact Statement/image44_1.png",
+        "eis/Draft SpaceX Starship-Super Heavy CCSFS Environmental Impact Statement/image45_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Each 'Delineated Wetland' area is labeled with a unit code in the form W#. Which delineated wetland does the boundary of the 'Green Island Coastal Barrier Resource System' cross? Provide only the number.",
+        "expected_answer": "8",
+        "image_urls": ["eis/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image92_1.png",
+        "eis/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image103_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Identify the eastern area of 'Decommissioning Sub-Alternative 2B'. Which 'Community Type's overlap this area? Provide the letter codes shown on the map.",
+        "expected_answer": "MNFd; BSMHF",
+        "image_urls": ["eis/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image104_1.png",
+        "eis/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image109_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "Identify the area classified as 'Low' in the 'Commute to Work by Public Transit' index that contains the Proposed Station 'Audubon Town Center'. What are the 'Transit Dependency Index' values for this area?",
+        "expected_answer": "Low; Medium; High",
+        "image_urls": ["eis/MetroTransitExpansion_Appendix A1_Purpose and Need/image16_1.png",
+        "eis/MetroTransitExpansion_Appendix A1_Purpose and Need/image18_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+]
 
 
 
