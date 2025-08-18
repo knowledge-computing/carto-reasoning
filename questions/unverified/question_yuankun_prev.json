@@ -223,84 +223,280 @@
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["FEMA//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "What is the approximate distance from the ‘6. BROOKLINE DR. FLOOD STUDY’ to the easternmost Utility Pole location in the Rayhill Memorial Trail project in Oneida County, New York?",
+        "expected_answer": "7500 Feet",
+        "image_urls": ["FEMA/fema_pa-dr-4472-00801-ny-rayhilltrail-dea-20240722/image55_1.png",
+        "FEMA/fema_pa-dr-4472-00801-ny-rayhilltrail-dea-20240722/image62_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["FEMA//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "What is the orientation of the ‘Visitor Center Complex’ relative to the ‘Diversion Dam’ in the LPDM NM #1 Los Luceros Fire Mitigation Project?",
+        "expected_answer": "South",
+        "image_urls": ["FEMA/fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412/image34_1.png",
+        "FEMA/fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412/image30_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["FEMA//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Each 'APE' region in the LPDM NM #1 Los Luceros Fire Mitigation Project is associated with a number (e.g., 151). Which 'APE' types overlap with the 'Orchard' Project Area Classifications?",
+        "expected_answer": "18; 11",
+        "image_urls": ["FEMA/fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412/image52_m0.png",
+        "FEMA/fema_ehp-lpdm-pj-06-nm-2023-001-loslucerosfiremit-drafttea-2024412/image35_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["FEMA//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "In the T.C. Jester Stormwater Detention Basin, what are the ‘Flood Hazard Zones’ that contain the two ‘Wet-Bottom Area in Proposed Basins’?",
+        "expected_answer": "1% Annual Chance Flood Hazard; Regulatory Floodway",
+        "image_urls": ["FEMA/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202/image39_1.png",
+        "FEMA/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202/image98_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["FEMA//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "What is the name of the creek that intersects the 'APE' area but is disjoint from the 'Proposed Basin' area? Provide the answer without including the word 'Creek'.",
+        "expected_answer": "Cypress",
+        "image_urls": ["FEMA/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202/image164_1.png",
+        "FEMA/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202/image163_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["FEMA//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Identify the 'Inflow Weirs' area within 'Proposed Basin 1A' of the T.C. Jester Stormwater Detention Basin project area. What is the orientation of the identified 'Inflow Weirs' area in relation to 'BEECHAM DR'?",
+        "expected_answer": "North West",
+        "image_urls": ["FEMA/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202/image12_1.png",
+        "FEMA/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202/image149_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["FEMA//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "The T.C. Jester Stormwater Detention Basin consists of several area types ending with 'Wetlands'. Which type overlaps with the 'Proposed Basin 1A' Action Area? Provide the answer including the word 'Wetlands'.",
+        "expected_answer": "Delineated Wetlands",
+        "image_urls": ["FEMA/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202/image99_1.png",
+        "FEMA/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202/image115_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["FEMA//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "In the Flood Hazard Zones map, by what other name is the 'Vegetation Removal Area' of the T.C. Jester Stormwater Detention Basin referred?",
+        "expected_answer": "Areas of Basins",
+        "image_urls": ["FEMA/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202/image45_1.png",
+        "FEMA/fema_ehp-lpdm-pj-06-tx-2022-007-tc-jester-dea-20241202/image41_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["FEMA//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Identify the ‘Zone X500 – Areas of 500-Year Flood’ region within the Virginia Street Drainage Improvements project. Which ‘Soil Units’ overlap with this area?",
+        "expected_answer": "URLX; LetA; LabA",
+        "image_urls": ["FEMA/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125/image21_1.png",
+        "FEMA/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125/image17_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify ‘Tyrrell Park’ within the Coastal Zone of the Virginia Street Drainage Improvements project. What is the orientation of the westernmost ‘Proposed Detention Basin’ in relation to ‘Tyrrell Park’?",
+        "expected_answer": "North East",
+        "image_urls": ["FEMA/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125/image30_1.png",
+        "FEMA/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125/image25_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "All highways in the United States are labeled with the prefix 'US'. Which highways cross through the 'Benefit Area' of the Virginia Street Drainage Improvements project? Answer including the prefix 'US'.",
+        "expected_answer": "US 69; US 96; US 287",
+        "image_urls": ["FEMA/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125/image9_1.png",
+        "FEMA/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125/image8_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Identify the two areas: the Proposed Basin labeled ‘Upl 6’ and the Isolated Wetland labeled ‘W-2’. What is the estimated shortest distance between them?",
+        "expected_answer": "6600 Feet",
+        "image_urls": ["FEMA/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125/image26_1.png",
+        "FEMA/fema_oehp_emt-2021-fm-022-0010-tx-virginia-street-dea-052125/image11_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "What is the orientation of 'Marlette Lake' within the 'Tahoe Management Unit' in relation to the point labeled 'Reese' in the Lahontan Basin?",
+        "expected_answer": "South West",
+        "image_urls": ["FEMA/fema_pdmc-pj-09-nv-2018-001-marlette-dea-20240710/image130_1.png",
+        "FEMA/fema_pdmc-pj-09-nv-2018-001-marlette-dea-20240710/image137_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "The Marlette Lake Dam Resilient Infrastructure project labels several points along the Project Site Access Route (e.g., ‘Marlette Dam Construction Site’). How many points labeled ‘Flume Trail’ lie within the Lake Tahoe–Nevada State Park boundaries?",
+        "expected_answer": "1",
+        "image_urls": ["FEMA/fema_pdmc-pj-09-nv-2018-001-marlette-dea-20240710/image28_1.png",
+        "FEMA/fema_pdmc-pj-09-nv-2018-001-marlette-dea-20240710/image10_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Within Area 11 of North Shore Levee West, there are three classified area for the Elements of Proposed Action. For which of these areas does the 'Roadway' serve as a boundary? Answer with the word including 'Area'.",
+        "expected_answer": "Re-Pavement Area",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image147_1.png", 
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image162_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Within Area 7 of North Shore Levee West, how many ‘Closure Structures’ are located in the ‘Permanent Impact Area’?",
+        "expected_answer": "7",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image143_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image158_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    
+    {
+        "question_text": "Within Area 6 of North Shore Levee West, how many ‘Closure Structures’ are located in the ‘Vegetation Conversion Area’?",
+        "expected_answer": "3",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image142_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image157_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    
+    {
+        "question_text": "Within North Shore Levee West, what is the orientation of ‘Minor St’ in relation to ‘Berkeley St’?",
+        "expected_answer": "South West",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image152_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image153_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    
+    {
+        "question_text": "Within North Shore Levee West, what is the orientation of ‘Wetland 31’ relative to ‘Wetland 7’?",
+        "expected_answer": "North West",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image154_1.png", 
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image155_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    
+    {
+        "question_text": "Identify the road segment labeled ‘107’. What is the orientation of the ‘Proposed Levee/Floodwall Alignment’ in North Shore Levee West relative to the road labeled ‘107’?",
+        "expected_answer": "North West",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image12_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image71_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "What is the orientation of the ‘Mitigation Site’ in North Shore Levee West relative to the ‘Staging Area’ within Area 5 of North Shore Levee West?",
+        "expected_answer": "North West",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image151_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image156_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    
+    {
+        "question_text": "Identify the 'Closure Structure' on Endresen Rd in Area 1 of North Shore Levee West. What is the approximate distance from this 'Closure Structure' to the 'Queen Ave Pump Station Outfall'?",
+        "expected_answer": "2500 Feet",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image137_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image139_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    
+    {
+        "question_text": "What is the approximate distance between the southwest corner of the ‘Embankment’ line and the easternmost point of the ‘Vegetation Conversion Area’ in the North Shore Levee West project?",
+        "expected_answer": "2400 Feet",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image148_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image163_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    
+    {
+        "question_text": "Areas of North Shore Levee West are classified either as one of the four Areas (categories ending with 'Area') or as one of the two Wetlands (categories ending with 'Wetlands'). Within Area 10 of North Shore Levee West, which Areas or Wetlands does the 'Re-Pavement Area' overlap with?",
+        "expected_answer": "Permanent Impact Area",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image146_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image161_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    
+    {
+        "question_text": "Within North Shore Levee West, which ‘Flood Zones’ are the ‘Mitigation Site’ located in?",
+        "expected_answer": "100-Year Floodplain; 500-Year Floodplain",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image17_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image18_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
     },
     
+    {
+        "question_text": "In North Shore Levee West, the Proposed Action Sequence classifies five types of construction segments. The ‘Raised Roadway’ of North Shore Levee West corresponds to which construction segment? Provide the answer excluding the part in parentheses.",
+        "expected_answer": "4th Segment of Construction",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image27_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image36_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+    
+    {
+        "question_text": "Within North Shore Levee West, what is the orientation of the southeast corner of ‘Wetland 22’ relative to the ‘Hoquiam Tidal Channel’?",
+        "expected_answer": "South West",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image160_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image159_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Areas of North Shore Levee West are classified either as one of the four Areas (categories ending with 'Area') or as one of the two Wetlands (categories ending with 'Wetlands'). Within Area 12, which three Areas or Wetlands border the 'Re-Pavement Area'?",
+        "expected_answer": "Delineated Wetlands; Temporary Impact Area; Permanent Impact Area",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image164_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image149_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "The Aberdeen–Hoquiam North Shore Levee is classified into three categories. In which category is the 'Hoquiam Police Station' located?",
+        "expected_answer": "North Shore Levee (West)",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image116_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image101_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "What area types, as indicated in the legend, compose the 'Mitigation Area' of North Shore Levee West?",
+        "expected_answer": "Scrub-Shrub or Forested Wetland; Marsh or Scrub-Shrub Wetland; Tidal Channel or Mud Flat Wetland; Upland Fill Riparian Area",
+        "image_urls": ["FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image136_1.png",
+        "FEMA/BRIC-EMS-2020-BR-102-0002_WA-NorthShoreLeveeWest-DEA-20241126/image138_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    } 
 ]
-
-
-{
-    "question_text": "",
-    "expected_answer": "",
-    "image_urls": ["FEMA//image"],
-    "map_count": "",
-    "spatial_relationship": ""
-},

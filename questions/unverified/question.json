@@ -181,14 +181,7 @@
         "image_urls": ["seattle-planning/IndustrialMaritimeStrategyFinalEIS/image438_m0.png"],
         "map_count": "Single",
         "spatial_relationship": "Border"},
-  
-    {
-        "question_text": "Every 'Screenline' in the City of Seattle is associated with a unique ID in the format {NUMBER}.{NUMBER}. What is the ID of the Screenline that crosses a Public Land area?",
-        "expected_answer": "7.11",
-        "image_urls": ["seattle-planning/IndustrialMaritimeStrategyFinalEIS/image570_1.png"],
-        "map_count": "Single",
-        "spatial_relationship": "Intersect"
-    },
+        
   
     {
         "question_text": "In the SoDo Stadium Industrial Lands Subareas, how many 'Terminal & Rail Yard Gate' points are located outside the boundaries of both 'Intermodal Facilities'?",

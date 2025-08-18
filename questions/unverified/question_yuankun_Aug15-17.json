@@ -3,28 +3,18 @@
         "question_text": "In Seattle, WA, when comparing Alternative 3 - Targeted to Alternative 2 - Limited, which type of area has the largest increase in size?",
         "expected_answer": "Maritime, Manufacturing & Logistics",
         "image_urls": [
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image155_1.png",
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image159_1.png"
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image155_1.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image159_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Equal"
     },
     {
-        "question_text": "In Seattle, WA, which Noise-sensitive Area includes the point location of Georgetown?",
-        "expected_answer": "Georgetown",
-        "image_urls": [
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image352_1.png",
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image354_1.png"
-        ],
-        "map_count": "Multi",
-        "spatial_relationship": "Equal"
-    },
-    {
-        "question_text": "In Seattle, WA, which screenlines intersect with State Routes/Freeways?",
+        "question_text": "Every 'Screenline' in the City of Seattle is associated with a unique ID in the format {NUMBER}.{NUMBER}. In Seattle, WA, which screenlines intersect with State Routes/Freeways?",
         "expected_answer": "8; 10.11; 9.12; 4.13",
         "image_urls": [
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image570_1.png",
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image578_1.png"
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image570_1.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image578_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
@@ -33,8 +23,8 @@
         "question_text": "In Seattle, WA, which elementary and middle school attendance area is the Seattle Schools Administration located in?",
         "expected_answer": "Mercer",
         "image_urls": [
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image760_1.png",
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image761_1.png"
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image760_1.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image761_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Within"
@@ -43,8 +33,8 @@
         "question_text": "In Seattle, WA, what type of Industrial Lands Subareas does Terminal 91 belong to?",
         "expected_answer": "Interbay Smith Cove",
         "image_urls": [
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image752_m0.png",
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image786_1.png"
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image752_m0.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image786_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Within"
@@ -53,8 +43,8 @@
         "question_text": "In Seattle, WA, which Fire 911 Responses by ZIP Code area is the Police HQ located in during 2016 - 2020?",
         "expected_answer": "More than 30,000",
         "image_urls": [
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image746_1.png",
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image751_1.png"
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image746_1.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image751_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Within"
@@ -63,8 +53,8 @@
         "question_text": "In Seattle, WA, which type of wastewater system mainline has the most overlapping service area with the stormwater system mainline?",
         "expected_answer": "Sanitary mainlines",
         "image_urls": [
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image782_1.png",
-            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image784_1.png"
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image782_1.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image784_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Equal"
@@ -242,13 +232,3 @@
         "spatial_relationship": "Orientation"
     }
 ]
-//         {
-//     "question_text": "",
-//     "expected_answer": "",
-//     "image_urls": [
-//         "FEMA//image.png",
-//         "FEMA//image.png"
-//     ],
-//     "map_count": "Multi",
-//     "spatial_relationship": ""
-// },
