@@ -1,0 +1,254 @@
+[
+    {
+        "question_text": "In Seattle, WA, when comparing Alternative 3 - Targeted to Alternative 2 - Limited, which type of area has the largest increase in size?",
+        "expected_answer": "Maritime, Manufacturing & Logistics",
+        "image_urls": [
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image155_1.png",
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image159_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+    {
+        "question_text": "In Seattle, WA, which Noise-sensitive Area includes the point location of Georgetown?",
+        "expected_answer": "Georgetown",
+        "image_urls": [
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image352_1.png",
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image354_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+    {
+        "question_text": "In Seattle, WA, which screenlines intersect with State Routes/Freeways?",
+        "expected_answer": "8; 10.11; 9.12; 4.13",
+        "image_urls": [
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image570_1.png",
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image578_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+    {
+        "question_text": "In Seattle, WA, which elementary and middle school attendance area is the Seattle Schools Administration located in?",
+        "expected_answer": "Mercer",
+        "image_urls": [
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image760_1.png",
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image761_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+    {
+        "question_text": "In Seattle, WA, what type of Industrial Lands Subareas does Terminal 91 belong to?",
+        "expected_answer": "Interbay Smith Cove",
+        "image_urls": [
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image752_m0.png",
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image786_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+    {
+        "question_text": "In Seattle, WA, which Fire 911 Responses by ZIP Code area is the Police HQ located in during 2016 - 2020?",
+        "expected_answer": "More than 30,000",
+        "image_urls": [
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image746_1.png",
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image751_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+    {
+        "question_text": "In Seattle, WA, which type of wastewater system mainline has the most overlapping service area with the stormwater system mainline?",
+        "expected_answer": "Sanitary mainlines",
+        "image_urls": [
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image782_1.png",
+            "seattle_filtered/IndustrialMaritimeStrategyFinalEIS/image784_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+    {
+        "question_text": "What is the name of the Irish EIP-AGRI Operational Group that is located nearest to Dublin, Ireland?",
+        "expected_answer": "Small Biogas Demonstration Programme",
+        "image_urls": [
+            "ireland/EPA_Irelands_Environment_2020/image107_1.png",
+            "ireland/EPA_Irelands_Environment_2020/image337_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+    {
+        "question_text": "What type of the Targeting Agricultural Measures WFD 2nd Cycle Significant Pressures exists in Northern Ireland?",
+        "expected_answer": "WFD Catchments",
+        "image_urls": [
+            "ireland/EPA_Irelands_Environment_2020/image339_1.png",
+            "ireland/EPA_Irelands_Environment_2020/image368_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+    {
+        "question_text": "How many locations categorized as 'A: Can be collected for direct human consumption' in the 2022 Classification of Shellfish Production Areas are in North Western (b) of Ireland?",
+        "expected_answer": "5",
+        "image_urls": [
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image60_1.png",
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image84_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+    {
+        "question_text": "In 'Zone a' of the Zones For Air Quality Assessment And Management In Ireland, which Corine Land Cover Class 2000 has the largest area? ",
+        "expected_answer": "Artificial surfaces",
+        "image_urls": [
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image44_1.png",
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image96_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+    {
+        "question_text": "What Great Soil Group of Ireland is GALWAY CITY COUNCIL located in?",
+        "expected_answer": "Shallow brown earths",
+        "image_urls": [
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image45_1.png",
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image100_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+    {
+        "question_text": "In Ireland, which aquaculture area location is situated in the county where the Knockharley landfill is located?",
+        "expected_answer": "Mornington",
+        "image_urls": [
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image192_1.png",
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image245_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+    {
+        "question_text": "In Ireland, what is the orientation of Clontarf, the Smoke and SO₂ Monitoring location of Dublin City Council, relative to the River Moy?",
+        "expected_answer": "South East",
+        "image_urls": [
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image47_1.png",
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image57_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+    {
+        "question_text": "In Ireland, which type of Noise In Quiet Area overlaps the most with artificial areas?",
+        "expected_answer": "Anthropogenic Noise",
+        "image_urls": [
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image97_1.png",
+            "ireland/State-of-the-environment-in-Ireland-2004-reduced/image104_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+    {
+        "question_text": "In what orientation is Minute Man National Historical Park relative to the 7.5-minute quadrangle of Natick?",
+        "expected_answer": "North",
+        "image_urls": [
+            "national-parks/639106/image1_m2.png",
+            "national-parks/639106/image1_m9.png",
+            "national-parks/639106/image1_m10.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+    {
+        "question_text": "What is the approximate distance from the Two Medicine Lake to the Logan Pass in the Glacier National Park? (Answer in MILES)",
+        "expected_answer": "22.5MILES",
+        "image_urls": [
+            "national-parks/639363/image1_m8.png",
+            "national-parks/639363/image1_m13.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+    {
+        "question_text": "In the Glacier National Park region and its surrounding areas, what is the approximate distance from East Glacier Park to Missoula, MT? (Answer in MILES)",
+        "expected_answer": "122MILES",
+        "image_urls": [
+            "national-parks/639363/image1_m9.png",
+            "national-parks/639363/image1_m10.png",
+            "national-parks/639363/image1_m14.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+    {
+        "question_text": "Which 15-Minute Quadrangle surrounding Yellowstone National Park are the heavy line segments of the Heart Mountain Fault located in?",
+        "expected_answer": "PILOT PEAK",
+        "image_urls": [
+            "national-parks/642208/image1_m49.png",
+            "national-parks/642208/image1_m54.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+    {
+        "question_text": "In what orientation is EAST GALLATIN RANGE FAULT relative to the South Fork fault mass?",
+        "expected_answer": "North West",
+        "image_urls": [
+            "national-parks/642208/image1_m48.png",
+            "national-parks/642208/image1_m57.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+    {
+        "question_text": "In what orientation is Snag Peak block relative to the city of Seattle, WA?",
+        "expected_answer": "North West",
+        "image_urls": [
+            "national-parks/646954/image1_m1.png",
+            "national-parks/646954/image1_m2.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+    {
+        "question_text": "In Delaware Water Gap National Recreation Area, what is the approximate straight-line distance in miles from the southwestmost corner of Lake Sparta to Sussex?",
+        "expected_answer": "15miles",
+        "image_urls": [
+            "national-parks/664400/image1_m20.png",
+            "national-parks/664400/image1_m23.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+    {
+        "question_text": "In Delaware Water Gap National Recreation Area, what type of area is Layton located in?",
+        "expected_answer": "Valley-outwash deposit",
+        "image_urls": [
+            "national-parks/664400/image1_m49.png",
+            "national-parks/664400/image1_m50.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+    {
+        "question_text": "In the vicinity of Virgin Islands National Park, what is the orientation of Little Tatch Island relative to Fungi Passage?",
+        "expected_answer": "North East",
+        "image_urls": [
+            "national-parks/698075/image1_m1.png",
+            "national-parks/698075/image1_m6.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    }
+]
+//         {
+//     "question_text": "",
+//     "expected_answer": "",
+//     "image_urls": [
+//         "FEMA//image.png",
+//         "FEMA//image.png"
+//     ],
+//     "map_count": "Multi",
+//     "spatial_relationship": ""
+// },
