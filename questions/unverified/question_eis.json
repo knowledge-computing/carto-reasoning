@@ -177,20 +177,254 @@
     },
 
     {
+        "question_text": "Identify the 'Cultural Resources Study Area' in which the 'SLC-6 Launch Site' is located. Which bodies of water, excluding the Pacific Ocean, cross through the identified area?",
+        "expected_answer": "Santa Ynez River; Bear Creek; Honda Creek; Jalama Creek",
+        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image73_1.png",
+        "eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image43_m0.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Identify the southernmost 'Non-Intrusive Inspection (NII) Facility' within the Study Area around Seco Mines. Which 'Soil Unit (USDA)'s boundary is touched by this facility?",
+        "expected_answer": "LgA",
+        "image_urls": ["eis/Green Eagle Railroad FEIS Volume II- Appendices/image293_1.png",
+        "eis/Green Eagle Railroad FEIS Volume II- Appendices/image291_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Identify the 'Sea Turtle Nesting Branches that are not Designated or Proposed Critical Habitat' line that intersects the '1.25' Notional Startship RTLS Sonic Boom Overpressures (PSF) Zone. Which two species' habitat areas does this line act as a border between them? Give the answer including the word 'Habitat'.",
+        "expected_answer": "West Indian Manatee (Florida subspecies) Proposed Critical Habitat; Southeastern Beach Mouse Potential Habitat",
+        "image_urls": ["eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.1_ESA Consultation (USFWS)_Part3/image58_1.png",
+        "eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.1_ESA Consultation (USFWS)_Part3/image54_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "The area around the 'LC-39A Boundary' is divided into 11 numbered regions. Identify the regions that are intersected only by the boundary of the '2 PSF (APE)' zone. Among those regions, which one has the higher count of 'Previously Recorded Historic Buildings'? Provide only the associated number.",
+        "expected_answer": "10",
+        "image_urls": ["eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation/image26_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Identify the Prev. Recorded Historic Bridge labeled '8BR02956' along Nasa Pkwy W and the Prev. Recorded Historic Building labeled '8BR01693*'. What is the orientation of the bridge in relation to the building?",
+        "expected_answer": "West",
+        "image_urls": ["eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation/image31_1.png",
+        "eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation/image32_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "The Conceptual Site Plan at SLC-6 proposes four types of 'New' areas. Which type of 'New' area does the 'North Drainage' line intersect?",
+        "expected_answer": "New Rail System",
+        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image77_1.png",
+        "eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image124_m0.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Within the Bremerton Waterfront Infrastructure area, which 'OU Boundaries' do not share a border with the 'Naval Restricted Area (NRA 2)' line?",
+        "expected_answer": "OU C; OU D",
+        "image_urls": ["eis/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image194_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Identify the 'Water Quality Assessment – 303(d)' areas around the NAVBASE Kitsap-Bremerton. Which 'FGTS Truck Freight Corridors' line does one of these areas touch with? Answer with the part before the colon.",
+        "expected_answer": "T-3",
+        "image_urls": ["eis/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image152_1.png",
+        "eis/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image453_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "In the Joint Compatibility Transportation Plan, 'Level of Service (LOS)' points are categorized into six levels. Identify the LOS points located on the border of Naval Base Kitsap-Bremerton. What are their categories?",
+        "expected_answer": "A; C; D",
+        "image_urls": ["eis/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image444_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "All Survey Type areas are associated with a code in the format 22-#. Identify the northwestern border of the 'Inner Harbor Navigation Canal APE.' What is the code number of the 'Phase I' Survey Type area that shares a border with the 'Inner Harbor Navigation Canal APE'?",
+        "expected_answer": "22-2522",
+        "image_urls": ["eis/Annex 4 - NHPA Section 106 May 2025/image200_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Identify the 'Previously Recorded Historic Structure (Demolished)' point labeled '911 Deslonde Street'. Which 'Streetscape Photo Point' number is located closest to this structure?",
+        "expected_answer": "5",
+        "image_urls": ["eis/Annex 4 - NHPA Section 106 May 2025/image203_1.png",
+        "eis/Annex 4 - NHPA Section 106 May 2025/image239_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the boundary between the 'Proposed Expansion of the Bywater Historic District' and the 'Bywater Historic District'. Among the 'Newly Recorded Historic Structures' located within the 'Bywater Historic District', which structure is farthest from this boundary?",
+        "expected_answer": "4548 North Rampart Street",
+        "image_urls": ["eis/Annex 4 - NHPA Section 106 May 2025/image202_1.png",
+        "eis/Annex 4 - NHPA Section 106 May 2025/image241_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "The Buffalo-Amherst–Tonawanda Corridor Transit Expansion includes several categories of 'Track Alignments' (legend labels beginning with 'Track Alignment,'). Identify the 'LIGHT RAIL GRADE SEPARATED' line located along Maple Road and Sweet Home Road. With which type of Track Alignment line does this segment overlap?",
+        "expected_answer": "Track Alignment, Below Grade",
+        "image_urls": ["eis/MetroTransitExpansion_Chapter 2_Alternatives Considered/image8_1.png",
+        "eis/MetroTransitExpansion_Chapter 2_Alternatives Considered/image16_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "Which two 'Proposed Recreation Facilities' are located along the 'Walking Portage' in the Turner Falls and Northfield Mountain Prospect Area?",
+        "expected_answer": "Put-in; Unity Park Put-in",
+        "image_urls": ["eis/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image32_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "What is the orientation of the 'Station No. 1 Intakes' in relation to the 'Switchyard' within the Turner Falls and Northfield Mountain project area?",
+        "expected_answer": "West",
+        "image_urls": ["eis/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image400_1.png",
+        "eis/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image405_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "What is the orientation of 'Bryan Palmer & Barry Maust' in relation to 'Gary Blocher' within the Meyersdale Study Area?",
+        "expected_answer": "South",
+        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image21_m1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Within the Study Area of Meyersdale, there are seven different community resources (e.g., EMS and Medical). Identify the community resource points that are located south of the Natural Gas Pipeline. What type of community resource are these points?",
+        "expected_answer": "Place of Worship",
+        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image789_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "What is the name of the 'Potentially Eligible Historic Resources' area that shares a border with the 'MD Priority Funding Areas'?",
+        "expected_answer": "Kinsinger Farm",
+        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image222_1.png",
+        "eis/Vol-3-FEISAppendixA-M-May-2025/image226_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Identify the study area under 'Maryland Census Tract 3' 'Census Block Groups' 1. What are the numbers of the 'Waste Sites' located within this region?",
+        "expected_answer": "19; 30; 23; 33",
+        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image220_1.png",
+        "eis/Vol-3-FEISAppendixA-M-May-2025/image227_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
         "question_text": "",
         "expected_answer": "",
         "image_urls": ["eis//image"],
         "map_count": "",
         "spatial_relationship": ""
     },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    }
 ]
-
-
-
-{
-    "question_text": "",
-    "expected_answer": "",
-    "image_urls": ["eis//image"],
-    "map_count": "",
-    "spatial_relationship": ""
-},

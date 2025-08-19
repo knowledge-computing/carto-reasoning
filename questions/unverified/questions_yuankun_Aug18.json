@@ -240,13 +240,3 @@
         "spatial_relationship": "Within"
     }
 ]
-//         {
-//     "question_text": "",
-//     "expected_answer": "",
-//     "image_urls": [
-//         "FEMA//image.png",
-//         "FEMA//image.png"
-//     ],
-//     "map_count": "Multi",
-//     "spatial_relationship": ""
-// },
