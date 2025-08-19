@@ -9,6 +9,105 @@
     },
 
     {
+        "question_text": "Which 'Evacuation Zones' is the Fort Myers Beach Fire Station #32 located in the Lee County Emergency Management?",
+        "expected_answer": "A",
+        "image_urls": [
+            "FEMA/fema_rm-hurriance-ian-mat-report-12-2023/image331_1.png",
+            "FEMA/fema_rm-hurriance-ian-mat-report-12-2023/image370_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Every 'Screenline' in the City of Seattle is associated with a unique ID in the format {NUMBER}.{NUMBER}. Which screenlines intersect with State Routes/Freeways?",
+        "expected_answer": "8; 10.11; 9.12; 4.13",
+        "image_urls": [
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image570_1.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image578_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "In the City of Seattle, the Manufacturing Industrial Centers are divided into three categories under 'Alternative 2 – Limited' and four categories under 'Alternative 3 – Targeted.' When comparing the areas across categories, which category shows the largest increase in size?",
+        "expected_answer": "Maritime, Manufacturing & Logistics",
+        "image_urls": [
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image155_1.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image159_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "Both the Hurricane Charley line and the Hurricane Ian line are divided into multiple categories. Which category intersects with Hardee County, Florida?",
+        "expected_answer": "Category 4",
+        "image_urls": [
+            "FEMA/fema_rm-hurriance-ian-mat-report-12-2023/image53_1.png",
+            "FEMA/fema_rm-hurriance-ian-mat-report-12-2023/image55_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "In the City of Seattle, what type of 'Industrial Lands Subareas' does 'Terminal 91' belong to?",
+        "expected_answer": "Interbay Smith Cove",
+        "image_urls": [
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image752_m0.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image786_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "In the City of Seattle, which type of 'Wastewater system mainline' has the most overlapping service area with the 'Stormwater system mainline'?",
+        "expected_answer": "Sanitary mainlines",
+        "image_urls": [
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image782_1.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image784_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "What is the name of the 'Irish EIP-AGRI Operational Group' that is located nearest to 'Dublin'?",
+        "expected_answer": "Small Biogas Demonstration Programme",
+        "image_urls": [
+            "ireland/EPA_Irelands_Environment_2020/image107_1.png",
+            "ireland/EPA_Irelands_Environment_2020/image337_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+    
+    {
+        "question_text": "In the City of Seattle, which 'Fire 911 Responses by ZIP Code (2016-2020)' area is the 'Police HQ' located in?",
+        "expected_answer": "More than 30,000",
+        "image_urls": [
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image746_1.png",
+            "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image751_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "What is the approximate distance from the '140-Year' Ian MAT Survey Point to the northwesternmost '0.0–3.0' Elevation (ft NAVD88) point of Ian USGS High Water Mark in Bokeelia?",
+        "expected_answer": "18Miles",
+        "image_urls": [
+            "FEMA/fema_rm-hurriance-ian-mat-report-12-2023/image49_1.png",
+            "FEMA/fema_rm-hurriance-ian-mat-report-12-2023/image50_1.png"
+        ],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
         "question_text": "The Hancock County Flood Risk Reduction Program identifies two wetland types, in addition to Freshwater Pond, Lake, and River areas. Which wetland type is located within the 'Zone AE – Regulatory Floodway' in the Eagle Creek Basin?",
         "expected_answer": "Freshwater Forested/Shrub Wetland",
         "image_urls": ["FEMA/fema_oehp_hancock-county-flood-risk-reduction-program_050925/image25_1.png",

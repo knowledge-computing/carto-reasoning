@@ -157,6 +157,32 @@
         "map_count": "Multi",
         "spatial_relationship": "Equal"
     },
+
+    {
+        "question_text": "Identify the 'Vehicle Assembly Building' within the KSC Property Boundary. What is the name of the body of water that borders it?",
+        "expected_answer": "Banana Creek",
+        "image_urls": ["eis/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image6_1.png",
+        "eis/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image16_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Each 'Burn Unit' area is assigned a code (e.g., T-29-A, 4.4 D). Identify the edge of LC-39A in which the Air Separation Unit is located along. Which Burn Unit Boundaries share a border with this side of the LC-39A boundary? Provide their codes.",
+        "expected_answer": "T-33-C; T-29-A",
+        "image_urls": ["eis/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image25_1.png",
+        "eis/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image163_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
 ]
 
 

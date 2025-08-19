@@ -1,54 +1,5 @@
 [
     {
-        "question_text": "In the Concept Plan of the Historic District of Little India of Singapore, identify the unnamed ‘CAR PARK’ point. What is the name of the farthest named ‘CAR PARK’ from this point?",
-        "expected_answer": "President Shopping Centre/Hotel",
-        "image_urls": ["sg-ura/30yrs-of-conservation/image15_m0.png"],
-        "map_count": "Single",
-        "spatial_relationship": "Distance"
-    },
-
-    {
-        "question_text": "Within the ‘BUKIT PASOH’ area of the Historic District Chinatown of Singapore, how many ‘ENVELOPE CONTROL SITE’s are located inside it?",
-        "expected_answer": "5",
-        "image_urls": ["sg-ura/30yrs-of-conservation/image14_m0.png"],
-        "map_count": "Single",
-        "spatial_relationship": "Within"
-    },
-
-    {
-        "question_text": "As given in the Extended Central Sketch Plan of Singapore, how many ‘Major Bus Terminals’ are located inside the ‘High Density Housing with Commercial Uses’ region?",
-        "expected_answer": "2",
-        "image_urls": ["sg-ura/30yrs-of-conservation/image6_m1.png"],
-        "map_count": "Single",
-        "spatial_relationship": "Within"
-    },
-
-    {
-        "question_text": "Identify the 'PHASE 1B' CST phasing line of Downtown Singapore. How many 'SUBJECT TO DETAILED PLANNING' areas does this line intersect with?",
-        "expected_answer": "2",
-        "image_urls": ["sg-ura/AnnualReport_1997-1998/image16_1.png",
-        "sg-ura/AnnualReport_1997-1998/image18_1.png"],
-        "map_count": "Multi",
-        "spatial_relationship": "Intersect"
-    },
-
-    {
-        "question_text": "China Square in Singapore is divided into multiple land parcels, each labeled with an alphabet. What is the orientation of ‘Parcel B’ in relation to ‘Parcel D’?",
-        "expected_answer": "West",
-        "image_urls": ["sg-ura/AnnualReport_1997-1998/image20_1.png"],
-        "map_count": "Single",
-        "spatial_relationship": "Orientation"
-    },
-
-    {
-        "question_text": "Within Chinatown, Singapore, each area inside the conservation boundary is labeled with a name (e.g., TANGJONG PAGAR) and each Gazetted Monument is labeled with a number and name (e.g., 5: Al-Abrar Mosque). Which Gazetted Monuments are located in the area that contains the ‘Future malls’ line? Give just the names.",
-        "expected_answer": "Jamae Mosque; Sri Mariamman Temple",
-        "image_urls": ["sg-ura/AnnualReport_1997-1998/image26_1.png"],
-        "map_count": "Single",
-        "spatial_relationship": "Within"
-    },
-
-    {
         "question_text": "What is the name of the ‘Fresh Water’ body located closest to the ‘Pasir Panjang Linear Park’ greeneries area?",
         "expected_answer": "Performance Promenade",
         "image_urls": ["sg-ura/Skyline_Issue_13/image15_m1.png"],

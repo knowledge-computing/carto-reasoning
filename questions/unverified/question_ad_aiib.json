@@ -1,0 +1,588 @@
+[
+    {
+        "question_text": "Each 'Critical Location' point in the AIIB Selected Landslide Sites is associated with a two-digit or three-digit number. Identify the 'Critical Location' point numbers within MATARA that are intersected by a Major Road.",
+        "expected_answer": "19; 21; 22",
+        "image_urls": ["aiib/P000124-SL-Landslide/image35_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Identify the 'Planned Playground' point located closest to 'Sas Al Nakhl Island'. What are the two nearest 'Destination's to this playground?",
+        "expected_answer": "Zayed Sports City; Sheikh Khalifa Park",
+        "image_urls": ["abu-dhabi/2011-HM-Urban-Design21/image34_1.png",
+        "abu-dhabi/2011-HM-Urban-Design21/image44_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the 'Ceremonial Route' originating from the 'Capital District' of Abu Dhabi. What is its orientation?",
+        "expected_answer": "North West",
+        "image_urls": ["abu-dhabi/2011-HM-Urban-Design21/image45_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Identify the highest and the lowest 'NO2(ug/m3) - 2018' point of the Diffusion tube annual nitrogen dioxide concentrations in Limerick for 2018. What is the orientation of the highest point in relation to the lowest point.",
+        "expected_answer": "South West",
+        "image_urls": ["ireland/EPA_Irelands_Environment_2020/image77_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Within the region, all islands are labeled in the format 'Island name (country code)'. What are the country codes of the islands that have an Annual mean BaP concentration 'ng/m^3' point in 2017?",
+        "expected_answer": "FR; NO",
+        "image_urls": ["ireland/EPA_Irelands_Environment_2020/image79_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "The Ordnance Survey Ireland records each 'Bathing Water Quality Status' with a unique number. What are the numbers of the points classified as having 'Sufficient' Bathing Water Quality Status within the 'Dublin Area'?",
+        "expected_answer": "6; 14; 17",
+        "image_urls": ["ireland/EPA_Irelands_Environment_2020/image364_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "According to Ordnance Survey Ireland in 2019, identify the largest 'Designated WFD Shellfish Areas'. What is the name of the 'Large Towns' located closest to it?",
+        "expected_answer": "Dundalk",
+        "image_urls": ["ireland/EPA_Irelands_Environment_2020/image143_1.png",
+        "ireland/EPA_Irelands_Environment_2020/image365_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "According to Ordnance Survey Ireland, identify the region with a 'High' 2013-2018 WFD Surface Waters Ecological Status on the western half of the country. What is the name of the 'Large Towns' located closest to this region.",
+        "expected_answer": "Galway",
+        "image_urls": ["ireland/EPA_Irelands_Environment_2020/image144_1.png",
+        "ireland/EPA_Irelands_Environment_2020/image165_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "According to Ordnance Survey Ireland, each waste point is associated with a code (e.g., W0165) and the company managing it (e.g., Ballynagran Landfill). What is the name of the company that manages the 'Landfills Accepting Municipal Waste' site located closest to 'Breedon Cement Ireland Limited'?",
+        "expected_answer": "Drehid Waste Management Facility",
+        "image_urls": ["ireland/EPA_Irelands_Environment_2020/image245_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "According to Ordnance Survey Ireland, locate the 'Ballymagroarty' point from the 'Remedial Action List of Public Water Supplies (July 2020)'. Which category from the 'Licensed Sites by Sector (September 2020)' is most prevalent in the area containing this point?",
+        "expected_answer": "Food & Drink Sector",
+        "image_urls": ["ireland/EPA_Irelands_Environment_2020/image359_1.png",
+        "ireland/EPA_Irelands_Environment_2020/image262_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "The Ordnance Survey Ireland divides the country into counties, each labeled with either a number or a number–letter combination. Identify the county labeled '03'. Which counties border it?",
+        "expected_answer": "26; 06",
+        "image_urls": ["ireland/EPA_Irelands_Environment_2020/image176_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "What is the name of the northernmost 'National Air Monitoring Site' as recorded by Ordnance Survey Ireland?",
+        "expected_answer": "Main Head",
+        "image_urls": ["ireland/EPA_Irelands_Environment_2020/image67_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "The Ordnance Survey Ireland divides the country into counties, each labeled with either a number or a number–letter combination. How many 'Decrease' points for Rivers 2013–2018 Phosphate Trends are located within the county labeled '20'?",
+        "expected_answer": "4",
+        "image_urls": ["ireland/EPA_Irelands_Environment_2020/image176_m1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "The EPA lists the Targeting Agricultural Measures categories in the legend. Which measure category is associated with the region closest to the Dumping At Sea Permits > Active 2018 'S0021-01' point?",
+        "expected_answer": "Nitrogen Measures",
+        "image_urls": ["ireland/EPA_Irelands_Environment_2020/image183_1.png", "ireland/EPA_Irelands_Environment_2020/image207_m0.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the 'Drogheda' Smoke and SO₂ Monitoring Station in Ireland. Which 'COUNCIL' contains the monitoring station in Dublin that is located closest to it? Provide the council name exactly as labeled. Include the word 'Council' in the answer.",
+        "expected_answer": "Fingal County Council",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image45_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image47_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "TEAGASC identifies 11 'Great Soil Groups' in Ireland. What is the dominant 'Great Soil Group' in the Mid Western region of Ireland?",
+        "expected_answer": "Gleys",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image60_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image100_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the two aquaculture points closest to the northernmost Purple Hairstreak distribution point. For these two points, list the sea-animals under intensive shellfish famrning (each represented by a single alphabet in the legend), as recorded by the Ireland Seafood Development Agency (BIM). Give the names of the sea-animals.",
+        "expected_answer": "Mussels; Oysters",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image122_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image192_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the westernmost '>40,000 tonnes p.a.' Municipal Landfill point. For the area in which this point is located, which 'Rivers Draining in Excess of 2,000 km^2' feature shares its boundary? Provide the name exactly as labeled.",
+        "expected_answer": "Blackwater [Munster]",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image57_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image245_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Identify the easternmost 'C: Requires relaying over a long period (at least 2 months) in clean water prior to sale for human consumption' point as designated by DCMNR (Department of Communications, Marine and Natural Resources in Ireland). Which major 'Estuaries and Bays' is located closest to this point? Give the name exactly as it appears on the map.",
+        "expected_answer": "Broadmeadow",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image79_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image84_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the area in which the air quality assessment zone 'Sligo' is located. Within this area, how many bathing areas are classified as 'Compliant with EC Guide and Mandatory Values'? Include the ones if they lie on the border.",
+        "expected_answer": "2",
+        "image_urls": ["ireland/State-of-the-environment-in-Ireland-2004-reduced/image44_1.png",
+        "ireland/State-of-the-environment-in-Ireland-2004-reduced/image85_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "On the Seychelles Water and Sanitation Project Wastewater Treatment Plant site layout, every building door is represented as a quarter-circle region indicating the door's swing (either inward or outward). What is the orientation of the Transformer Building's door relative to the Guardhouse's door?",
+        "expected_answer": "North East",
+        "image_urls": ["seychelles/91346907/image27_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Identify the 'Wetland' adjacent to the 'Soupape Marsh' area. What are the names of the 'Trial Sites' located on the boundary of this Wetland?",
+        "expected_answer": "IAS, Waste; Animal waste",
+        "image_urls": ["seychelles/91346907/image56_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Identify the ‘Moulded Concrete Gutter’ at the Seychelles Water and Sanitation Project Wastewater Treatment Plant. What is the ‘Elevation’ indicated on the map at the point where it intersects the ‘Drainage Ditch’? Give just the number.",
+        "expected_answer": "1.80",
+        "image_urls": ["seychelles/91346907/image71_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "In the East Coast area of Seychelles, each CADASTRAL parcel is assigned a unique code in the format S#. Based on the map, how many CADASTRAL parcels share a boundary with the Area_Coral region?",
+        "expected_answer": "14",
+        "image_urls": ["seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image15_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Île Aurore Nouvelle consists of five rectangular sub-regions associated with a number. Which rectangular region has the largest 'Unmapped Benthic Habitat (1-8m depth)' area? Give just the number associated with the region.",
+        "expected_answer": "1",
+        "image_urls": ["seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image80_1.png",
+        "seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image83_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "Identify the westernmost extent of the Mangrove Forest and the southeastern extent of the Coral Reefs in Providence Laguna. What is the orientation of the identified Coral Reef area in relation to the identified Mangrove Forest area?",
+        "expected_answer": "East",
+        "image_urls": ["seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image106_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "There are multiple numbered points along the boundary of the '181925 Sqm' region of Seychelles. The area and the surroundings are classified into four habitant categories: Macroalgae meadows, Sand banks, Rock/Rubble beds, and Coral Reefs. Which habitat category lies between Point 6 and 7.",
+        "expected_answer": "Sand bank",
+        "image_urls": ["seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image22_1.png",
+        "seychelles/East-Coast-ECP4-Reclamation-Project-Environmental-And-Social-Impact-Report/image193_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Locate the 'Rafia Clump' Tree Losses point in the ARIA Seychelles site map. What is the name of the room situated directly to the south of this point?",
+        "expected_answer": "Grand Ball Room",
+        "image_urls": ["seychelles/ESIA-Report-ARIA-Eco-Sol-11.07.25/image8_1.png",
+        "seychelles/ESIA-Report-ARIA-Eco-Sol-11.07.25/image72_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Identify the two 'Upper Canopy' regions that are intersected by the '25m Setback Line'. What are the percentage values shown in parentheses for each regions?",
+        "expected_answer": "10.49; 7.41",
+        "image_urls": ["seychelles/ESIA-Report-ARIA-Eco-Sol-11.07.25/image67_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+    
+    {
+        "question_text": "The Fisherman’s Cove / H Resort area is divided into 9 Vegetation–Habitat regions. Under the Phase 1/3 Demolition, which Vegetation–Habitat regions fall within the demolition boundary?",
+        "expected_answer": "Hedge - Exotic; Ornamental Garden; Mixed Woodland",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image18_1.png",
+        "seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image13_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "The Fisherman’s Cove Project is divided into two areas: J67 and J146, while the H Resort Project area is divided into three regions: V576, V577, and V10116. What is the approximate horizontal (east–west) distance between the westernmost 'Native Plants' point in V576 and the easternmost 'Endemic Plants' point in J146.",
+        "expected_answer": "55 m",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image20_1.png",
+        "seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image22_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "In the Fisherman’s Cove / H Resort area, there are four regions categorized as 'Land-birds Feeding Zones'. Identify the one that lies along the shoreline. How many 'Observed Nests' lie within this shoreline zone? Express your answer in form X/Y, where X = number of shoreline nests and Y = total number of observed nests. Do not reduce the fraction.",
+        "expected_answer": "3/6",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image69_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the 'Mixed Woodland' region in the 'Fisherman’s Cove / H Resort' area. Which legend label does this area correspond to in the 'H Resort' area?",
+        "expected_answer": "Riparian Woodland",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image77_1.png",
+        "seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image78_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "In the New Construction Plan, each building is labeled with a number, and multiple buildings may share the same number. How many buildings are within the 'Story Hotel Under Construction' area in Phase 2/3 Construction?",
+        "expected_answer": "12",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image47_1.png",
+        "seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image14_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "In the Concept Plan of the Historic District of Little India of Singapore, identify the unnamed ‘CAR PARK’ point. What is the name of the farthest named ‘CAR PARK’ from this point?",
+        "expected_answer": "President Shopping Centre/Hotel",
+        "image_urls": ["sg-ura/30yrs-of-conservation/image15_m1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Within the ‘BUKIT PASOH’ area of the Historic District Chinatown of Singapore, how many ‘ENVELOPE CONTROL SITE’s are located inside it?",
+        "expected_answer": "5",
+        "image_urls": ["sg-ura/30yrs-of-conservation/image14_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "As given in the Extended Central Sketch Plan of Singapore, how many ‘Major Bus Terminals’ are located inside the ‘High Density Housing with Commercial Uses’ region?",
+        "expected_answer": "2",
+        "image_urls": ["sg-ura/30yrs-of-conservation/image6_m1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the 'PHASE 1B' CST phasing line of Downtown Singapore. How many 'SUBJECT TO DETAILED PLANNING' areas does this line intersect with?",
+        "expected_answer": "2",
+        "image_urls": ["sg-ura/AnnualReport_1997-1998/image16_1.png",
+        "sg-ura/AnnualReport_1997-1998/image18_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "China Square in Singapore is divided into multiple land parcels, each labeled with an alphabet. What is the orientation of ‘Parcel B’ in relation to ‘Parcel D’?",
+        "expected_answer": "West",
+        "image_urls": ["sg-ura/AnnualReport_1997-1998/image20_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Within Chinatown, Singapore, each area inside the conservation boundary is labeled with a name (e.g., TANGJONG PAGAR) and each Gazetted Monument is labeled with a number and name (e.g., 5: Al-Abrar Mosque). Which Gazetted Monuments are located in the area that contains the ‘Future malls’ line? Give just the names.",
+        "expected_answer": "Jamae Mosque; Sri Mariamman Temple",
+        "image_urls": ["sg-ura/AnnualReport_1997-1998/image26_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
+    
+    {
+        "question_text": "In the Fisherman's Cove / H Resort map, one of the 'Other bird species – Flight paths' arrows originates from the sea area. What is the orientation of this arrow?",
+        "expected_answer": "South West",
+        "image_urls": ["seychelles/ESIA-Report-FC-and-SS-Redevelopment-_-Vol-1_FINAL-1/image70_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Identify the 'Protected Landscape' located near the Al Ain National Zoo. What are the 'Destination' points that are situated within this protected landscape.",
+        "expected_answer": "Green Mubazzarah; Mezyad Desert Park, Jebel Hafeet Overlook",
+        "image_urls": ["abu-dhabi/2011-HM-Urban-Design21/image46_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "In the AIIB Project, the Critical Landslide Sites are divided into two regions: RE North and RE South. The Other Sites are grouped into three 'Group's, each consisting of multiple 'Pack's. Which Group is located entirely within the 'RE South' region, and what are the Pack numbers (with leading zeros) included in this Group?",
+        "expected_answer": "05; 07; 08; 09",
+        "image_urls": ["aiib/P000124-SL-Landslide/image36_2.png",
+        "aiib/P000124-SL-Landslide/image37_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "What is the shortest distance between the Initiation Point (145) and the Project Impact Boundary as given in AIIB's Integrated Landslide Hazard Zoning?",
+        "expected_answer": "40 m",
+        "image_urls": ["aiib/P000124-SL-Landslide/image51_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Each 'Quarries' are labeled with a unit code that consists of either a number or a number-alphabet combination. Within the 1000m Area of Influence between Sorbulak Station and Moyiunkum Station, there are 5 Quarries. Identify which of these Quarries touch the Almaty Railway Bypass. Give their unit codes.",
+        "expected_answer": "6; 7A; 8; 9",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image97_1.png",
+        "aiib/2.-Supplementary-ESIA_23042025-EN/image116_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Each Noise Sampling Location along the Almaty Railway Bypass is marked with a unit code (e.g., N02). Identify the Noise Sampling Location that is closest to 'Sorbulak Station'. Give only the unit code as your answer.",
+        "expected_answer": "N04",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image30_1.png",
+        "aiib/2.-Supplementary-ESIA_23042025-EN/image140_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Every 'Zhetygen-scatter' point is associated with a number. Which 'Zhetygen-scatter' point is located closest to the 'Zhetygen Proposed Barrier' line. Give just the number.",
+        "expected_answer": "3",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image175_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the southern portion of the Alternative Route labled 'Sub-option 4.2' in the legend. How many ‘Settlements’ does this route crosses through? Do not include any settlements that are touched by the route.",
+        "expected_answer": "2",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image55_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Identify the point where all three Alternative Routes from China to Europe (i.e., 'Norther Corridor', 'Middle Corridor', and 'Ocean Route') meet. Which country is this point located in?",
+        "expected_answer": "China",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image27_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "How many times does the line labeled ‘Existing Railway Infrastructure’ cross the 'Other Country's Boundary'? Do not include cases where the railway runs along or touches the border without crossing.",
+        "expected_answer": "3",
+        "image_urls": ["aiib/2.-Supplementary-ESIA_23042025-EN/image20_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Identify the 'Polder System or Embankment' line that forms the boundary of 'Ou Ta Paong'. Which 'Commune Center' is located closest to this line?",
+        "expected_answer": "Russei Krang",
+        "image_urls": ["aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image13_1.png",
+        "aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image29_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Within the 'Ou Ta Paong – OPT Canal' boundary, identify the two 'Elongated Tortoise' points and the two 'Black Marsh Turtle' points. What is the orientation of the two 'Elongated Tortoise' points in relation to the 'Black Marsh Turtle' points?",
+        "expected_answer": "South",
+        "image_urls": ["aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image170_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Within the 'Ou Tapaong OPT_Canals' boundar (red outline), identify the three bird species points: 'Bengal Florican', 'Greater Adjutant', and 'Milky Stork'. Which bird species point is located closest to the boundary?",
+        "expected_answer": "Bengal Florican",
+        "image_urls": ["aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image172_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the two types of 'Mammal Species at OTP' and the two types of 'Fish Species at OTP'. Which species has the greatest number of points within the 'Out Ta Paong - OPT Canal' boundary? Answer with the specific species name.",
+        "expected_answer": "Siamese Tiger Perch",
+        "image_urls": ["aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image176_1.png",
+        "aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image177_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the 'National Road' that crosses the 'Ou Ta Paong' area. Which two 'Irrigation Schemes' does this road serve as a border? Provide the names without the word 'Area'.",
+        "expected_answer": "Svay Donkaev; Extension Dmnak Ampil",
+        "image_urls": ["aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image138_m0.png",
+        "aiib/CAM_P000452_ESCMP_Outapong_Irrigation_System_Subproject/image138_m1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Identify the 'Environmental Monitoring Locations' near Km 60/4–6 Virar FOB. Within the '100m Radius Study Area', which 'Sensitive Features' is located closest to this monitoring location?",
+        "expected_answer": "Virar Flyover",
+        "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image192_1.png",
+        "aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image198_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify all sensitive features located within the '100m Radius Study Area's of both 'Km 59/37-39 Ambernath (KJT end)' and 'Km 35/3-4 Kalwa FOB'. Among these features, which one is located closest to the railway line?",
+        "expected_answer": "Kalwa Rail Yard",
+        "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image191_1.png",
+        "aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image189_1.png,"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Within the '100 m Radius Study Areas' of Km 67/3, Km 67/20, and Km 67/16–18, identify all 'Sensitive Features' point. Among these points, identify the one located in a different 'Landuse/Landcover Class' from the others. What is the 'Landuse/Landcover Class' of this point?",
+        "expected_answer": "Vegetation",
+        "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image193_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Maharashtra State is divided into multiple districts, and each district is further divided into multiple tahsils. Identify the district named 'Thane'. How many 'Drought Affected Tahsil's are located within this district?",
+        "expected_answer": "1",
+        "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image51_1.png",
+        "aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image52_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the 'Lineament' line that runs through the horizontal center of the Greater Mumbai District, Maharashtra. Which two Hydrogeology areas does this line separate? Exclude any name portions written in parentheses.",
+        "expected_answer": "Hilly Area; Soft Rock",
+        "image_urls": ["aiib/EA-EMP-Trespass-control-FOB-works-on-Central-Western-Railway-MUTP-III-Project/image47_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Every 'Tower' point within the project location proposed by EQMS is associated with a code in the form 'TT-{NUMBER}'. Which 'Flood Prone Zone' is the tower point labeled 'TT-1/1' located?",
+        "expected_answer": "Not Flood Prone",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image234_1.png",
+        "aiib/Environmental-and-Social-Impact-Assessment/image155_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "There are 19 different types of Important Environmental Features (e.g., Brick Field) within the 5 km buffer of the project boundary proposed by EQMS. Identify the boundary shared between the 'Project Boundary' and the 'Amin Bazar Waste Disposal Area'. Which important environmental feature is located on this boundary?",
+        "expected_answer": "Primary School",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image72_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Identify the location of the 'NL3' Point receiver situated near the Project Boundary. Then, determine which 'Exit' point is located nearest to this 'NL3' point. What is the orientation of this identified 'Exit' point in relation to the 'Risk Area' point?",
+        "expected_answer": "South East",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image408_1.png",
+        "aiib/Environmental-and-Social-Impact-Assessment/image483_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Each Plankton Sample point is labeled with a code in the format ‘Q#’, and each Ground Water Well point is labeled with a code in the format ‘GT_#’. Which Ground Water Well point is located closest to the Plankton Sample point Q2? Give the code.",
+        "expected_answer": "GT_2650011",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image225_m0.png",
+        "aiib/Environmental-and-Social-Impact-Assessment/image271_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "All Surface Water Sampling locations are associated with a unique code in the format 'SW #'. Which two Soil Categories form the boundary where the two Surface Water Sampling locations lie?",
+        "expected_answer": "Jamuna,Karatoya-Bengali and Lakhya floodplain; Madhupur Soils",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image246_1.png",
+        "aiib/Environmental-and-Social-Impact-Assessment/image219_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "All Ambient Air Quality Monitoring Locations are labeled with a code in the format 'AQ #', and all Noise Level Monitoring Locations are labeled with a code in the format 'NL #'. Identify the Air Quality Monitoring Location closest to the Noise Level Monitoring Location 'NL 5'. What is the orientation of this point in relation to 'NL 5'?",
+        "expected_answer": "North East",
+        "image_urls": ["aiib/Environmental-and-Social-Impact-Assessment/image236_m0.png",
+        "aiib/Environmental-and-Social-Impact-Assessment/image255_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
+    },
+
+    {
+        "question_text": "Sri Lanka is divided into multiple districts (e.g., Ampara). Identify the district that contains the highest number of 'Landslides occurred within May, 2003'. What is the dominant 'Elevation-FEET' range of that district? Answer with the maximum elevation range value.",
+        "expected_answer": "2000",
+        "image_urls": ["aiib/environmental-and-social-management-framework-English/image13_1.png",
+        "aiib/environmental-and-social-management-framework-English/image8_m0.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "All Wedda’s Settlements are associated with a GN Division name (GND Name). Which two GN Divisions of Wedda’s Settlements overlap with the Forest Area in the Landslide Prone Districts of Sri Lanka?",
+        "expected_answer": "Dambana; Rathugala Henebedda",
+        "image_urls": ["aiib/environmental-and-social-management-framework-English/image30_1.png",
+        "aiib/environmental-and-social-management-framework-English/image15_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "Areas of the West Imphal District are classified under 6 geomorphology types and 4 soil types. Which soil type contains the area classified as 'Piedmot Slope'? (If the soil type name includes an '&', give only the part that comes after the '&'.)",
+        "expected_answer": "Fine, Ruptic Ultic Dystrochrepts",
+        "image_urls": ["aiib/IEE-20240306-iee-report/image91_1.png", 
+        "aiib/IEE-20240306-iee-report/image98_2.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    }
+]
