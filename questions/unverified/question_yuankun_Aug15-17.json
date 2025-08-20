@@ -378,8 +378,7 @@
         "expected_answer": "North",
         "image_urls": [
             "national-parks/639106/image1_m2.png",
-            "national-parks/639106/image1_m9.png",
-            "national-parks/639106/image1_m10.png"
+            "national-parks/639106/image1_m9.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Orientation"
@@ -399,7 +398,6 @@
         "expected_answer": "122MILES",
         "image_urls": [
             "national-parks/639363/image1_m9.png",
-            "national-parks/639363/image1_m10.png",
             "national-parks/639363/image1_m14.png"
         ],
         "map_count": "Multi",
