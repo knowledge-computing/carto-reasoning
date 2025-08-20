@@ -439,5 +439,37 @@
         "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025/image39_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Orientation"
-    }
+    },
+
+    {
+        "question_text": "What is the approximate straight-line distance between the SLC-6 Launch Site and the 2 psf contour of the Falcon Heavy Launch line?",
+        "expected_answer": "40 Miles",
+        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image51_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Within the Proposed Action Land Zones of SLC-6, which feature shares a border with both the 'Vegetation Maintenance Area' and the 'Gravel Apron'?",
+        "expected_answer": "Access Road",
+        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image80_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "Based on the Estimated Noise Levels from Demolition Explosive Events, what is the approximate distance between the '140 dB / 4.17 psf' boundary and the '120 dB / 0.42 psf' Peak Overpressure boundary?",
+        "expected_answer": "3 Miles",
+        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image78_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "The 'Peak Overpressure' of the SLC-4 Falcon 9 First Stage Landing Sonic Boom is classified into seven levels. Identify the 'LBVI Localities' that lie on the 'VSFB Boundary'. Within which 'Peak Overpressure' level is this locality located? Report the smallest value.",
+        "expected_answer": "4",
+        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image150_m0.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Within"
+    },
 ]
