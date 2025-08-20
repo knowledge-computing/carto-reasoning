@@ -31,7 +31,7 @@
     },
 
     {
-        "question_text": "In the City of Seattle, the Manufacturing Industrial Centers are divided into three categories under 'Alternative 2 – Limited' and four categories under 'Alternative 3 – Targeted.' When comparing the areas across categories, which category shows the largest increase in size?",
+        "question_text": "In the City of Seattle, the Manufacturing Industrial Centers are divided into three categories under 'Alternative 2 – Limited' and four categories under 'Alternative 3 – Targeted'. When comparing the areas across categories, which category shows the largest increase in size from 'Alternative 3 – Targeted' to 'Alternative 2 – Limited'?",
         "expected_answer": "Maritime, Manufacturing & Logistics",
         "image_urls": [
             "seattle-planning/IndustrialMaritimeStrategyFinalEIS/image155_1.png",
