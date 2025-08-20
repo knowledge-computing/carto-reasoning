@@ -501,9 +501,9 @@
     {
         "question_text": "",
         "expected_answer": "",
-        "image_urls": ["eis//image.png"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025/image141_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
     },
 
     {
