@@ -525,11 +525,12 @@
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image.png"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "All 'Connecticut River Stations' are associated with a unique code in the form '06-{ALPHABET}-{NUMBER/ALPHABET}'. What are the two 'Connecticut River Stations' located closest to the 'Vernon Dam'?",
+        "expected_answer": "06-V-01; 06-V-TR",
+        "image_urls": ["eis/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image12_1.png",
+        "eis/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image19_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Distance"
     },
 
     {
