@@ -55,7 +55,8 @@
         "expected_answer": "South West",
         "image_urls": [
             "FEMA/mat-report_hurricane-harvey-texas/image39_1.png",
-            "FEMA/mat-report_hurricane-harvey-texas/image47_1.png"
+            "FEMA/mat-report_hurricane-harvey-texas/image47_1.png",
+            "FEMA/mat-report_hurricane-harvey-texas/image0_1.png"
         ],
         "map_count": "Multi",
         "spatial_relationship": "Orientation"
