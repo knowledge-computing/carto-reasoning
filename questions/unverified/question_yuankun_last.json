@@ -51,11 +51,10 @@
         "spatial_relationship": "Within"
     },
     {
-        "question_text": "In the Hurricane Harvey-affected areas, in which direction is 'League City', TX located relative to the '0000 UTC Pos/Date' '2' point?",
+        "question_text": "In the Hurricane Harvey–affected areas, what is the direction of 'League City' within 'Galveston County' relative to the '0000 UTC Pos/Date' point labeled '2'?",
         "expected_answer": "South West",
         "image_urls": [
             "FEMA/mat-report_hurricane-harvey-texas/image39_1.png",
-            "FEMA/mat-report_hurricane-harvey-texas/image47_1.png",
             "FEMA/mat-report_hurricane-harvey-texas/image0_1.png"
         ],
         "map_count": "Multi",
