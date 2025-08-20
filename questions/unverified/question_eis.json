@@ -2,17 +2,17 @@
     {
         "question_text": "The Military Lease Area in Tinian is divided into multiple 'Proposed Training Areas' (coded with a 'TA' prefix). Which Proposed Training Area is the 'Explosives Training Range' located in?",
         "expected_answer": "TA B2",
-        "image_urls": ["eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image9_m0.png",
-        "eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image38_m0.png"],
+        "image_urls": ["EIS/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image9_m0.png",
+        "EIS/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image38_m0.png"],
         "map_count": "Multi",
         "spatial_relationship": "Within"
     },
 
     {
-        "question_text": "Each 'Landing Zone' within the Tinian Military Lease Area is labeled with a number. Identify the 'Existing Restricted Area' located nearest to 96th Street. Which Landing Zone is closest to this area. Provide only the Landing Zone number.",
+        "question_text": "Each 'Landing Zone' within the Tinian Military Lease Area is labeled with a number. Identify the 'Existing Restricted Area' located nearest to 96th Street. Which Landing Zone is closest to this area? Provide only the Landing Zone number.",
         "expected_answer": "6",
-        "image_urls": ["eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image39_m0.png",
-        "eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image53_m0.png"],
+        "image_urls": ["EIS/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image39_m0.png",
+        "EIS/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image53_m0.png"],
         "map_count": "Multi",
         "spatial_relationship": "Distance"
     },
@@ -20,8 +20,8 @@
     {
         "question_text": "'Surface Radar Sites' are labeled in the format 'Surface Radar Site #'. How many of these sites are located within the Composite SDZ boundary?",
         "expected_answer": "1",
-        "image_urls": ["eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image50_m0.png",
-        "eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image55_m0.png"],
+        "image_urls": ["EIS/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image50_m0.png",
+        "EIS/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image55_m0.png"],
         "map_count": "Multi",
         "spatial_relationship": "Within"
     },
@@ -29,8 +29,8 @@
     {
         "question_text": "Identify the 'New CJMT Road' that intersects with '8th Ave', and then the 'Repurposed Existing Communication Tower' closest to this road. What is the orientation of this tower relative to 'AHA 2'?",
         "expected_answer": "South",
-        "image_urls": ["eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image65_m0.png",
-        "eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image57_m0.png"],
+        "image_urls": ["EIS/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image65_m0.png",
+        "EIS/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image57_m0.png"],
         "map_count": "Multi",
         "spatial_relationship": "Orientation"
     },
@@ -38,17 +38,17 @@
     {
         "question_text": "Within the Tinian Military Lease Area, identify the 30 ft Transects Terrestrial Survey Area located between 'Runway Able' and 'Runway Charlie'. What is the dominant 'Vegetation Type' in this area?",
         "expected_answer": "Leucaena Forest",
-        "image_urls": ["eis/Appendices A through L_CJMT_RDEIS/image147_1.png",
-        "eis/Appendices A through L_CJMT_RDEIS/image148_1.png"],
+        "image_urls": ["EIS/Appendices A through L_CJMT_RDEIS/image147_1.png",
+        "EIS/Appendices A through L_CJMT_RDEIS/image148_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Equal"
     },
 
     {
-        "question_text": "In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} and has an associated name (e.g., code 'T1' corresponds to 'Tinian High School'). What are the names of the two Noise Sensitive Receptors intersected by the 'Primary Utility Corridor'.",
+        "question_text": "In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} and has an associated name (e.g., code 'T1' corresponds to 'Tinian High School'). What are the names of the two Noise Sensitive Receptors intersected by the 'Primary Utility Corridor'?",
         "expected_answer": "North Field National Historic Landmark; Unai Babui",
-        "image_urls": ["eis/Appendices A through L_CJMT_RDEIS/image277_1.png",
-        "eis/Appendices A through L_CJMT_RDEIS/image150_1.png"],
+        "image_urls": ["EIS/Appendices A through L_CJMT_RDEIS/image277_1.png",
+        "EIS/Appendices A through L_CJMT_RDEIS/image150_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
     },
@@ -56,7 +56,7 @@
     {
         "question_text": "In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} and has an associated name (e.g., code 'T1' corresponds to 'Tinian High School'). Among the receptors with codes beginning with 'S', which one is located closest to the '115 dB' boundary of Explosives Training Range 40lb Cratering Charge (PK15) Noise Contours? Give just the name",
         "expected_answer": "Coral Ocean Point Resort",
-        "image_urls": ["eis/Appendices A through L_CJMT_RDEIS/image303_1.png"],
+        "image_urls": ["EIS/Appendices A through L_CJMT_RDEIS/image303_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Distance"
     },
@@ -64,8 +64,8 @@
     {
         "question_text": "In Tinian, each 'Heritiera longipetiolata' species observation area is associated with a name (e.g., Pina-10). Which observation area is located closest to the Noise Sensitive Receptor labeled 'T15'?",
         "expected_answer": "Masalok-1",
-        "image_urls": ["eis/Appendices A through L_CJMT_RDEIS/image162_1.png",
-        "eis/Appendices A through L_CJMT_RDEIS/image280_1.png"],
+        "image_urls": ["EIS/Appendices A through L_CJMT_RDEIS/image162_1.png",
+        "EIS/Appendices A through L_CJMT_RDEIS/image280_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Distance"
     },
@@ -73,8 +73,8 @@
     {
         "question_text": "In Tinian, each 'Noise Sensitive Receptor' is assigned a unique code in the format {Letter}{Number} (e.g., T18). Which Noise Sensitive Receptors are located within both the '115 dBP' Explosive Equipment boundary and the '87 dBP' M2 boundary?",
         "expected_answer": "T16; T22; T20",
-        "image_urls": ["eis/Appendices A through L_CJMT_RDEIS/image297_1.png",
-        "eis/Appendices A through L_CJMT_RDEIS/image299_1.png"],
+        "image_urls": ["EIS/Appendices A through L_CJMT_RDEIS/image297_1.png",
+        "EIS/Appendices A through L_CJMT_RDEIS/image299_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Within"
     },
@@ -82,7 +82,7 @@
     {
         "question_text": "The mines 'Mine No. 4 - ALES-055797' and 'Blue Creek Mine No. 1 - ALES-056519' are divided into multiple smaller blocks. What is the orientation of the southernmost block(s) of Blue Creek Mine No. 1 relative to the northernmost block(s) of Mine No. 4?",
         "expected_answer": "South West",
-        "image_urls": ["eis/Appendix D - Biological Assessment/image10_1.png"],
+        "image_urls": ["EIS/Appendix D - Biological Assessment/image10_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Orientation"
     },
@@ -90,7 +90,7 @@
     {
         "question_text": "Within the Tinian Military Lease Area, how many 'CJMT Modeled Pumping Wells' are not along the 'CJMT Water Mains' line?",
         "expected_answer": "9",
-        "image_urls": ["eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image36_1.png"],
+        "image_urls": ["EIS/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image36_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Intersect"
     },
@@ -98,8 +98,8 @@
     {
         "question_text": "Within the Tinian Military Lease Area, what is the orientation of the 'General Groundwater Directional Flow' arrow that passes through the 'North Lowland' Physiographic Area?",
         "expected_answer": "North East",
-        "image_urls": ["eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image16_1.png",
-        "eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image73_1.png"],
+        "image_urls": ["EIS/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image16_1.png",
+        "EIS/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image73_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Orientation"
     },
@@ -107,8 +107,8 @@
     {
         "question_text": "How many 'Existing Water Storage Tanks' are located within the 'Low-Permeability Tinian Pyroclastic Rocks at Sea Level' area in Tinian?",
         "expected_answer": "2",
-        "image_urls": ["eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image17_1.png",
-        "eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image65_1.png"],
+        "image_urls": ["EIS/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image17_1.png",
+        "EIS/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image65_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Within"
     },
@@ -116,8 +116,8 @@
     {
         "question_text": "Which numbered 'Electrical/Comm Routing Segment' crosses both the 'Tt' and 'ATm' geologic unit areas in Tinian?",
         "expected_answer": "4",
-        "image_urls": ["eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image75_1.png",
-        "eis/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image155_1.png"],
+        "image_urls": ["EIS/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image75_1.png",
+        "EIS/Appendix_M_CJMT_RDEIS_Utility Studies_Part 1/image155_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
     },
@@ -125,8 +125,8 @@
     {
         "question_text": "What is the orientation of the 'Delta Substation' in relation to 'Launch Complex 39A'?",
         "expected_answer": "South East",
-        "image_urls": ["eis/Draft SpaceX Starship-Super Heavy CCSFS Environmental Impact Statement/image44_1.png",
-        "eis/Draft SpaceX Starship-Super Heavy CCSFS Environmental Impact Statement/image45_1.png"],
+        "image_urls": ["EIS/Draft SpaceX Starship-Super Heavy CCSFS Environmental Impact Statement/image44_1.png",
+        "EIS/Draft SpaceX Starship-Super Heavy CCSFS Environmental Impact Statement/image45_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Orientation"
     },
@@ -134,8 +134,8 @@
     {
         "question_text": "Each 'Delineated Wetland' area is labeled with a unit code in the form W#. Which delineated wetland does the boundary of the 'Green Island Coastal Barrier Resource System' cross? Provide only the number.",
         "expected_answer": "8",
-        "image_urls": ["eis/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image92_1.png",
-        "eis/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image103_1.png"],
+        "image_urls": ["EIS/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image92_1.png",
+        "EIS/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image103_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
     },
@@ -143,8 +143,8 @@
     {
         "question_text": "Identify the eastern area of 'Decommissioning Sub-Alternative 2B'. Which 'Community Type's overlap this area? Provide the letter codes shown on the map.",
         "expected_answer": "MNFd; BSMHF",
-        "image_urls": ["eis/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image104_1.png",
-        "eis/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image109_1.png"],
+        "image_urls": ["EIS/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image104_1.png",
+        "EIS/Enbridge Line 5 Tunnel Project Draft Environmental Statement_Volume 1_Chapters 1 through 7/image109_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Equal"
     },
@@ -152,8 +152,8 @@
     {
         "question_text": "Identify the area classified as 'Low' in the 'Commute to Work by Public Transit' index that contains the Proposed Station 'Audubon Town Center'. What are the 'Transit Dependency Index' values for this area?",
         "expected_answer": "Low; Medium; High",
-        "image_urls": ["eis/MetroTransitExpansion_Appendix A1_Purpose and Need/image16_1.png",
-        "eis/MetroTransitExpansion_Appendix A1_Purpose and Need/image18_1.png"],
+        "image_urls": ["EIS/MetroTransitExpansion_Appendix A1_Purpose and Need/image16_1.png",
+        "EIS/MetroTransitExpansion_Appendix A1_Purpose and Need/image18_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Equal"
     },
@@ -161,8 +161,8 @@
     {
         "question_text": "Identify the 'Vehicle Assembly Building' within the KSC Property Boundary. What is the name of the body of water that borders it?",
         "expected_answer": "Banana Creek",
-        "image_urls": ["eis/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image6_1.png",
-        "eis/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image16_1.png"],
+        "image_urls": ["EIS/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image6_1.png",
+        "EIS/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image16_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Border"
     },
@@ -170,8 +170,8 @@
     {
         "question_text": "Each 'Burn Unit' area is assigned a code (e.g., T-29-A, 4.4 D). Identify the edge of LC-39A in which the Air Separation Unit is located along. Which Burn Unit Boundaries share a border with this side of the LC-39A boundary? Provide their codes.",
         "expected_answer": "T-33-C; T-29-A",
-        "image_urls": ["eis/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image25_1.png",
-        "eis/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image163_1.png"],
+        "image_urls": ["EIS/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image25_1.png",
+        "EIS/SpaceX SSH at LC-39A Draft EIS_Volume I_Main EIS/image163_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Border"
     },
@@ -179,26 +179,26 @@
     {
         "question_text": "Identify the 'Cultural Resources Study Area' in which the 'SLC-6 Launch Site' is located. Which bodies of water, excluding the Pacific Ocean, cross through the identified area?",
         "expected_answer": "Santa Ynez River; Bear Creek; Honda Creek; Jalama Creek",
-        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image73_1.png",
-        "eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image43_m0.png"],
+        "image_urls": ["EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image73_1.png",
+        "EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image43_m0.png"],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
     },
 
     {
-        "question_text": "Identify the southernmost 'Non-Intrusive Inspection (NII) Facility' within the Study Area around Seco Mines. Which 'Soil Unit (USDA)'s boundary is touched by this facility?",
-        "expected_answer": "LgA",
-        "image_urls": ["eis/Green Eagle Railroad FEIS Volume II- Appendices/image293_1.png",
-        "eis/Green Eagle Railroad FEIS Volume II- Appendices/image291_1.png"],
+        "question_text": "Identify the 'Soil Unit (USDA)' area that contains the 'Property with Environmental Listing' point named 'W.C. Rabb, Historical Landfill'. What types of 'Soil Unit (USDA)' border the identified area?",
+        "expected_answer": "CoB; PrB; MKC",
+        "image_urls": ["EIS/Green Eagle Railroad FEIS Volume II- Appendices/image293_1.png",
+        "EIS/Green Eagle Railroad FEIS Volume II- Appendices/image291_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Border"
     },
 
     {
-        "question_text": "Identify the 'Sea Turtle Nesting Branches that are not Designated or Proposed Critical Habitat' line that intersects the '1.25' Notional Startship RTLS Sonic Boom Overpressures (PSF) Zone. Which two species' habitat areas does this line act as a border between them? Give the answer including the word 'Habitat'.",
+        "question_text": "Identify the southernmost 'Sea Turtle Nesting Branches that are not Designated or Proposed Critical Habitat' segment. Which two species' habitat areas does this line act as a border between? Give the answer including the word 'Habitat'.",
         "expected_answer": "West Indian Manatee (Florida subspecies) Proposed Critical Habitat; Southeastern Beach Mouse Potential Habitat",
-        "image_urls": ["eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.1_ESA Consultation (USFWS)_Part3/image58_1.png",
-        "eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.1_ESA Consultation (USFWS)_Part3/image54_1.png"],
+        "image_urls": ["EIS/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.1_ESA Consultation (USFWS)_Part3/image58_1.png",
+        "EIS/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.1_ESA Consultation (USFWS)_Part3/image54_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Border"
     },
@@ -206,7 +206,7 @@
     {
         "question_text": "The area around the 'LC-39A Boundary' is divided into 11 numbered regions. Identify the regions that are intersected only by the boundary of the '2 PSF (APE)' zone. Among those regions, which one has the higher count of 'Previously Recorded Historic Buildings'? Provide only the associated number.",
         "expected_answer": "10",
-        "image_urls": ["eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation/image26_1.png"],
+        "image_urls": ["EIS/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation/image26_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Intersect"
     },
@@ -214,8 +214,8 @@
     {
         "question_text": "Identify the 'Prev. Recorded Historic Bridge' labeled '8BR02956' along Nasa Pkwy W and the 'Prev. Recorded Historic Building' labeled '8BR01693*'. What is the orientation of the bridge in relation to the building?",
         "expected_answer": "West",
-        "image_urls": ["eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation/image31_1.png",
-        "eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation/image32_1.png"],
+        "image_urls": ["EIS/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation/image31_1.png",
+        "EIS/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation/image32_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Orientation"
     },
@@ -223,8 +223,8 @@
     {
         "question_text": "The Conceptual Site Plan at SLC-6 proposes four types of 'New' areas. Which type of 'New' area does the 'North Drainage' line intersect?",
         "expected_answer": "New Rail System",
-        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image77_1.png",
-        "eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image124_m0.png"],
+        "image_urls": ["EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image77_1.png",
+        "EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image124_m0.png"],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
     },
@@ -232,7 +232,7 @@
     {
         "question_text": "Within the Bremerton Waterfront Infrastructure area, which 'OU Boundaries' do not share a border with the 'Naval Restricted Area (NRA 2)' line?",
         "expected_answer": "OU C; OU D",
-        "image_urls": ["eis/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image194_1.png"],
+        "image_urls": ["EIS/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image194_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Border"
     },
@@ -240,8 +240,8 @@
     {
         "question_text": "Identify the 'Water Quality Assessment – 303(d)' areas around the NAVBASE Kitsap-Bremerton. Which 'FGTS Truck Freight Corridors' line does one of these areas touch with? Answer with the part before the colon.",
         "expected_answer": "T-3",
-        "image_urls": ["eis/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image152_1.png",
-        "eis/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image453_1.png"],
+        "image_urls": ["EIS/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image152_1.png",
+        "EIS/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image453_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Border"
     },
@@ -249,7 +249,7 @@
     {
         "question_text": "In the Joint Compatibility Transportation Plan, 'Level of Service (LOS)' points are categorized into six levels. Identify the LOS points located on the border of Naval Base Kitsap-Bremerton. What are their categories?",
         "expected_answer": "A; C; D",
-        "image_urls": ["eis/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image444_1.png"],
+        "image_urls": ["EIS/Volume 1 - Bremerton Waterfront Infrastructure Improvements at Puget Sound Naval Shipyard and Intermediate Maintenance Facility/image444_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Intersect"
     },
@@ -257,7 +257,7 @@
     {
         "question_text": "All Survey Type areas are associated with a code in the format 22-#. Identify the northwestern border of the 'Inner Harbor Navigation Canal APE.' What is the code number of the 'Phase I' Survey Type area that shares a border with the 'Inner Harbor Navigation Canal APE'?",
         "expected_answer": "22-2522",
-        "image_urls": ["eis/Annex 4 - NHPA Section 106 May 2025/image200_1.png"],
+        "image_urls": ["EIS/Annex 4 - NHPA Section 106 May 2025/image200_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Border"
     },
@@ -265,8 +265,8 @@
     {
         "question_text": "Identify the 'Previously Recorded Historic Structure (Demolished)' point labeled '911 Deslonde Street'. Which 'Streetscape Photo Point' number is located closest to this structure?",
         "expected_answer": "5",
-        "image_urls": ["eis/Annex 4 - NHPA Section 106 May 2025/image203_1.png",
-        "eis/Annex 4 - NHPA Section 106 May 2025/image239_1.png"],
+        "image_urls": ["EIS/Annex 4 - NHPA Section 106 May 2025/image203_1.png",
+        "EIS/Annex 4 - NHPA Section 106 May 2025/image239_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Distance"
     },
@@ -274,8 +274,8 @@
     {
         "question_text": "Identify the boundary between the 'Proposed Expansion of the Bywater Historic District' and the 'Bywater Historic District'. Among the 'Newly Recorded Historic Structures' located within the 'Bywater Historic District', which structure is farthest from this boundary?",
         "expected_answer": "4548 North Rampart Street",
-        "image_urls": ["eis/Annex 4 - NHPA Section 106 May 2025/image202_1.png",
-        "eis/Annex 4 - NHPA Section 106 May 2025/image241_1.png"],
+        "image_urls": ["EIS/Annex 4 - NHPA Section 106 May 2025/image202_1.png",
+        "EIS/Annex 4 - NHPA Section 106 May 2025/image241_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Distance"
     },
@@ -283,8 +283,8 @@
     {
         "question_text": "The Buffalo-Amherst–Tonawanda Corridor Transit Expansion includes several categories of 'Track Alignments' (legend labels beginning with 'Track Alignment,'). Identify the 'LIGHT RAIL GRADE SEPARATED' line located along Maple Road and Sweet Home Road. With which type of Track Alignment line does this segment overlap?",
         "expected_answer": "Track Alignment, Below Grade",
-        "image_urls": ["eis/MetroTransitExpansion_Chapter 2_Alternatives Considered/image8_1.png",
-        "eis/MetroTransitExpansion_Chapter 2_Alternatives Considered/image16_1.png"],
+        "image_urls": ["EIS/MetroTransitExpansion_Chapter 2_Alternatives Considered/image8_1.png",
+        "EIS/MetroTransitExpansion_Chapter 2_Alternatives Considered/image16_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Equal"
     },
@@ -292,7 +292,7 @@
     {
         "question_text": "Which two 'Proposed Recreation Facilities' are located along the 'Walking Portage' in the Turner Falls and Northfield Mountain Prospect Area?",
         "expected_answer": "Put-in; Unity Park Put-in",
-        "image_urls": ["eis/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image32_1.png"],
+        "image_urls": ["EIS/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image32_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Intersect"
     },
@@ -300,8 +300,8 @@
     {
         "question_text": "What is the orientation of the 'Station No. 1 Intakes' in relation to the 'Switchyard' within the Turner Falls and Northfield Mountain project area?",
         "expected_answer": "West",
-        "image_urls": ["eis/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image400_1.png",
-        "eis/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image405_1.png"],
+        "image_urls": ["EIS/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image400_1.png",
+        "EIS/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image405_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Orientation"
     },
@@ -309,7 +309,7 @@
     {
         "question_text": "What is the orientation of 'Bryan Palmer & Barry Maust' in relation to 'Gary Blocher' within the Meyersdale Study Area?",
         "expected_answer": "South",
-        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image21_m1.png"],
+        "image_urls": ["EIS/Vol-3-FEISAppendixA-M-May-2025/image21_m1.png"],
         "map_count": "Single",
         "spatial_relationship": "Orientation"
     },
@@ -317,7 +317,7 @@
     {
         "question_text": "Within the Study Area of Meyersdale, there are seven different community resources (e.g., EMS and Medical). Identify the community resource points that are located south of the Natural Gas Pipeline. What type of community resource are these points?",
         "expected_answer": "Place of Worship",
-        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image789_1.png"],
+        "image_urls": ["EIS/Vol-3-FEISAppendixA-M-May-2025/image789_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Orientation"
     },
@@ -325,8 +325,8 @@
     {
         "question_text": "What is the name of the 'Potentially Eligible Historic Resources' area that shares a border with the 'MD Priority Funding Areas'?",
         "expected_answer": "Kinsinger Farm",
-        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image222_1.png",
-        "eis/Vol-3-FEISAppendixA-M-May-2025/image226_1.png"],
+        "image_urls": ["EIS/Vol-3-FEISAppendixA-M-May-2025/image222_1.png",
+        "EIS/Vol-3-FEISAppendixA-M-May-2025/image226_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Border"
     },
@@ -334,8 +334,8 @@
     {
         "question_text": "Identify the study area under 'Maryland Census Tract 3' 'Census Block Groups' 1. What are the numbers of the 'Waste Sites' located within this region?",
         "expected_answer": "19; 30; 23; 33",
-        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image220_1.png",
-        "eis/Vol-3-FEISAppendixA-M-May-2025/image227_1.png"],
+        "image_urls": ["EIS/Vol-3-FEISAppendixA-M-May-2025/image220_1.png",
+        "EIS/Vol-3-FEISAppendixA-M-May-2025/image227_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Within"
     },
@@ -343,8 +343,8 @@
     {
         "question_text": "All 'Noise Sensitive Areas' (NSA) within the study area are associated with a number (e.g., NSA 1). Identify the NSAs located within Somerset County, Pennsylvania. Among these, which NSAs lie west of the 'Alignment AE' area? Provide your answer in the format NSA #.",
         "expected_answer": "NSA 7; NSA 8; NSA 10; NSA 9; NSA 11; NSA 12; NSA 13; NSA 14",
-        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image241_1.png",
-        "eis/Vol-3-FEISAppendixA-M-May-2025/image273_1.png"],
+        "image_urls": ["EIS/Vol-3-FEISAppendixA-M-May-2025/image241_1.png",
+        "EIS/Vol-3-FEISAppendixA-M-May-2025/image273_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Within"
     },
@@ -352,7 +352,7 @@
     {
         "question_text": "Identify all 'Sharp Curves' roadway lines that cross a boundary between two townships. For these sharp curve segments, how many 'Sight Distance' points are located along them? (If a sight distance symbol has two arrows originating from it, count it as one point.)",
         "expected_answer": "3",
-        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image119_1.png"],
+        "image_urls": ["EIS/Vol-3-FEISAppendixA-M-May-2025/image119_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Intersect"
     },
@@ -360,7 +360,7 @@
     {
         "question_text": "Each block group is associated with a 'Low-Income Population Percentage' category represented as a percentage range. Identify the two block groups that share a boundary with Meyersdale. What is the maximum value of the higher percentage range block group?",
         "expected_answer": "25.00",
-        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image782_1.png"],
+        "image_urls": ["EIS/Vol-3-FEISAppendixA-M-May-2025/image782_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Border"
     },
@@ -368,8 +368,8 @@
     {
         "question_text": "Identify the two 'Farm Operators' within which the area marked as 'Potentially Eligible Historic Resource' lies. Which Farm Operators share a boundary with these two identified Farm Operators?",
         "expected_answer": "Jerry Deal; Chris & Linda Maust",
-        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image216_1.png",
-        "eis/Vol-3-FEISAppendixA-M-May-2025/image26_1.png"],
+        "image_urls": ["EIS/Vol-3-FEISAppendixA-M-May-2025/image216_1.png",
+        "EIS/Vol-3-FEISAppendixA-M-May-2025/image26_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Border"
     },
@@ -377,7 +377,7 @@
     {
         "question_text": "Each Dredged Material Management Unit (DMMU) along the Inner Harbor Navigation Canal is assigned a number. Which DMMUs share a boundary with 'DMMU 4'? Answer in the form DMMU #.",
         "expected_answer": "DMMU 3; DMMU 5; DMMU 6; DMMU 8",
-        "image_urls": ["eis/IHNC Appendix F - 2017 Draft GRR and Draft SEIS IHNC Lock Replacement Project/image41_1.png"],
+        "image_urls": ["EIS/IHNC Appendix F - 2017 Draft GRR and Draft SEIS IHNC Lock Replacement Project/image41_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Border"
     },
@@ -385,16 +385,16 @@
     {
         "question_text": "Which 'Land Ownership' category, other than 'Other Private', shares a boundary with the 'HCP Permit Area' located near Devil's Staircase Wilderness?",
         "expected_answer": "Oregon Board of Forestry; BLM; Millicoma Tree Farm",
-        "image_urls": ["eis/Final EIS for the Elliott State Research Forest HCP/image218_1.png"],
+        "image_urls": ["EIS/Final EIS for the Elliott State Research Forest HCP/image218_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Border"
     },
 
     {
-        "question_text": "Every 'Study Area Subwatershed' is labeled (e.g., GLENN CREEK). Within the HCP Permit Area, identify the inner hole that lies along the boundary between Douglas County and Coos County. Which two 'Study Area Subwatersheds' is touched by this inner hole?",
+        "question_text": "Every 'Study Area Subwatershed' is labeled (e.g., GLENN CREEK). Within the HCP Permit Area, identify the inner hole that lies along the boundary between Douglas County and Coos County. Which two 'Study Area Subwatersheds' are touched by this inner hole?",
         "expected_answer": "WEST FORK MILLICOMA RIVER; DEAN CREEK UMPQUA RIVER",
-        "image_urls": ["eis/Final EIS for the Elliott State Research Forest HCP/image54_1.png",
-        "eis/Final EIS for the Elliott State Research Forest HCP/image90_1.png"],
+        "image_urls": ["EIS/Final EIS for the Elliott State Research Forest HCP/image54_1.png",
+        "EIS/Final EIS for the Elliott State Research Forest HCP/image90_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Border"
     },
@@ -402,8 +402,8 @@
     {
         "question_text": "Areas within the NSO Eastern Boundary are assigned a name (e.g., South CA Coast). What is the name of the area that shares a border with the 'Sierra Nevada' CSO Range?",
         "expected_answer": "South CA Cascades Zone",
-        "image_urls": ["eis/Final EIS - Barred Owl Management Strategy/image146_1.png",
-        "eis/Final EIS - Barred Owl Management Strategy/image56_1.png"],
+        "image_urls": ["EIS/Final EIS - Barred Owl Management Strategy/image146_1.png",
+        "EIS/Final EIS - Barred Owl Management Strategy/image56_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Border"
     },
@@ -411,7 +411,7 @@
     {
         "question_text": "Identify the 'Physiographic Province' in which 'Portland' is located. Which 'Physiographic Provinces' share a border with the identified province?",
         "expected_answer": "Oregon Coast Range; Western Oregon Cascades; Western Washington Lowlands",
-        "image_urls": ["eis/Final EIS - Barred Owl Management Strategy/image29_1.png"],
+        "image_urls": ["EIS/Final EIS - Barred Owl Management Strategy/image29_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Border"
     },
@@ -419,8 +419,8 @@
     {
         "question_text": "Identify the 'CACO Critical Habitat' areas that share a border with the 'CACO Localities' region. Which area contains the 'Sonic Boom Levels' point in the highest range?",
         "expected_answer": "SESPE-PIRU CONDOR AREA",
-        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image175_1.png",
-        "eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image176_m0.png"],
+        "image_urls": ["EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image175_1.png",
+        "EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image176_m0.png"],
         "map_count": "Multi",
         "spatial_relationship": "Border"
     },
@@ -428,7 +428,7 @@
     {
         "question_text": "Identify 'Greenville Road' that intersects with the 'Detailed Alternative LOD' area. Which 'NRHP Eligible' areas does Greenville Road act as a boundary between?",
         "expected_answer": "Deal Farm; Jacob Glotfelty Barn",
-        "image_urls": ["eis/Vol-1-FEIS-US6219-Section050-Transportation-Improvement-Project-Combined-FEIS-ROD-May-2025/image106_2.png"],
+        "image_urls": ["EIS/Vol-1-FEIS-US6219-Section050-Transportation-Improvement-Project-Combined-FEIS-ROD-May-2025/image106_2.png"],
         "map_count": "Single",
         "spatial_relationship": "Border"
     },
@@ -436,7 +436,7 @@
     {
         "question_text": "What is the orientation of the 'Water Tower' in relation to the 'Existing Mobile Assembly Shelter (to be demolished)' in the site plan of SLC-6?",
         "expected_answer": "East",
-        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025/image39_1.png"],
+        "image_urls": ["EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025/image39_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Orientation"
     },
@@ -444,7 +444,7 @@
     {
         "question_text": "What is the approximate straight-line distance between the SLC-6 Launch Site and the 2 psf contour of the Falcon Heavy Launch line?",
         "expected_answer": "40 Miles",
-        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image51_m0.png"],
+        "image_urls": ["EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image51_m0.png"],
         "map_count": "Single",
         "spatial_relationship": "Distance"
     },
@@ -452,7 +452,7 @@
     {
         "question_text": "Within the Proposed Action Land Zones of SLC-6, which feature shares a border with both the 'Vegetation Maintenance Area' and the 'Gravel Apron'?",
         "expected_answer": "Access Road",
-        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image80_m0.png"],
+        "image_urls": ["EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image80_m0.png"],
         "map_count": "Single",
         "spatial_relationship": "Border"
     },
@@ -460,7 +460,7 @@
     {
         "question_text": "Based on the Estimated Noise Levels from Demolition Explosive Events, what is the approximate distance between the '140 dB / 4.17 psf' boundary and the '120 dB / 0.42 psf' Peak Overpressure boundary?",
         "expected_answer": "3 Miles",
-        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image78_m0.png"],
+        "image_urls": ["EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image78_m0.png"],
         "map_count": "Single",
         "spatial_relationship": "Distance"
     },
@@ -468,7 +468,7 @@
     {
         "question_text": "The 'Peak Overpressure' of the SLC-4 Falcon 9 First Stage Landing Sonic Boom is classified into seven levels. Identify the 'LBVI Localities' that lie on the 'VSFB Boundary'. Within which 'Peak Overpressure' level is this locality located? Report the smallest value.",
         "expected_answer": "4",
-        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image150_m0.png"],
+        "image_urls": ["EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image150_m0.png"],
         "map_count": "Single",
         "spatial_relationship": "Within"
     },
@@ -476,7 +476,7 @@
     {
         "question_text": "Identify the inner hole area within the 'Approved Landing Area'. What is the approximate distance from the boundary of this hole area to the 'SLC-4/SLC-6' point?",
         "expected_answer": "450 Miles",
-        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image354_1.png"],
+        "image_urls": ["EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image354_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Distance"
     },
@@ -484,8 +484,8 @@
     {
         "question_text": "Identify the 'Federal Opportunity Zone' within the Meyersdale Transportation 'Study Area'. What is the 'Minority Population Percentage by Block Group (2020 Decennial Data)' for this region? Provide the answer in the exact range format ({number}-{number}) without the percentage (%) symbol.",
         "expected_answer": "0.00-3.00",
-        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image770_1.png",
-        "eis/Vol-3-FEISAppendixA-M-May-2025/image781_1.png"],
+        "image_urls": ["EIS/Vol-3-FEISAppendixA-M-May-2025/image770_1.png",
+        "EIS/Vol-3-FEISAppendixA-M-May-2025/image781_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Equal"
     },
@@ -493,7 +493,7 @@
     {
         "question_text": "Identify the 'I-68 Corridor Overuse' area near Somerset. Which area is intersected by the boundary of the identified area?",
         "expected_answer": "SR 669 Weight Restrictions",
-        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image629_m9.png"],
+        "image_urls": ["EIS/Vol-3-FEISAppendixA-M-May-2025/image629_m9.png"],
         "map_count": "Single",
         "spatial_relationship": "Intersect"
     },
@@ -501,7 +501,7 @@
     {
         "question_text": "Identify the 'SLC-6 Modification Area' within the 'South Drainage' area. Which 'Hydrology Regime, Wetland Status' category does it intersect?",
         "expected_answer": "Intermittent, One-Parameter",
-        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025/image141_1.png"],
+        "image_urls": ["EIS/VSFB_Falcon_Launch_Draft_EIS_May_2025/image141_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Intersect"
     },
@@ -509,8 +509,8 @@
     {
         "question_text": "What is the orientation of the 'Receptor Location' numbered '17' in relation to the 'Central Targeting Tower' near the 'Eagle Pass City Boundary'?",
         "expected_answer": "South",
-        "image_urls": ["eis/Green Eagle Railroad FEIS Volume II- Appendices/image247_1.png",
-        "eis/Green Eagle Railroad FEIS Volume II- Appendices/image113_1.png"],
+        "image_urls": ["EIS/Green Eagle Railroad FEIS Volume II- Appendices/image247_1.png",
+        "EIS/Green Eagle Railroad FEIS Volume II- Appendices/image113_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Orientation"
     },
@@ -518,8 +518,8 @@
     {
         "question_text": "Identify the line segment that connects the two 'Study Intersection' points along the 'Truck Route.' What is the orientation of this segment relative to the 'Existing Warehouse Area' within the Eagle Pass City Boundary?",
         "expected_answer": "North West",
-        "image_urls": ["eis/Green Eagle Railroad FEIS Volume II- Appendices/image215_1.png",
-        "eis/Green Eagle Railroad FEIS Volume II- Appendices/image213_1.png"],
+        "image_urls": ["EIS/Green Eagle Railroad FEIS Volume II- Appendices/image215_1.png",
+        "EIS/Green Eagle Railroad FEIS Volume II- Appendices/image213_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Orientation"
     },
@@ -527,8 +527,8 @@
     {
         "question_text": "All 'Connecticut River Stations' are associated with a unique code in the form '06-{ALPHABET}-{NUMBER/ALPHABET}'. What are the two 'Connecticut River Stations' located closest to the 'Vernon Dam'?",
         "expected_answer": "06-V-01; 06-V-TR",
-        "image_urls": ["eis/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image12_1.png",
-        "eis/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image19_1.png"],
+        "image_urls": ["EIS/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image12_1.png",
+        "EIS/P-2485-071etc_NorthfieldMtn_TurnersFallsDEIS_Appendices/image19_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Distance"
     },
@@ -536,8 +536,8 @@
     {
         "question_text": "Identify the 'LOS D' road section that crosses through the 'Elk Lick Township'. What is the 'Average Travel Speed (MPH)' on this segment? Answer with just the number without the unit.",
         "expected_answer": "30.1",
-        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image124_1.png",
-        "eis/Vol-3-FEISAppendixA-M-May-2025/image126_1.png"],
+        "image_urls": ["EIS/Vol-3-FEISAppendixA-M-May-2025/image124_1.png",
+        "EIS/Vol-3-FEISAppendixA-M-May-2025/image126_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
     }
