@@ -499,27 +499,29 @@
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
+        "question_text": "Identify the 'SLC-6 Modification Area' within the 'South Drainage' area. Which 'Hydrology Regime, Wetland Status' category does it intersect?",
+        "expected_answer": "Intermittent, One-Parameter",
         "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025/image141_1.png"],
         "map_count": "Single",
         "spatial_relationship": "Intersect"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image.png"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "What is the orientation of the 'Receptor Location' numbered '17' in relation to the 'Central Targeting Tower' near the 'Eagle Pass City Boundary'?",
+        "expected_answer": "South",
+        "image_urls": ["eis/Green Eagle Railroad FEIS Volume II- Appendices/image247_1.png",
+        "eis/Green Eagle Railroad FEIS Volume II- Appendices/image113_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image.png"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Identify the line segment that connects the two 'Study Intersection' points along the 'Truck Route.' What is the orientation of this segment relative to the 'Existing Warehouse Area' within the Eagle Pass City Boundary?",
+        "expected_answer": "North West",
+        "image_urls": ["eis/Green Eagle Railroad FEIS Volume II- Appendices/image215_1.png",
+        "eis/Green Eagle Railroad FEIS Volume II- Appendices/image213_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Orientation"
     },
 
     {
