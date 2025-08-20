@@ -471,5 +471,70 @@
         "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image150_m0.png"],
         "map_count": "Single",
         "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "Identify the inner hole area within the 'Approved Landing Area'. What is the approximate distance from the boundary of this hole area to the 'SLC-4/SLC-6' point?",
+        "expected_answer": "450 Miles",
+        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image354_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Distance"
+    },
+
+    {
+        "question_text": "Identify the 'Federal Opportunity Zone' within the Meyersdale Transportation 'Study Area'. What is the 'Minority Population Percentage by Block Group (2020 Decennial Data)' for this region? Provide the answer in the exact range format ({number}-{number}) without the percentage (%) symbol.",
+        "expected_answer": "0.00-3.00",
+        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image770_1.png",
+        "eis/Vol-3-FEISAppendixA-M-May-2025/image781_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Equal"
+    },
+
+    {
+        "question_text": "Identify the 'I-68 Corridor Overuse' area near Somerset. Which area is intersected by the boundary of the identified area?",
+        "expected_answer": "SR 669 Weight Restrictions",
+        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image629_m9.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image.png"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image.png"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image.png"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image.png"],
+        "map_count": "",
+        "spatial_relationship": ""
+    },
+
+    {
+        "question_text": "",
+        "expected_answer": "",
+        "image_urls": ["eis//image.png"],
+        "map_count": "",
+        "spatial_relationship": ""
     }
 ]
