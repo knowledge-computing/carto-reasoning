@@ -534,10 +534,11 @@
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image.png"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Identify the 'LOS D' road section that crosses through the 'Elk Lick Township'. What is the 'Average Travel Speed (MPH)' on this segment? Answer with just the number without the unit.",
+        "expected_answer": "30.1",
+        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image124_1.png",
+        "eis/Vol-3-FEISAppendixA-M-May-2025/image126_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Intersect"
     }
 ]
