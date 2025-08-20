@@ -1,6 +1,6 @@
 [
     {
-        "question_text": "The Military Lease Area in Tinian is divided into multiple 'Proposed Training Areas' (coded with a 'TA' prefix). In which Proposed Training Area is the 'Explosives Training Range' located?",
+        "question_text": "The Military Lease Area in Tinian is divided into multiple 'Proposed Training Areas' (coded with a 'TA' prefix). Which Proposed Training Area is the 'Explosives Training Range' located in?",
         "expected_answer": "TA B2",
         "image_urls": ["eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image9_m0.png",
         "eis/1_CJMT_RDEIS_ExecSum-Ch1-PurposeNeed-Ch2-Alternatives/image38_m0.png"],
@@ -212,7 +212,7 @@
     },
 
     {
-        "question_text": "Identify the Prev. Recorded Historic Bridge labeled '8BR02956' along Nasa Pkwy W and the Prev. Recorded Historic Building labeled '8BR01693*'. What is the orientation of the bridge in relation to the building?",
+        "question_text": "Identify the 'Prev. Recorded Historic Bridge' labeled '8BR02956' along Nasa Pkwy W and the 'Prev. Recorded Historic Building' labeled '8BR01693*'. What is the orientation of the bridge in relation to the building?",
         "expected_answer": "West",
         "image_urls": ["eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation/image31_1.png",
         "eis/SpaceX SSH at LC-39A Draft EIS_Volume II_AppB.4_DOT Section 4(f) Consultation/image32_1.png"],
@@ -341,90 +341,103 @@
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "All 'Noise Sensitive Areas' (NSA) within the study area are associated with a number (e.g., NSA 1). Identify the NSAs located within Somerset County, Pennsylvania. Among these, which NSAs lie west of the 'Alignment AE' area? Provide your answer in the format NSA #.",
+        "expected_answer": "NSA 7; NSA 8; NSA 10; NSA 9; NSA 11; NSA 12; NSA 13; NSA 14",
+        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image241_1.png",
+        "eis/Vol-3-FEISAppendixA-M-May-2025/image273_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Identify all 'Sharp Curves' roadway lines that cross a boundary between two townships. For these sharp curve segments, how many 'Sight Distance' points are located along them? (If a sight distance symbol has two arrows originating from it, count it as one point.)",
+        "expected_answer": "3",
+        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image119_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Intersect"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Each block group is associated with a 'Low-Income Population Percentage' category represented as a percentage range. Identify the two block groups that share a boundary with Meyersdale. What is the maximum value of the higher percentage range block group?",
+        "expected_answer": "25.00",
+        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image782_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Identify the two 'Farm Operators' within which the area marked as 'Potentially Eligible Historic Resource' lies. Which Farm Operators share a boundary with these two identified Farm Operators?",
+        "expected_answer": "Jerry Deal; Chris & Linda Maust",
+        "image_urls": ["eis/Vol-3-FEISAppendixA-M-May-2025/image216_1.png",
+        "eis/Vol-3-FEISAppendixA-M-May-2025/image26_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Each Dredged Material Management Unit (DMMU) along the Inner Harbor Navigation Canal is assigned a number. Which DMMUs share a boundary with 'DMMU 4'? Answer in the form DMMU #.",
+        "expected_answer": "DMMU 3; DMMU 5; DMMU 6; DMMU 8",
+        "image_urls": ["eis/IHNC Appendix F - 2017 Draft GRR and Draft SEIS IHNC Lock Replacement Project/image41_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Which 'Land Ownership' category, other than 'Other Private', shares a boundary with the 'HCP Permit Area' located near Devil's Staircase Wilderness?",
+        "expected_answer": "Oregon Board of Forestry; BLM; Millicoma Tree Farm",
+        "image_urls": ["eis/Final EIS for the Elliott State Research Forest HCP/image218_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Every 'Study Area Subwatershed' is labeled (e.g., GLENN CREEK). Within the HCP Permit Area, identify the inner hole that lies along the boundary between Douglas County and Coos County. Which two 'Study Area Subwatersheds' is touched by this inner hole?",
+        "expected_answer": "WEST FORK MILLICOMA RIVER; DEAN CREEK UMPQUA RIVER",
+        "image_urls": ["eis/Final EIS for the Elliott State Research Forest HCP/image54_1.png",
+        "eis/Final EIS for the Elliott State Research Forest HCP/image90_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Areas within the NSO Eastern Boundary are assigned a name (e.g., South CA Coast). What is the name of the area that shares a border with the 'Sierra Nevada' CSO Range?",
+        "expected_answer": "South CA Cascades Zone",
+        "image_urls": ["eis/Final EIS - Barred Owl Management Strategy/image146_1.png",
+        "eis/Final EIS - Barred Owl Management Strategy/image56_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Identify the 'Physiographic Province' in which 'Portland' is located. Which 'Physiographic Provinces' share a border with the identified province?",
+        "expected_answer": "Oregon Coast Range; Western Oregon Cascades; Western Washington Lowlands",
+        "image_urls": ["eis/Final EIS - Barred Owl Management Strategy/image29_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Identify the 'CACO Critical Habitat' areas that share a border with the 'CACO Localities' region. Which area contains the 'Sonic Boom Levels' point in the highest range?",
+        "expected_answer": "SESPE-PIRU CONDOR AREA",
+        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image175_1.png",
+        "eis/VSFB_Falcon_Launch_Draft_EIS_May_2025_Appendices_Volume1/image176_m0.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Border"
     },
 
     {
-        "question_text": "",
-        "expected_answer": "",
-        "image_urls": ["eis//image"],
-        "map_count": "",
-        "spatial_relationship": ""
+        "question_text": "Identify 'Greenville Road' that intersects with the 'Detailed Alternative LOD' area. Which 'NRHP Eligible' areas does Greenville Road act as a boundary between?",
+        "expected_answer": "Deal Farm; Jacob Glotfelty Barn",
+        "image_urls": ["eis/Vol-1-FEIS-US6219-Section050-Transportation-Improvement-Project-Combined-FEIS-ROD-May-2025/image106_2.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Border"
+    },
+
+    {
+        "question_text": "What is the orientation of the 'Water Tower' in relation to the 'Existing Mobile Assembly Shelter (to be demolished)' in the site plan of SLC-6?",
+        "expected_answer": "East",
+        "image_urls": ["eis/VSFB_Falcon_Launch_Draft_EIS_May_2025/image39_1.png"],
+        "map_count": "Single",
+        "spatial_relationship": "Orientation"
     }
 ]
