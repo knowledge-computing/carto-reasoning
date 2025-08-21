@@ -822,16 +822,6 @@
         "spatial_relationship": "Intersect"
     },
     {
-        "question_text": "In the vicinity of the La Vida Mission quadrangle, what is the approximate distance from the city of Aztec to the city of Mancos? (Answer in MILES)",
-        "expected_answer": "40MILES",
-        "image_urls": [
-            "national-parks/732920/image1_m92.png",
-            "national-parks/732920/image1_m114.png"
-        ],
-        "map_count": "Multi",
-        "spatial_relationship": "Distance"
-    },
-    {
         "question_text": "What are the Rocks areas covered by the Published geologic maps by O'Sullivan and Beikman near La Vida Mission quadrangle?",
         "expected_answer": "OLDER MESOZOIC ROCKS; YOUNGER CRETACEOUS AND TERTIARY ROCKS",
         "image_urls": [
@@ -850,16 +840,6 @@
         ],
         "map_count": "Multi",
         "spatial_relationship": "Equal"
-    },
-    {
-        "question_text": "Surrounding the Chaco Culture National Historical Park, what orientation is the city of Farmington in relation to the Quadrangle of CROWNPOINT?",
-        "expected_answer": "North",
-        "image_urls": [
-            "national-parks/732920/image1_m97.png",
-            "national-parks/732920/image1_m154.png"
-        ],
-        "map_count": "Multi",
-        "spatial_relationship": "Orientation"
     },
     {
         "question_text": "Surrounding the Chaco Culture National Historical Park, which geologic unit intersects the Colorado Plateau?",
