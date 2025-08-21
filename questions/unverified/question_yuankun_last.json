@@ -852,7 +852,7 @@
         "spatial_relationship": "Equal"
     },
     {
-        "question_text": "Surrounding the Chaco Culture National Historical Park, what orientation is the city of Farmington in relative to the Quadrangle of CROWNPOINT?",
+        "question_text": "Surrounding the Chaco Culture National Historical Park, what orientation is the city of Farmington in relation to the Quadrangle of CROWNPOINT?",
         "expected_answer": "North",
         "image_urls": [
             "national-parks/732920/image1_m97.png",
@@ -872,7 +872,7 @@
         "spatial_relationship": "Intersect"
     },
     {
-        "question_text": "Surrounding the Chaco Culture National Historical Park, what orientation is the NORTH MESA in relative to the Tanner Lake Quadrangle?",
+        "question_text": "Surrounding the Chaco Culture National Historical Park, what is the orientation of 'North Mesa' relative to the 'Tanner Lake' Quadrangle?",
         "expected_answer": "South",
         "image_urls": [
             "national-parks/732920/image1_m143.png",
