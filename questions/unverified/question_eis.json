@@ -540,5 +540,23 @@
         "EIS/Vol-3-FEISAppendixA-M-May-2025/image126_1.png"],
         "map_count": "Multi",
         "spatial_relationship": "Intersect"
-    }
+    },
+
+    {
+        "question_text": "Identify the northernmost 'Activity Center' within the 'HCP Permit Area' of Elliott State Forest. In which 'Allocation Area's is this point located?",
+        "expected_answer": "CRW Reserve; CRW RCA",
+        "image_urls": ["EIS/Final EIS for the Elliott State Research Forest HCP/image50_1.png",
+        "EIS/Final EIS for the Elliott State Research Forest HCP/image55_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
+
+    {
+        "question_text": "In 'Douglas' County and 'Coos' County, areas are categorized into one or multiple of four types. In which area types is the 'Dean Creek Elk Viewing Area' located?",
+        "expected_answer": "Low Income Tracts; Low-Income Counties",
+        "image_urls": ["EIS/Final EIS for the Elliott State Research Forest HCP/image210_1.png",
+        "EIS/Final EIS for the Elliott State Research Forest HCP/image169_1.png"],
+        "map_count": "Multi",
+        "spatial_relationship": "Within"
+    },
 ]
