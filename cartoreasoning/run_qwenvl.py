@@ -13,6 +13,9 @@ from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, Auto
 from transformers import BitsAndBytesConfig             # To reduce memory usage
 from qwen_vl_utils import process_vision_info
 
+with open('./instruction.pkl', 'rb') as handle:
+    instructions = pickle.load(handle)
+
 def check_exist(path_dir, bool_create=True):
     if os.path.exists(path_dir):
         return 1
@@ -39,14 +42,16 @@ def define_model(model_id:str,
             quantization_config=quantization_config, 
             attn_implementation="flash_attention_2",
             device_map="auto",
-        ).to(0)     # Only works under CUDA suppport
+            trust_remote_code=True
+        )        # Only works under CUDA suppport
 
     else:
         # Slow processing
         model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
             model_id, 
             quantization_config=quantization_config, 
-            torch_dtype="auto", device_map="auto"
+            device_map="auto",
+            trust_remote_code=True
         )
 
     processor = AutoProcessor.from_pretrained(model_id)
@@ -57,8 +62,8 @@ def upload_images(images:List[str],
                  image_prefix:str=None,
                  save_cache:bool=True,
                  cache_dir:str=None):
-    # Recommended for repetitively used files or large files
-    dict_im_data = {}   # Storing mapping from image to API images
+
+    dict_im_data = {}   # Storing mapping ffor images
 
     for im_path in list(set(images)):
         if image_prefix:
@@ -78,104 +83,40 @@ def make_chat_prompt(question:str,
                      dict_im_data:Dict[str, str],
                      img_limit:int) -> list:
 
-    content = []
+    content = [{"type": "text", "text": "Answer in English only."}]
     for idx, f in enumerate(file_list):
         if idx > img_limit:
             break
         content.append({"type": "image", "image": f"{dict_im_data[f]}"})
 
-    content.append({"type": "text", "text": f"{question}"})
+    content.append({"type": "text", "text": f"{question}. "})
 
     return content
 
 def respond_q(model,
               processor,
               dict_im_data:Dict[str, str],
-              question_q:str,
-              img_list:List[str],
+              input_struct:List[dict],
               img_limit:int):
     
-    instructions = """
-    Answer the question using the provided images. Follow the the following instructions.
+    messages = []
+    for i in input_struct:
+        content = make_chat_prompt(question=i['question_text'],
+                                   file_list=i['image_lists'],
+                                   dict_im_data=dict_im_data,
+                                   img_limit=img_limit)
+        conversation = [
+            {"role": "system", "content": instructions},
+            {"role": "user", "content": content}
+        ]
 
-    General: 
-    * If answer is a text from the map, copy it as it appears
-
-    Numerical Answers
-    * Include units as indicated on the map (Don’t convert 1200m to 1.2km)
-    * If both map frame and ruler scale is available, use the ruler scale
-    * If question asks for an area, use {unit}^2
-    * Use numerical values (e.g., 4 instead of four)
-
-    Directional Answers:
-    * Use 8 cardinal directions only: North, North East, East, South East, South, South West, West, North West
-    * Write 'North' or 'South' before 'East' or 'West'
-    * Notice that the north arrow compass do not always point upward
-
-    Multi-Part Answers:
-    * Separate with semicolon (;) (e.g., Zone A; Zone B)
-
-    Give ONLY the answer.
-    """
-
-    content = make_chat_prompt(question=question_q,
-                               file_list=img_list,
-                               dict_im_data=dict_im_data,
-                               img_limit=img_limit)
-    conversation = [
-        {   "role": "system",
-            "content": [{"type": "text", "text": f"{instructions}"}],
-        },
-        {
-            "role": "user",
-            "content": content,
-        }
-    ]
-
-    text = processor.apply_chat_template(
-        conversation, tokenize=False, add_generation_prompt=True
-    )
-    image_inputs, video_inputs = process_vision_info(conversation)
-    inputs = processor(
-        text=[text],
-        images=image_inputs,
-        videos=video_inputs,
-        padding=True,
-        return_tensors="pt",
-    )
-    inputs = inputs.to(model.device, torch.float16)
-
-    # inputs = processor.apply_chat_template(
-    #     [conversation],
-    #     add_generation_prompt=True,
-    #     tokenize=True,
-    #     return_dict=True,
-    #     padding=True,
-    #     return_tensors="pt"
-    # ).to(model.device, torch.float16)
-
-    generated_ids = model.generate(**inputs, max_new_tokens=128)
-    generated_ids_trimmed = [
-        out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
-    ]
-    output_text = processor.batch_decode(
-        generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
-    )
-
-    return {'qwenvl_response': output_text[0]}
-
-def respond_q_batch(model,
-              processor,
-              dict_im_data:Dict[str, str],
-              list_qs):
-    conversations = []
-    for q in list_qs:
-        conversations.append(q)
+        messages.append(conversation)
 
     texts = [
         processor.apply_chat_template(msg, tokenize=False, add_generation_prompt=True)
         for msg in messages
     ]
+
     image_inputs, video_inputs = process_vision_info(messages)
     inputs = processor(
         text=texts,
@@ -184,17 +125,30 @@ def respond_q_batch(model,
         padding=True,
         return_tensors="pt",
     )
-    inputs = inputs.to("cuda")
+    inputs = inputs.to(model.device, torch.float16)
 
-    # Batch Inference
-    generated_ids = model.generate(**inputs, max_new_tokens=128)
-    generated_ids_trimmed = [
-        out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
+    with torch.no_grad():    
+        # Batch Inference
+        generated_ids = model.generate(**inputs, max_new_tokens=256, 
+                                       do_sample=False, temperature=None, top_p=None, top_k=None)
+        generated_ids_trimmed = [
+            out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
     ]
     output_texts = processor.batch_decode(
         generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
     )
-    return 0
+
+    list_output = []
+
+    for response in output_texts:
+        try:
+            cleaned_response = response.split("Final answer:")[-1].strip()
+            list_output.append(cleaned_response)
+            
+        except:
+            list_output.append(response)
+
+    return list_output
 
 def main(model_name:str,
          question_path:str,
@@ -221,7 +175,7 @@ def main(model_name:str,
         all_images = []
         for d in data:
             all_images.extend(d['image_urls'])
-            all_images.extend(d['distractor_urls'])
+            all_images.extend(d['contextual_urls'])
 
         dict_im_data = upload_images(images=all_images,
                                      image_prefix=image_folder,
@@ -238,13 +192,11 @@ def main(model_name:str,
     pl_question = pl.read_json(question_path).with_columns(
         q_answered = pl.lit(False),
     ).with_columns(
-        pl.when(bool_distractor)
-        .then(pl.concat_list('distractor_urls', 'image_urls'))
+        pl.when(bool_distractor==True)
+        .then(pl.concat_list('contextual_urls', 'image_urls'))
         .otherwise(pl.col('image_urls')).alias('image_lists')
-    )
+    ).sort(pl.col('image_lists').list.len(), descending=True, maintain_order=True)
 
-    # Running inference in chunks (of 20) in case it crashse in middle
-    chunk_size = 20 
     pl_answered = pl.DataFrame()
 
     response_cache = os.path.join(cache_dir, 'response_cache.pkl')
@@ -255,23 +207,28 @@ def main(model_name:str,
         cache_length = pl_answered.shape[0]
         pl_question = pl_question[cache_length:]
 
-    for i in tqdm(range(0, pl_question.height, chunk_size)):
-        chunk = pl_question.slice(i, chunk_size)
+    for i in tqdm(range(0, pl_question.height, batch_size)):
+        chunk = pl_question.slice(i, batch_size)
 
-        if batch_size > 1:
-            pass
+        chunk = chunk.with_columns(
+            tmp = pl.struct(pl.col(['question_text', 'image_lists']))
+        )
 
-        else:
-            chunk = chunk.with_columns(
-                tmp = pl.struct(pl.all()).map_elements(lambda x: respond_q(model, processor, dict_im_data, x['question_text'], x['image_lists'], img_limit))
-            ).with_columns(
-                pl.col('q_answered').replace({False: True})
-            ).unnest('tmp').drop('image_lists')
+        list_input = chunk['tmp'].to_list()
+        list_output = respond_q(model=model, processor=processor,
+                                input_struct=list_input,
+                                dict_im_data=dict_im_data,
+                                img_limit=img_limit)
+        
+        chunk = chunk.with_columns(
+            pl.col('q_answered').replace({False: True}),
+            qwenvl_response = pl.Series(list_output)
+        ).drop(['tmp', 'image_lists'])
 
-            pl_answered = pl.concat(
-                [pl_answered, chunk],
-                how='diagonal'
-            )
+        pl_answered = pl.concat(
+            [pl_answered, chunk],
+            how='diagonal'
+        )
 
         with open(response_cache, 'wb') as handle:
             pickle.dump(pl_answered, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -279,11 +236,16 @@ def main(model_name:str,
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
-    new_file_name = f"{question_path.split('.json')[0]}_qwen.json"
+    if bool_distractor:
+        new_file_name = os.path.join(output_dir, 'qwen_w_contextual.json')
+    else:
+        new_file_name = os.path.join(output_dir, 'qwen_wo_contextual.json')
+
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
     # Removing response cache pickle file
     os.remove(response_cache)
+    os.remove(cache_file)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
@@ -291,26 +253,26 @@ if __name__ == '__main__':
     parser.add_argument('--model', '-m', default='Qwen/Qwen2.5-VL-72B-Instruct',
                         help='Model name/type')
 
-    parser.add_argument('--questions', '-q', required=True,
+    parser.add_argument('--questions', '-q', required=True, 
                         help='Path to questions JSON file')
 
-    parser.add_argument('--images', '-im', default='./', type=str,
-                        help="Directory/link to repository containing images")
+    parser.add_argument('--images', '-im', required=True, type=str,
+                        help="Directory/link to reporsitory containing images")    
     
     parser.add_argument('--distractor', '-d', action="store_true", 
                         help='Use distractor images')
    
-    parser.add_argument('--output_dir', '-o', default='./',
+    parser.add_argument('--output_dir', '-o', default='./responses',
                         help="Location to output files")
     
     parser.add_argument('--cache_dir', '-c', default='./',
                         help="Location to cache directory (cache for image names)")
     
-    parser.add_argument('--flash', action="store_true", type=bool,
+    parser.add_argument('--flash', action="store_true",
                         help="Use flash attention")
     
     parser.add_argument('--batch_size', default=1,
-                        help="Use flash attention")
+                        help="Batch size. Default is 1.")
     
     parser.add_argument('--max_images', '-max', type=int, default=20,
                         help="FOR DEVELOPING TEST PURPOSE")
@@ -328,10 +290,11 @@ if __name__ == '__main__':
          img_limit=args.max_images)
 
     # main(model_name='Qwen/Qwen2.5-VL-7B-Instruct',
-    #     question_path='/home/yaoyi/pyo00005/carto-reasoning/questions/unverified/questions_config_distractor_t.json',
-    #     image_folder='/home/yaoyi/pyo00005/carto-reasoning/img-raw',
+    #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
+    #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
     #     bool_distractor=True,
     #     output_dir='./',
     #     cache_dir='./',
     #     use_flash=True,
+    #     batch_size=2,
     #     img_limit=args.max_images)

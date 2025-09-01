@@ -8,12 +8,27 @@ import json
 import pickle
 import polars as pl
 
+import requests
+from PIL import Image
+
 import torch
-from transformers import AutoProcessor, LlavaNextForConditionalGeneration
+from transformers import AutoModelForCausalLM
 from transformers import BitsAndBytesConfig             # To reduce memory usage
+
+import warnings
+warnings.filterwarnings("ignore", category=pl.MapWithoutReturnDtypeWarning)
 
 with open('./instruction.pkl', 'rb') as handle:
     instructions = pickle.load(handle)
+
+# Paraemter specific to Ovis
+# Thinking mode & budget
+enable_thinking = True
+enable_thinking_budget = True  # Only effective if enable_thinking is True.
+
+# Total tokens for thinking + answer. Ensure: max_new_tokens > thinking_budget + 25
+max_new_tokens = 3072
+thinking_budget = 2048
 
 def check_exist(path_dir, bool_create=True):
     if os.path.exists(path_dir):
@@ -36,25 +51,24 @@ def define_model(model_id:str,
     )
 
     if use_flash:
-        model = LlavaNextForConditionalGeneration.from_pretrained(
-            model_id,
-            quantization_config=quantization_config,
-            attn_implementation="flash_attention_2",
-            device_map="auto",
-            trust_remote_code=True
-            )        # Only works under CUDA suppport
-    else:
-        # Slow processing
-        model = LlavaNextForConditionalGeneration.from_pretrained(
+        model = AutoModelForCausalLM.from_pretrained(
             model_id,
             quantization_config=quantization_config, 
+            attn_implementation="flash_attention_2",
             device_map="auto",
+            trust_remote_code=True,
+        )
+
+    else:
+        # Slow processing
+        model = AutoModelForCausalLM.from_pretrained(
+            model_id,
+            quantization_config=quantization_config, 
+            torch_dtype="auto", device_map="auto",
             trust_remote_code=True
         )
 
-    processor = AutoProcessor.from_pretrained(model_id)
-
-    return model, processor
+    return model
 
 def upload_images(images:List[str],
                  image_prefix:str=None,
@@ -75,71 +89,78 @@ def upload_images(images:List[str],
 
     return dict_im_data
 
-
 def make_chat_prompt(question:str,
                      file_list:List[str],
                      dict_im_data:Dict[str, str],
                      img_limit:int) -> list:
 
-    content = []
+    content = [{"type": "text", "text": "Answer in English only."}]
     for idx, f in enumerate(file_list):
         if idx > img_limit:
             break
-        content.append({"type": "image", "url": f"{dict_im_data[f]}"})
 
-    content.append({"type": "text", "text": f"{question}"})
+        if 'https' in dict_im_data[f]:
+            content.append({"type": "image", "image": Image.open(requests.get(dict_im_data[f], stream=True).raw)})
+        else:
+            content.append({"type": "image", "image": f"{dict_im_data[f]}"})
+
+    content.append({"type": "text", "text": f"{question}. "})
 
     return content
 
 def respond_q(model,
               processor,
               dict_im_data:Dict[str, str],
-              input_struct:List[dict],
-              img_limit:int):
+              question_q:str,
+              img_list:List[str],
+              img_limit:int,
+              allow_thinking:bool=True):
+    
+    content = make_chat_prompt(question=question_q,
+                               file_list=img_list,
+                               dict_im_data=dict_im_data,
+                               img_limit=img_limit)
+    conversation = [
+        {   "role": "system",
+            "content": [{"type": "text", "text": f"{instructions}"}],
+        },
+        {
+            "role": "user",
+            "content": content,
+        }
+    ]
 
-    messages = []
-    for i in input_struct:
-        content = make_chat_prompt(question=i['question_text'],
-                                   file_list=i['image_lists'],
-                                   dict_im_data=dict_im_data,
-                                   img_limit=img_limit)
-        conversation = [
-            {   "role": "system",
-                "content": [{"type": "text", "text": f"{instructions}"}],
-            },
-            {
-                "role": "user",
-                "content": content,
-            }
-        ]
+    input_ids, pixel_values, grid_thws = model.preprocess_inputs(messages=conversation, 
+                                                                 add_generation_prompt=True,)
+    
+    if allow_thinking:
+        input_ids, pixel_values, grid_thws = model.preprocess_inputs(messages=conversation, 
+                                                                     add_generation_prompt=True,
+                                                                     enable_thinking=enable_thinking)
+    input_ids = input_ids.cuda()
+    pixel_values = pixel_values.cuda().to(model.dtype) if pixel_values is not None else None
+    grid_thws = grid_thws.cuda() if grid_thws is not None else None
 
-        messages.append(conversation)
+    with torch.no_grad():
+        
+        if allow_thinking:
+            outputs = model.generate(inputs=input_ids, pixel_values=pixel_values, grid_thws=grid_thws,
+                                     enable_thinking=enable_thinking, enable_thinking_budget=enable_thinking_budget,
+                                     max_new_tokens=max_new_tokens, thinking_budget=thinking_budget,)
+        else:
+            outputs = model.generate(inputs=input_ids, pixel_values=pixel_values, grid_thws=grid_thws,
+                                    max_new_tokens=256, do_sample=False,
+                                    eos_token_id=model.text_tokenizer.eos_token_id,
+                                    pad_token_id=model.text_tokenizer.pad_token_id,)
 
-    inputs = processor.apply_chat_template(
-        messages,
-        add_generation_prompt=True,
-        tokenize=True,
-        return_dict=True,
-        padding=True,
-        padding_side="left",
-        return_tensors="pt"
-    ).to(model.device, torch.float16)
+    response = model.text_tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-    with torch.no_grad():  
-        generate_ids = model.generate(**inputs, max_new_tokens=256, do_sample=False)
-
-    output_texts = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
-    list_output = []
-
-    for response in output_texts:
-        try:
-            cleaned_response = response.split("Final answer:")[-1].strip()
-            list_output.append(cleaned_response)
-            
-        except:
-            list_output.append(response)
-
-    return list_output
+    try:
+        cleaned_response = response.split('Final answer:')[-1].strip()
+        return {'ovis2.5_response': cleaned_response}
+    except:
+        return {'ovis2.5_response': response}
+    
 
 def main(model_name:str,
          question_path:str,
@@ -148,6 +169,7 @@ def main(model_name:str,
          output_dir:str,
          cache_dir:str,
          use_flash:bool,
+         allow_thinking:bool,
          batch_size:int,
          img_limit:int):
     
@@ -167,7 +189,7 @@ def main(model_name:str,
         for d in data:
             all_images.extend(d['image_urls'])
             all_images.extend(d['contextual_urls'])
-
+ 
         dict_im_data = upload_images(images=all_images,
                                      image_prefix=image_folder,
                                      save_cache=True,
@@ -177,7 +199,7 @@ def main(model_name:str,
             dict_im_data = pickle.load(handle)
 
     # Load model and processor
-    model, processor = define_model(model_id=model_name, use_flash=use_flash)
+    model = define_model(model_id=model_name, use_flash=use_flash)
 
     # Set up questions dataframe
     pl_question = pl.read_json(question_path).with_columns(
@@ -188,7 +210,6 @@ def main(model_name:str,
         .otherwise(pl.col('image_urls')).alias('image_lists')
     )
 
-    # Running inference in chunks (of 20) in case it crashse in middle
     pl_answered = pl.DataFrame()
 
     response_cache = os.path.join(cache_dir, 'response_cache.pkl')
@@ -202,25 +223,20 @@ def main(model_name:str,
     for i in tqdm(range(0, pl_question.height, batch_size)):
         chunk = pl_question.slice(i, batch_size)
 
-        chunk = chunk.with_columns(
-            tmp = pl.struct(pl.col(['question_text', 'image_lists']))
-        )
+        if batch_size > 1:
+            pass
 
-        list_input = chunk['tmp'].to_list()
-        list_output = respond_q(model=model, processor=processor,
-                                input_struct=list_input,
-                                dict_im_data=dict_im_data,
-                                img_limit=img_limit)
-        
-        chunk = chunk.with_columns(
-            pl.col('q_answered').replace({False: True}),
-            llava_next_response = pl.Series(list_output)
-        ).drop(['tmp', 'image_lists'])
+        else:
+            chunk = chunk.with_columns(
+                tmp = pl.struct(pl.all()).map_elements(lambda x: respond_q(model, None, dict_im_data, x['question_text'], x['image_lists'], img_limit, allow_thinking))
+            ).with_columns(
+                pl.col('q_answered').replace({False: True})
+            ).unnest('tmp').drop('image_lists')
 
-        pl_answered = pl.concat(
-            [pl_answered, chunk],
-            how='diagonal'
-        )
+            pl_answered = pl.concat(
+                [pl_answered, chunk],
+                how='diagonal'
+            )
 
         with open(response_cache, 'wb') as handle:
             pickle.dump(pl_answered, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -229,20 +245,20 @@ def main(model_name:str,
     pd_answered = pl_answered.to_pandas()
 
     if bool_distractor:
-        new_file_name = os.path.join(output_dir, 'next_w_contextual.json')
+        new_file_name = os.path.join(output_dir, 'ovis25_w_contextual.json')
     else:
-        new_file_name = os.path.join(output_dir, 'next_wo_contextual.json')
+        new_file_name = os.path.join(output_dir, 'ovis25_wo_contextual.json')
 
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
-    # Removing response cache pickle file
+    # Removing response cache & image cache pickle file
     os.remove(response_cache)
     os.remove(cache_file)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
 
-    parser.add_argument('--model', '-m', default='llava-hf/llava-next-72b-hf',
+    parser.add_argument('--model', '-m', default='Qwen/Qwen2.5-VL-72B-Instruct',
                         help='Model name/type')
 
     parser.add_argument('--questions', '-q', required=True, 
@@ -250,7 +266,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--images', '-im', required=True, type=str,
                         help="Directory/link to reporsitory containing images")
-    
+        
     parser.add_argument('--distractor', '-d', action="store_true", 
                         help='Use distractor images')
    
@@ -262,6 +278,9 @@ if __name__ == '__main__':
     
     parser.add_argument('--flash', action="store_true",
                         help="Use flash attention")
+    
+    parser.add_argument('--thinking', action="store_true",
+                        help="Allow reasoning capability")
     
     parser.add_argument('--batch_size', default=1,
                         help="Batch size. Default is 1.")
@@ -278,15 +297,17 @@ if __name__ == '__main__':
          output_dir=args.output_dir,
          cache_dir=args.cache_dir,
          use_flash=args.flash,
+         allow_thinking=args.thinking,
          batch_size=args.batch_size,
          img_limit=args.max_images)
 
-    # main(model_name='llava-hf/llava-v1.6-mistral-7b-hf',
+    # main(model_name='AIDC-AI/Ovis2.5-2B',
     #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
     #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
-    #     bool_distractor=True,
+    #     bool_distractor=False,
     #     output_dir='./',
     #     cache_dir='./',
     #     use_flash=True,
+    #     allow_thinking=True,
     #     batch_size=1,
     #     img_limit=args.max_images)

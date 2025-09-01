@@ -9,7 +9,7 @@ import pickle
 import polars as pl
 
 import torch
-from transformers import AutoProcessor, LlavaNextForConditionalGeneration
+from transformers import AutoProcessor, AutoModelForImageTextToText
 from transformers import BitsAndBytesConfig             # To reduce memory usage
 
 with open('./instruction.pkl', 'rb') as handle:
@@ -36,7 +36,7 @@ def define_model(model_id:str,
     )
 
     if use_flash:
-        model = LlavaNextForConditionalGeneration.from_pretrained(
+        model = AutoModelForImageTextToText.from_pretrained(
             model_id,
             quantization_config=quantization_config,
             attn_implementation="flash_attention_2",
@@ -45,7 +45,7 @@ def define_model(model_id:str,
             )        # Only works under CUDA suppport
     else:
         # Slow processing
-        model = LlavaNextForConditionalGeneration.from_pretrained(
+        model = AutoModelForImageTextToText.from_pretrained(
             model_id,
             quantization_config=quantization_config, 
             device_map="auto",
@@ -214,7 +214,7 @@ def main(model_name:str,
         
         chunk = chunk.with_columns(
             pl.col('q_answered').replace({False: True}),
-            llava_next_response = pl.Series(list_output)
+            internvl35_response = pl.Series(list_output)
         ).drop(['tmp', 'image_lists'])
 
         pl_answered = pl.concat(
@@ -229,10 +229,10 @@ def main(model_name:str,
     pd_answered = pl_answered.to_pandas()
 
     if bool_distractor:
-        new_file_name = os.path.join(output_dir, 'next_w_contextual.json')
+        new_file_name = os.path.join(output_dir, 'internvl_w_contextual.json')
     else:
-        new_file_name = os.path.join(output_dir, 'next_wo_contextual.json')
-
+        new_file_name = os.path.join(output_dir, 'internvl_wo_contextual.json')
+        
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
     # Removing response cache pickle file
@@ -281,7 +281,7 @@ if __name__ == '__main__':
          batch_size=args.batch_size,
          img_limit=args.max_images)
 
-    # main(model_name='llava-hf/llava-v1.6-mistral-7b-hf',
+    # main(model_name='OpenGVLab/InternVL3_5-8B-HF',
     #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
     #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
     #     bool_distractor=True,

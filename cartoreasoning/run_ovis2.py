@@ -8,8 +8,11 @@ import json
 import pickle
 import polars as pl
 
+import requests
+from PIL import Image
+
 import torch
-from transformers import AutoProcessor, LlavaNextForConditionalGeneration
+from transformers import AutoModelForCausalLM
 from transformers import BitsAndBytesConfig             # To reduce memory usage
 
 with open('./instruction.pkl', 'rb') as handle:
@@ -26,7 +29,7 @@ def check_exist(path_dir, bool_create=True):
     return -1
 
 def define_model(model_id:str,
-                 use_flash: bool):
+                 use_flash: bool=False):
     
     # specify how to quantize the model
     quantization_config = BitsAndBytesConfig(
@@ -35,26 +38,18 @@ def define_model(model_id:str,
         bnb_4bit_compute_dtype=torch.float16,
     )
 
-    if use_flash:
-        model = LlavaNextForConditionalGeneration.from_pretrained(
-            model_id,
-            quantization_config=quantization_config,
-            attn_implementation="flash_attention_2",
-            device_map="auto",
-            trust_remote_code=True
-            )        # Only works under CUDA suppport
-    else:
-        # Slow processing
-        model = LlavaNextForConditionalGeneration.from_pretrained(
-            model_id,
-            quantization_config=quantization_config, 
-            device_map="auto",
-            trust_remote_code=True
-        )
+    # FLash attention not supported for Ovis2
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id,
+        quantization_config=quantization_config,
+        multimodal_max_length=32768,
+        trust_remote_code=True,
+        device_map="auto")
+    
+    text_tokenizer = model.get_text_tokenizer()
+    visual_tokenizer = model.get_visual_tokenizer()
 
-    processor = AutoProcessor.from_pretrained(model_id)
-
-    return model, processor
+    return model, text_tokenizer, visual_tokenizer
 
 def upload_images(images:List[str],
                  image_prefix:str=None,
@@ -75,67 +70,78 @@ def upload_images(images:List[str],
 
     return dict_im_data
 
-
 def make_chat_prompt(question:str,
                      file_list:List[str],
                      dict_im_data:Dict[str, str],
                      img_limit:int) -> list:
 
-    content = []
-    for idx, f in enumerate(file_list):
-        if idx > img_limit:
-            break
-        content.append({"type": "image", "url": f"{dict_im_data[f]}"})
+    # for idx, f in enumerate(file_list):
+    #     if idx > img_limit:
+    #         break
+    question_default = "Answer in English only."
 
-    content.append({"type": "text", "text": f"{question}"})
+    if 'https' in dict_im_data[file_list[0]]:
+        image = [Image.open(requests.get(dict_im_data[image_path], stream=True).raw) for image_path in file_list]
+    else:
+        image = [Image.open(dict_im_data[image_path]) for image_path in file_list]
 
-    return content
+    query = question_default + '\n' + \
+            '\n'.join([f'Image {i+1}: <image>' for i in range(len(image))]) + \
+            '\n' + question
+
+    return query, image
 
 def respond_q(model,
-              processor,
+              text_tokenizer, visual_tokenizer,
               dict_im_data:Dict[str, str],
               input_struct:List[dict],
-              img_limit:int):
+              img_limit:int,):
+    
+    batch_input_ids = []
+    batch_attention_mask = []
+    batch_pixel_values = []
 
-    messages = []
     for i in input_struct:
-        content = make_chat_prompt(question=i['question_text'],
-                                   file_list=i['image_lists'],
-                                   dict_im_data=dict_im_data,
-                                   img_limit=img_limit)
-        conversation = [
-            {   "role": "system",
-                "content": [{"type": "text", "text": f"{instructions}"}],
-            },
-            {
-                "role": "user",
-                "content": content,
-            }
-        ]
+        query, image = make_chat_prompt(question=i['question_text'],
+                                        file_list=i['image_lists'],
+                                        dict_im_data=dict_im_data,
+                                        img_limit=img_limit)
+        
+        prompt, input_ids, pixel_values = model.preprocess_inputs(query, image, max_partition=9)
+        attention_mask = torch.ne(input_ids, text_tokenizer.pad_token_id)
+        batch_input_ids.append(input_ids.to(device=model.device))
+        batch_attention_mask.append(attention_mask.to(device=model.device))
+        batch_pixel_values.append(pixel_values.to(dtype=visual_tokenizer.dtype, device=visual_tokenizer.device))
 
-        messages.append(conversation)
+    batch_input_ids = torch.nn.utils.rnn.pad_sequence([i.flip(dims=[0]) for i in batch_input_ids], batch_first=True,
+                                                      padding_value=0.0).flip(dims=[1])
+    batch_input_ids = batch_input_ids[:, -model.config.multimodal_max_length:]
+    batch_attention_mask = torch.nn.utils.rnn.pad_sequence([i.flip(dims=[0]) for i in batch_attention_mask],
+                                                        batch_first=True, padding_value=False).flip(dims=[1])
+    batch_attention_mask = batch_attention_mask[:, -model.config.multimodal_max_length:]
 
-    inputs = processor.apply_chat_template(
-        messages,
-        add_generation_prompt=True,
-        tokenize=True,
-        return_dict=True,
-        padding=True,
-        padding_side="left",
-        return_tensors="pt"
-    ).to(model.device, torch.float16)
+    with torch.inference_mode():
+        gen_kwargs = dict(
+            max_new_tokens=256,
+            do_sample=False,            # Basically temp=0
+            top_p=None,
+            top_k=None,
+            temperature=None,
+            repetition_penalty=None,
+            eos_token_id=model.generation_config.eos_token_id,
+            pad_token_id=text_tokenizer.pad_token_id,
+            use_cache=True
+        )   
+        output_ids = model.generate(batch_input_ids, pixel_values=batch_pixel_values, attention_mask=batch_attention_mask,
+                                    **gen_kwargs)
 
-    with torch.no_grad():  
-        generate_ids = model.generate(**inputs, max_new_tokens=256, do_sample=False)
-
-    output_texts = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
     list_output = []
 
-    for response in output_texts:
+    for i in range(len(input_struct)):
+        response = text_tokenizer.decode(output_ids[i], skip_special_tokens=True)
         try:
-            cleaned_response = response.split("Final answer:")[-1].strip()
+            cleaned_response = response.split('Final answer:')[-1].strip()
             list_output.append(cleaned_response)
-            
         except:
             list_output.append(response)
 
@@ -167,7 +173,7 @@ def main(model_name:str,
         for d in data:
             all_images.extend(d['image_urls'])
             all_images.extend(d['contextual_urls'])
-
+ 
         dict_im_data = upload_images(images=all_images,
                                      image_prefix=image_folder,
                                      save_cache=True,
@@ -176,8 +182,8 @@ def main(model_name:str,
         with open(cache_file, 'rb') as handle:
             dict_im_data = pickle.load(handle)
 
-    # Load model and processor
-    model, processor = define_model(model_id=model_name, use_flash=use_flash)
+    # Load model and processor (Ovis2 doesn't have the option for Flash)
+    model, text_tokenizer, visual_tokenizer = define_model(model_id=model_name, use_flash=False)
 
     # Set up questions dataframe
     pl_question = pl.read_json(question_path).with_columns(
@@ -188,7 +194,6 @@ def main(model_name:str,
         .otherwise(pl.col('image_urls')).alias('image_lists')
     )
 
-    # Running inference in chunks (of 20) in case it crashse in middle
     pl_answered = pl.DataFrame()
 
     response_cache = os.path.join(cache_dir, 'response_cache.pkl')
@@ -207,14 +212,16 @@ def main(model_name:str,
         )
 
         list_input = chunk['tmp'].to_list()
-        list_output = respond_q(model=model, processor=processor,
-                                input_struct=list_input,
-                                dict_im_data=dict_im_data,
-                                img_limit=img_limit)
+        list_output = respond_q(model=model,
+                    text_tokenizer=text_tokenizer,
+                    visual_tokenizer=visual_tokenizer,
+                    input_struct=list_input,
+                    dict_im_data=dict_im_data,
+                    img_limit=img_limit)
         
         chunk = chunk.with_columns(
             pl.col('q_answered').replace({False: True}),
-            llava_next_response = pl.Series(list_output)
+            ovis2_response = pl.Series(list_output)
         ).drop(['tmp', 'image_lists'])
 
         pl_answered = pl.concat(
@@ -229,9 +236,9 @@ def main(model_name:str,
     pd_answered = pl_answered.to_pandas()
 
     if bool_distractor:
-        new_file_name = os.path.join(output_dir, 'next_w_contextual.json')
+        new_file_name = os.path.join(output_dir, 'ovis2_w_contextual.json')
     else:
-        new_file_name = os.path.join(output_dir, 'next_wo_contextual.json')
+        new_file_name = os.path.join(output_dir, 'ovis2_wo_contextual.json')
 
     pd_answered.to_json(new_file_name, orient='records', indent=4)
 
@@ -242,7 +249,7 @@ def main(model_name:str,
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
 
-    parser.add_argument('--model', '-m', default='llava-hf/llava-next-72b-hf',
+    parser.add_argument('--model', '-m', default='AIDC-AI/Ovis2-34B',
                         help='Model name/type')
 
     parser.add_argument('--questions', '-q', required=True, 
@@ -250,7 +257,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--images', '-im', required=True, type=str,
                         help="Directory/link to reporsitory containing images")
-    
+        
     parser.add_argument('--distractor', '-d', action="store_true", 
                         help='Use distractor images')
    
@@ -260,7 +267,7 @@ if __name__ == '__main__':
     parser.add_argument('--cache_dir', '-c', default='./',
                         help="Location to cache directory (cache for image names)")
     
-    parser.add_argument('--flash', action="store_true",
+    parser.add_argument('--flash', action="store_true", type=bool,
                         help="Use flash attention")
     
     parser.add_argument('--batch_size', default=1,
@@ -270,7 +277,7 @@ if __name__ == '__main__':
                         help="FOR DEVELOPING TEST PURPOSE")
     
     args = parser.parse_args()
-    
+
     main(model=args.model,
          question_path=args.questions,
          image_folder=args.images,
@@ -281,12 +288,12 @@ if __name__ == '__main__':
          batch_size=args.batch_size,
          img_limit=args.max_images)
 
-    # main(model_name='llava-hf/llava-v1.6-mistral-7b-hf',
+    # main(model_name='AIDC-AI/Ovis2-1B',
     #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
     #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
-    #     bool_distractor=True,
+    #     bool_distractor=False,
     #     output_dir='./',
     #     cache_dir='./',
     #     use_flash=True,
-    #     batch_size=1,
+    #     batch_size=2,
     #     img_limit=args.max_images)

@@ -1,7 +1,10 @@
 import os
 import argparse
+
 from dotenv import load_dotenv
 from typing import List, Dict
+
+import time
 from tqdm import tqdm
 
 import json
@@ -15,6 +18,10 @@ from google.genai import types
 # Load environment variables from .env file
 load_dotenv()
 client = genai.Client(api_key=os.getenv('GOOGLE_API_KEY'))
+
+with open('./instruction.pkl', 'rb') as handle:
+    instructions = pickle.load(handle)
+    instructions += "DO NOT use web search."    # Adding in case they use search
 
 def check_exist(path_dir, bool_create=True):
     if os.path.exists(path_dir):
@@ -49,11 +56,20 @@ def upload_images(images:List[str],
 
 def make_chat_prompt(question:str,
                      file_list:List[str],
-                     dict_im_data:Dict[str, str]) -> list:
+                     dict_im_data:Dict[str, str],
+                     bool_async:bool=False) -> list:
     
-    imgs = [client.files.get(name=dict_im_data[fn]) for fn in file_list]
+    if bool_async:
+        imgs = [{"file_data": 
+                    {"file_uri": dict_im_data[fn],
+                     "mime_type": client.files.get(name=dict_im_data[fn]).mime_type}} 
+               for fn in file_list]
+        content = [{"text": question}]
+        
+    else:
+        imgs = [client.files.get(name=dict_im_data[fn]) for fn in file_list]
 
-    content = [question]
+        content = [question]
     content.extend(imgs)
 
     return content
@@ -66,29 +82,6 @@ def respond_q(model:str,
     content = make_chat_prompt(question_q, 
                                img_list,
                                dict_im_data)
-    
-    instructions = """
-    Answer the question using the provided images. Follow the the following instructions.
-
-    General: 
-    * If answer is a text from the map, copy it as it appears
-
-    Numerical Answers
-    * Include units as indicated on the map (Don’t convert 1200m to 1.2km)
-    * If both map frame and ruler scale is available, use the ruler scale
-    * If question asks for an area, use {unit}^2
-    * Use numerical values (e.g., 4 instead of four)
-
-    Directional Answers:
-    * Use 8 cardinal directions only: North, North East, East, South East, South, South West, West, North West
-    * Write 'North' or 'South' before 'East' or 'West'
-    * Notice that the north arrow compass do not always point upward
-
-    Multi-Part Answers:
-    * Separate with semicolon (;) (e.g., Zone A; Zone B)
-
-    Give ONLY the answer.
-    """
 
     response = client.models.generate_content(
         model = model,
@@ -102,50 +95,14 @@ def respond_q(model:str,
 
     return {'gemini_response': response.text}
 
-def main(model:str,
-         question_path:str,
-         image_folder:str,
-         bool_distractor:bool,
-         output_dir:str,
-         cache_dir:str):
-    
-    # Create directory paths
-    check_exist(output_dir)
-    check_exist(cache_dir)
-
-    # Load question JSON file
-    with open(question_path, 'r') as file:
-        data = json.load(file)
-    
-    # Uploading all images to path storage
-    if len(client.files.list()) == 0:
-    # if True:
-        all_images = []
-        for d in data:
-            all_images.extend(d['image_urls'])
-            all_images.extend(d['distractor_urls'])
-
-        dict_im_data = upload_images(images=all_images,
-                                     image_prefix=image_folder,
-                                     save_cache=True,
-                                     cache_dir=cache_dir)
-    else:
-        with open(os.path.join(cache_dir, 'image_cache.pkl'), 'rb') as handle:
-            dict_im_data = pickle.load(handle)
-    
-    pl_question = pl.read_json(question_path).with_columns(
-        q_answered = pl.lit(False),
-    ).with_columns(
-        pl.when(bool_distractor)
-        .then(pl.concat_list('distractor_urls', 'image_urls'))
-        .otherwise(pl.col('image_urls')).alias('image_lists')
-    )
-
-    # Running inference in chunks (of 20) in case it crashse in middle
+def gemini_sync(model,
+                dict_im_data,
+                pl_question,
+                response_cache):
+    # Running inference in chunks (of 20) in case it crashs in middle
     chunk_size = 20 
     pl_answered = pl.DataFrame()
 
-    response_cache = os.path.join(cache_dir, 'response_cache.pkl')
     if check_exist(response_cache) == 1: 
         with open(response_cache, 'rb') as handle:
             pl_answered = pickle.load(handle)
@@ -172,32 +129,158 @@ def main(model:str,
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
-    new_file_name = f"{question_path.split('.json')[0]}_{model}.json"
-    pd_answered.to_json(new_file_name, orient='records', indent=4)
+    return pd_answered, response_cache
 
-    # Removing response cache pickle file
-    os.remove(response_cache)
+def gemini_async(model,
+                 dict_im_data,
+                 pl_question,
+                 cache_dir,):
+    
+    input_struct = pl_question.select(
+        tmp = pl.struct(pl.all())
+    )['tmp'].to_list()
+
+    with open(os.path.join(cache_dir, "batch_requests.jsonl"), "w") as f:
+        for i in input_struct:
+            content = make_chat_prompt(i["question_text"], 
+                                       i["image_lists"],
+                                       dict_im_data,
+                                       True)
+            
+            request = {
+                "key": i["question_ref"],
+                "request": {
+                    "system_instruction": {
+                        "parts": [{"text": instructions}]
+                    },
+                    "contents": content
+                }
+            }
+
+            f.write(json.dumps(request) + '\n')
+
+    # Upload batch file to File API
+    batch_input = client.files.upload(
+        file=os.path.join(cache_dir, "batch_requests.jsonl"),
+        config=types.UploadFileConfig(display_name="carto-reason-batch", mime_type="jsonl"),
+    )
+
+    # Create batch job
+    job = client.batches.create(
+        model=model,
+        src=batch_input.name,  # the uploaded JSONL File name
+        config={"display_name": "carto-eval-run-01"},
+    )
+    print("Batch job:", job.name)  # e.g., "batches/abcdef123"
+
+    return job.name
+
+def main(model:str,
+         question_path:str,
+         image_folder:str,
+         bool_distractor:bool,
+         output_dir:str,
+         cache_dir:str,
+         bool_batch:bool,
+         img_limit:int,):
+    
+    # Create directory paths
+    check_exist(output_dir)
+    check_exist(cache_dir)
+
+    # Load question JSON file
+    with open(question_path, 'r') as file:
+        data = json.load(file)
+    
+    # Uploading all images to path storage
+    if len(client.files.list()) == 0:
+    # if True:
+        all_images = []
+        for d in data:
+            all_images.extend(d['image_urls'])
+            all_images.extend(d['contextual_urls'])
+
+        dict_im_data = upload_images(images=all_images,
+                                     image_prefix=image_folder,
+                                     save_cache=True,
+                                     cache_dir=cache_dir)
+    else:
+        with open(os.path.join(cache_dir, 'image_cache.pkl'), 'rb') as handle:
+            dict_im_data = pickle.load(handle)
+    
+    pl_question = pl.read_json(question_path).with_columns(
+        q_answered = pl.lit(False),
+    ).with_columns(
+        pl.when(bool_distractor)
+        .then(pl.concat_list('contextual_urls', 'image_urls'))
+        .otherwise(pl.col('image_urls')).alias('image_lists')
+    )
+
+    # Common file names amonst async/sync
+    response_cache = os.path.join(cache_dir, 'response_cache.pkl')
+    if bool_distractor:
+        new_file_name = os.path.join(output_dir, 'gemini_w_contextual.json')
+    else:
+        new_file_name = os.path.join(output_dir, 'gemini_wo_contextual.json')
+    new_file_name = f"{question_path.split('.json')[0]}_{model}.json"
+    
+    if not bool_batch:
+        # Run Sync
+        pd_answered, response_cache = gemini_sync(model=model, 
+                                  dict_im_data=dict_im_data, pl_question=pl_question,
+                                  response_cache=response_cache)
+        
+        pd_answered.to_json(new_file_name, orient='records', indent=4)
+
+        # Removing response cache pickle file
+        os.remove(response_cache)
+
+    else:
+        # Run Async
+        job_name = gemini_async(model=model, 
+                                dict_im_data=dict_im_data, pl_question=pl_question,
+                                cache_dir=cache_dir)
+        
+        # Information while running async
+        dict_info = {
+            "job_name": job_name,
+            "output_dir": output_dir,
+            "cache_dir": cache_dir,
+            "output_fn": new_file_name
+        }
+
+        with open(response_cache, 'wb') as handle:
+            pickle.dump(dict_info, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+        print(f"Batch job information stored in dir {cache_dir}")
+    
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
 
-    parser.add_argument('--model', '-m', required=True,
+    parser.add_argument('--model', '-m', default='gemini-2.5-pro',
                         help='Model name/type')
 
     parser.add_argument('--questions', '-q', required=True,
                         help='Path to questions JSON file')
 
-    parser.add_argument('--images', '-im', default='./', type=str,
+    parser.add_argument('--images', '-im', type=str,
                         help="Directory/link to repository containing images")
     
     parser.add_argument('--distractor', '-d', action="store_true", 
                         help='Use distractor images')
    
-    parser.add_argument('--output_dir', '-o', default='./',
+    parser.add_argument('--output_dir', '-o', default='./responses',
                         help="Location to output files")
     
     parser.add_argument('--cache_dir', '-c', default='./',
                         help="Location to cache directory (cache for image names)")
+    
+    parser.add_argument('--batch', action="store_true", 
+                        help="Use batch mode")
+    
+    parser.add_argument('--max_images', '-max', type=int, default=20,
+                        help="FOR DEVELOPING TEST PURPOSE")
     
     args = parser.parse_args()
     
@@ -206,11 +289,15 @@ if __name__ == '__main__':
          image_folder=args.images,
          bool_distractor=args.distractor,
          output_dir=args.output_dir,
-         cache_dir=args.cache_dir)
+         cache_dir=args.cache_dir,
+         bool_batch=args.batch,
+         img_limit=args.max_images)
 
-# main(model='gemini-2.5-flash',
-#     question_path='/home/yaoyi/pyo00005/carto-reasoning/questions/unverified/questions_config_distractor_t.json',
-#     image_folder='/home/yaoyi/pyo00005/carto-reasoning/img-raw',
-#     bool_distractor=True,
-#     output_dir='./',
-#     cache_dir='./')
+    # main(model='gemini-2.5-flash-lite',
+    #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
+    #     image_folder='./p2/carto-image',
+    #     bool_distractor=True,
+    #     output_dir='./',
+    #     cache_dir='./',
+    #     bool_batch=False,
+    #     img_limit=args.max_images)
