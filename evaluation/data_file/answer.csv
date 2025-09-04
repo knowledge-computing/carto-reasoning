@@ -1,0 +1,501 @@
+question_ref,map_count,spatial_relationship,answer_type,expected_answer
+q_0001,Single,Border,textual,"23RD AVE; 24TH AVE; E PIKE ST; E SPRING ST"
+q_0002,Single,Border,textual,Rezone Area 6
+q_0003,Single,Distance,textual,Central Greenway Phase 3: Alternative 2
+q_0004,Single,Orientation,cardinal,South West
+q_0005,Single,Border,textual,Lowrise 1; Lowrise 3
+q_0006,Single,Border,textual,LR1
+q_0007,Single,Within,textual,7
+q_0008,Single,Intersect,textual,13TH AVE S; S ALBRO PL
+q_0009,Multi,Intersect,textual,Single Family; Major Institution And Public Facilities/Utilities
+q_0010,Multi,Distance,textual,Community Center
+q_0011,Single,Border,textual,Wholesale Customer; Other
+q_0012,Single,Within,textual,Bitter Lake Village
+q_0013,Single,Border,textual,Georgetown
+q_0014,Single,Intersect,textual,7
+q_0015,Single,Border,textual,17
+q_0017,Single,Distance,textual,South Park #2
+q_0018,Single,Within,textual,1
+q_0020,Multi,Within,textual,SoDo Stadium
+q_0021,Single,Distance,textual,West Duwamish Greenbelt
+q_0022,Single,Intersect,textual,"Maritime, Manufacturing & Logistics"
+q_0023,Single,Border,textual,Kirkland
+q_0024,Single,Within,textual,7
+q_0025,Single,Distance,textual,D
+q_0026,Single,Within,textual,Washington Ship Canal
+q_0027,Single,Within,textual,5
+q_0028,Single,Intersect,textual,5
+q_0029,Single,Within,textual,Battalion 7
+q_0030,Multi,Distance,textual,R1
+q_0031,Single,Within,textual,Robert Eagle Staff; Eckstein
+q_0032,Single,Border,textual,6
+q_0033,Single,Within,textual,5
+q_0070,Single,Intersect,textual,2
+q_0072,Multi,Within,textual,1
+q_0073,Multi,Orientation,textual,Grand Ball Room
+q_0074,Multi,Border,textual,Blackwater [Munster]
+q_0075,Single,Border,textual,"IAS, Waste; Animal waste"
+q_0076,Single,Orientation,cardinal,North West
+q_0077,Multi,Equal,textual,0-2000
+q_0078,Single,Distance,textual,Drehid Waste Management Facility
+q_0079,Multi,Distance,textual,Dundalk
+q_0080,Multi,Intersect,textual,2
+q_0081,Single,Intersect,textual,10.49; 7.41
+q_0082,Single,Distance,textual,3
+q_0083,Single,Within,textual,Vegetation
+q_0084,Multi,Equal,textual,1
+q_0085,Single,Orientation,cardinal,South West
+q_0086,Multi,Border,textual,Svay Donkaev; Extension Dmnak Ampil
+q_0087,Multi,Within,textual,12
+q_0088,Single,Intersect,textual,3
+q_0089,Single,Distance,textual,President Shopping Centre/Hotel
+q_0090,Single,Within,textual,Jamae Mosque; Sri Mariamman Temple
+q_0091,Multi,Equal,textual,Riparian Woodland
+q_0092,Multi,Within,textual,Not Flood Prone
+q_0093,Single,Orientation,textual,Main Head
+q_0094,Single,Within,textual,3/6
+q_0095,Single,Intersect,textual,1.8
+q_0096,Multi,Within,textual,Sand bank
+q_0097,Single,Orientation,cardinal,South
+q_0098,Single,Intersect,textual,Primary School
+q_0099,Single,Intersect,textual,CHINA
+q_0100,Single,Distance,textual,Bengal Florican
+q_0101,Multi,Within,textual,Food & Drink Sector
+q_0102,Multi,Distance,textual,Virar Flyover
+q_0103,Single,Within,textual,1
+q_0104,Multi,Distance,textual,Broadmeadow
+q_0105,Multi,Orientation,cardinal,South East
+q_0106,Single,Distance,distance,40.0 \pm 1.63 m
+q_0107,Single,Orientation,cardinal,North East
+q_0108,Multi,Distance,textual,Russei Krang
+q_0109,Multi,Border,textual,6; 7A; 8; 9
+q_0110,Single,Border,textual,14
+q_0111,Multi,Intersect,textual,"Jamuna,Karatoya-Bengali and Lakhya floodplain; Madhupur Soils"
+q_0112,Multi,Distance,textual,Zayed Sports City; Sheikh Khalifa Park
+q_0113,Multi,Within,textual,"Fine, Ruptic Ultic Dystrochrepts"
+q_0115,Single,Orientation,cardinal,West
+q_0116,Single,Within,textual,4
+q_0118,Multi,Distance,textual,Mussels; Oysters
+q_0119,Single,Intersect,textual,19; 21; 22
+q_0120,Multi,Distance,textual,N04
+q_0121,Multi,Intersect,textual,Dambana; Rathugala Henebedda
+q_0122,Multi,Within,textual,Hedge - Exotic; Ornamental Garden; Mixed Woodland
+q_0123,Multi,Distance,textual,Galway
+q_0124,Multi,Distance,textual,Nitrogen Measures
+q_0125,Multi,Orientation,cardinal,North East
+q_0126,Single,Orientation,cardinal,South West
+q_0127,Multi,Distance,textual,GT_2650011
+q_0128,Multi,Distance,textual,Fingal County Council
+q_0129,Single,Orientation,cardinal,East
+q_0130,Multi,Within,textual,Gleys
+q_0131,Single,Within,textual,5
+q_0132,Single,Border,textual,26; 06
+q_0133,Multi,Within,textual,Siamese Tiger Perch
+q_0134,Single,Within,textual,FR; NO
+q_0135,Multi,Within,textual,05; 07; 08; 09
+q_0136,Single,Within,textual,6; 14; 17
+q_0137,Single,Within,textual,"Green Mubazzarah; Mezyad Desert Park; Jebel Hafeet Overlook"
+q_0138,Multi,Distance,textual,Kalwa Rail Yard
+q_0140,Multi,Equal,textual,Borrow; Project
+q_0142,Multi,Within,textual,"More than 30,000"
+q_0143,Multi,Within,textual,1
+q_0144,Multi,Border,textual,Delineated Wetlands; Temporary Impact Area; Permanent Impact Area
+q_0145,Multi,Orientation,cardinal,North West
+q_0146,Multi,Equal,textual,Dredge Area
+q_0147,Multi,Orientation,cardinal,South West
+q_0148,Multi,Equal,textual,Areas of Basins
+q_0150,Multi,Intersect,textual,North Shore Levee (West)
+q_0151,Multi,Distance,distance,18.0 \pm 2.06 Miles
+q_0152,Multi,Within,textual,18; 11
+q_0153,Multi,Within,textual,1% Annual Chance Flood Hazard; Regulatory Floodway
+q_0154,Multi,Orientation,cardinal,East
+q_0155,Multi,Equal,textual,Category 4
+q_0156,Multi,Border,textual,Re-Pavement Area
+q_0157,Multi,Distance,distance,2400.0 \pm 400.0 Feet
+q_0158,Single,Intersect,textual,E40; F2
+q_0159,Multi,Equal,textual,Sanitary mainlines
+q_0160,Multi,Within,textual,Delineated Wetlands
+q_0161,Multi,Intersect,textual,US 69; US 96; US 287
+q_0162,Multi,Equal,textual,4th Segment of Construction
+q_0163,Multi,Equal,textual,Permanent Impact Area
+q_0164,Multi,Intersect,textual,Meadow Branch; Walnut Street
+q_0165,Multi,Equal,textual,EARTHEN CONTAINMENT DIKE BORROW AREA (ECD-BA)
+q_0166,Multi,Orientation,cardinal,West
+q_0167,Multi,Orientation,cardinal,North East
+q_0168,Multi,Border,textual,A
+q_0170,Multi,Orientation,cardinal,South West
+q_0171,Multi,Distance,distance,6600.0 \pm 1300.0 Feet
+q_0172,Multi,Orientation,cardinal,North West
+q_0173,Multi,Distance,distance,0.62 \pm 0.06 Miles
+q_0174,Multi,Intersect,textual,Zone AE - Regulatory Floodway
+q_0175,Multi,Equal,textual,Small Biogas Demonstration Programme
+q_0176,Multi,Within,textual,URLX; LetA; LabA
+q_0178,Multi,Within,textual,A
+q_0179,Multi,Within,textual,7
+q_0180,Multi,Orientation,cardinal,North West
+q_0181,Multi,Intersect,textual,Area With Reduced Flood Risk Due to Levee
+q_0182,Multi,Within,textual,Interbay Smith Cove
+q_0183,Multi,Orientation,cardinal,South West
+q_0184,Multi,Orientation,cardinal,North West
+q_0185,Multi,Equal,textual,Weir C; Channel
+q_0186,Multi,Orientation,cardinal,South
+q_0187,Multi,Intersect,textual,8; 10.11; 9.12; 4.13
+q_0188,Multi,Orientation,cardinal,South West
+q_0189,Multi,Intersect,textual,Cypress
+q_0190,Multi,Distance,distance,7500.0 \pm 866.03 Feet
+q_0191,Multi,Equal,textual,-4'
+q_0192,Multi,Within,textual,1% Annual Chance
+q_0193,Multi,Equal,textual,Scrub-Shrub or Forested Wetland; Marsh or Scrub-Shrub Wetland; Tidal Channel or Mud Flat Wetland; Upland Fill Riparian Area
+q_0194,Multi,Orientation,cardinal,South
+q_0195,Multi,Orientation,cardinal,North West
+q_0196,Multi,Within,textual,2
+q_0197,Multi,Within,textual,Western Lake
+q_0199,Multi,Orientation,cardinal,North West
+q_0200,Multi,Within,textual,70607
+q_0201,Multi,Within,textual,Regulatory Floodway
+q_0202,Multi,Within,textual,3
+q_1001,Multi,Within,textual,3
+q_1002,Multi,Intersect,textual,4. GREEN NETWORK TRAFALAGAR PARK + ZONNEBLOEM SCHOOLS
+q_1003,Multi,Equal,textual,19
+q_1004,Multi,Within,textual,WFD Catchments
+q_1005,Multi,Intersect,textual,URBAN MOTORWAY
+q_1006,Multi,Border,textual,Bloemhof Rd
+q_1007,Multi,Distance,distance,12.5 \pm 2.02 Miles
+q_1008,Multi,Equal,textual,Open space Network
+q_1010,Multi,Equal,textual,URLX
+q_1011,Multi,Orientation,cardinal,South West
+q_1012,Multi,Within,textual,Mercer
+q_1013,Multi,Orientation,cardinal,South East
+q_1014,Multi,Orientation,cardinal,North West
+q_1015,Multi,Orientation,cardinal,North East
+q_1016,Multi,Within,textual,2
+q_1017,Multi,Intersect,textual,Yosemite; Bass Lake
+q_1018,Multi,Distance,distance,22.5 \pm 0.25 MILES
+q_1019,Multi,Equal,textual,PILOT PEAK
+q_1020,Multi,Intersect,textual,LAGOON; BARRIER ISLAND; ATLANTIC OCEAN
+q_1021,Multi,Equal,textual,1
+q_1022,Multi,Equal,textual,OLDER MESOZOIC ROCKS; YOUNGER CRETACEOUS AND TERTIARY ROCKS
+q_1023,Multi,Within,textual,Cultural Landscape
+q_1024,Multi,Intersect,textual,State Parks Barn Complex
+q_1025,Multi,Orientation,cardinal,North
+q_1026,Multi,Distance,distance,2900.0 \pm 1219.29 '
+q_1027,Multi,Orientation,cardinal,North East
+q_1028,Multi,Equal,textual,AREA 3
+q_1029,Multi,Orientation,cardinal,South East
+q_1030,Multi,Distance,distance,1.9 \pm 0.05 Kilometers
+q_1031,Multi,Distance,distance,55.0 \pm 4.79 MILES
+q_1032,Multi,Intersect,textual,1
+q_1033,Multi,Orientation,cardinal,North West
+q_1034,Multi,Equal,textual,CHACO SLOPE
+q_1035,Multi,Within,textual,0
+q_1037,Multi,Border,textual,Urban Center; Hub Urban Village; Residential Urban Village; Manufacturing / Industrial Center
+q_1038,Multi,Within,textual,Commercial/Mixed-Use
+q_1040,Multi,Orientation,cardinal,North
+q_1041,Multi,Within,textual,1
+q_1042,Multi,Border,textual,CONSTITUTION STREET
+q_1043,Multi,Orientation,cardinal,North West
+q_1044,Multi,Orientation,cardinal,South
+q_1045,Multi,Equal,textual,Shallow brown earths
+q_1046,Multi,Border,textual,3979; 150 bays; 4431
+q_1047,Multi,Distance,distance,15.0 \pm 0.5 miles
+q_1048,Multi,Equal,textual,HEART ROCK
+q_1049,Multi,Intersect,textual,NORTH - 'MOVE'
+q_1050,Multi,Intersect,textual,PORTION FOR OPEN SPACE; INSTITUTIONAL OPEN SPACE
+q_1051,Multi,Orientation,cardinal,North East
+q_1052,Multi,Orientation,cardinal,North West
+q_1053,Multi,Within,textual,Industrial General
+q_1054,Multi,Orientation,cardinal,South East
+q_1055,Multi,Equal,textual,H
+q_1057,Multi,Equal,textual,< 1/1000
+q_1058,Multi,Intersect,textual,Proposed Railway Line; Prioritised Railway Line; IRT Trunk Route (Phase 1A); Connector Route
+q_1059,Multi,Distance,distance,6500.0 \pm 850.43 Feet
+q_1060,Multi,Intersect,textual,Kin Klizhin Ruins; Pueblo Bonito; Sargent Ranch; Fire Rock Well
+q_1061,Multi,Orientation,cardinal,East
+q_1062,Multi,Distance,distance,122.0 \pm 12.17 MILES
+q_1063,Multi,Equal,textual,Valley-outwash deposit
+q_1064,Multi,Orientation,cardinal,North East
+q_1065,Multi,Within,textual,6
+q_1066,Multi,Intersect,textual,Rezone from C1-65 to C2-65
+q_1067,Multi,Orientation,cardinal,South
+q_1068,Multi,Within,textual,Existing Lagoon Crossing Structure
+q_1069,Multi,Within,textual,Artificial surfaces
+q_1070,Multi,Orientation,cardinal,South West
+q_1071,Multi,Orientation,cardinal,South West
+q_1072,Multi,Distance,distance,675.0 \pm 52.04 m
+q_1073,Multi,Border,textual,TENANT STREET
+q_1074,Multi,Intersect,textual,3
+q_1075,Multi,Orientation,cardinal,South
+q_1076,Multi,Border,textual,Bloemhof street
+q_1077,Multi,Intersect,textual,Golf Course River
+q_1078,Multi,Orientation,cardinal,North West
+q_1079,Multi,Border,textual,Other Shoreline Areas
+q_1080,Multi,Orientation,cardinal,East
+q_1081,Multi,Equal,textual,California State Parks
+q_1082,Multi,Orientation,cardinal,North West
+q_1083,Multi,Equal,textual,SAN JUAN CO
+q_1084,Multi,Within,textual,5
+q_1085,Multi,Within,textual,Mornington
+q_1086,Multi,Intersect,textual,Hogaboom Road
+q_1087,Multi,Within,textual,Anthropogenic Noise
+q_1088,Multi,Equal,textual,District Node
+q_1089,Multi,Equal,textual,Moderate
+q_1090,Multi,Orientation,cardinal,North East
+q_1091,Multi,Intersect,textual,4.13
+q_1092,Multi,Border,textual,Inferno Cone; Fissure Butte
+q_1093,Single,Orientation,cardinal,South
+q_1094,Single,Intersect,textual,8
+q_1095,Single,Within,textual,60
+q_1096,Multi,Border,textual,CoB; PrB; MKC
+q_1097,Single,Orientation,cardinal,South West
+q_1098,Single,Intersect,textual,A; C; D
+q_1099,Multi,Within,textual,TA B2
+q_1100,Multi,Border,textual,T-33-C; T-29-A
+q_1101,Multi,Distance,textual,06-V-01; 06-V-TR
+q_1102,Multi,Intersect,textual,New Rail System
+q_1103,Multi,Border,textual,South CA Cascades Zone
+q_1104,Multi,Equal,textual,MNFd; BSMHF
+q_1105,Single,Distance,distance,450.0 \pm 25.0 Miles
+q_1106,Multi,Equal,textual,Low; Medium; High
+q_1107,Multi,Distance,textual,6
+q_1108,Multi,Within,textual,Low Income Tracts; Low-Income Counties
+q_1109,Single,Border,textual,DMMU 3; DMMU 5; DMMU 6; DMMU 8
+q_1111,Multi,Orientation,cardinal,North East
+q_1112,Multi,Orientation,cardinal,North West
+q_1113,Multi,Border,textual,West Indian Manatee (Florida subspecies) Proposed Critical Habitat; Southeastern Beach Mouse Potential Habitat
+q_1114,Multi,Distance,textual,5
+q_1115,Multi,Border,textual,T-3
+q_1116,Multi,Intersect,textual,Santa Ynez River; Bear Creek; Honda Creek; Jalama Creek
+q_1118,Multi,Intersect,textual,8
+q_1119,Multi,Within,textual,T16; T22; T20
+q_1120,Multi,Orientation,cardinal,South
+q_1121,Multi,Within,textual,CRW Reserve; CRW RCA
+q_1122,Single,Orientation,cardinal,East
+q_1123,Multi,Intersect,textual,North Field National Historic Landmark; Unai Babui
+q_1124,Multi,Border,textual,SESPE-PIRU CONDOR AREA
+q_1125,Multi,Equal,textual,Leucaena Forest
+q_1126,Single,Border,textual,Oregon Board of Forestry; BLM; Millicoma Tree Farm
+q_1127,Single,Within,textual,4
+q_1128,Multi,Within,textual,NSA 7; NSA 8; NSA 10; NSA 9; NSA 11; NSA 12; NSA 13; NSA 14
+q_1129,Single,Intersect,textual,3
+q_1130,Multi,Border,textual,WEST FORK MILLICOMA RIVER; DEAN CREEK UMPQUA RIVER
+q_1131,Single,Intersect,textual,"Intermittent, One-Parameter"
+q_1132,Single,Border,textual,OU C; OU D
+q_1133,Single,Border,textual,Deal Farm; Jacob Glotfelty Barn
+q_1134,Single,Intersect,textual,SR 669 Weight Restrictions
+q_1135,Single,Distance,textual,Coral Ocean Point Resort
+q_1136,Multi,Border,textual,Banana Creek
+q_1137,Multi,Orientation,cardinal,West
+q_1138,Multi,Within,textual,2
+q_1139,Multi,Equal,textual,"Track Alignment, Below Grade"
+q_1140,Single,Border,textual,Access Road
+q_1141,Multi,Border,textual,Kinsinger Farm
+q_1142,Multi,Equal,textual,3.01-6.00
+q_1143,Multi,Orientation,cardinal,South
+q_1144,Single,Intersect,textual,10
+q_1145,Multi,Within,textual,1
+q_1146,Single,Border,textual,Oregon Coast Range; Western Oregon Cascades; Western Washington Lowlands
+q_1147,Single,Border,textual,22-2522
+q_1148,Multi,Orientation,cardinal,West
+q_1149,Multi,Within,textual,19; 30; 23; 33
+q_1150,Single,Distance,distance,40.0 \pm 4.73 Miles
+q_1151,Multi,Distance,textual,4548 North Rampart Street
+q_1152,Multi,Equal,textual,Bus
+q_1153,Single,Border,textual,25
+q_1154,Multi,Orientation,cardinal,South East
+q_1155,Single,Orientation,textual,Place of Worship
+q_1157,Multi,Distance,textual,Masalok-1
+q_1158,Single,Distance,textual,Performance Promenade
+q_1159,Multi,Intersect,textual,30.1
+q_1160,Single,Distance,distance,3.0 \pm 0.63 Miles
+q_2001,Single,Within,textual,LEA-107822
+q_2002,Multi,Border,textual,2579161; 2579162; 2579163; 2579164; BM-698
+q_2003,Single,Border,textual,C-SR-13
+q_2004,Single,Intersect,textual,5
+q_2005,Single,Intersect,textual,6
+q_2007,Single,Orientation,cardinal,North West
+q_2008,Single,Within,textual,MUL
+q_2009,Multi,Equal,textual,Worker camp
+q_2013,Single,Distance,distance,1.5 \pm 1.15 km
+q_2015,Single,Border,textual,B96-1
+q_2016,Multi,Within,textual,Mafic Volcanic
+q_2017,Multi,Distance,textual,Huevo de Oro
+q_2019,Single,Border,textual,Barrick Gold Inc
+q_2020,Single,Orientation,cardinal,South East
+q_2021,Multi,Orientation,cardinal,South
+q_2022,Single,Within,textual,11
+q_2024,Single,Intersect,textual,6
+q_2025,Single,Orientation,cardinal,North
+q_2026,Multi,Within,textual,1078867
+q_2027,Single,Distance,distance,3.2 \pm 0.53 km
+q_2028,Multi,Intersect,textual,CBS 8027; S-101722
+q_2029,Single,Border,distance,3.5 \pm 0.49 km
+q_2030,Single,Within,textual,Noche Buena
+q_3001,Single,Intersect,textual,Vale de Noudar
+q_3002,Single,Distance,textual,TFS21-07
+q_3006,Single,Border,textual,White Gold Corp
+q_3009,Multi,Distance,textual,CBS
+q_3010,Single,Intersect,textual,Camarioca Norte
+q_3012,Single,Orientation,cardinal,North West
+q_3013,Single,Within,textual,SWFLK1
+q_3014,Multi,Equal,textual,Waste Rock Dump C
+q_3016,Multi,Border,textual,Ganfeng Lithium Co.
+q_3018,Single,Border,textual,10
+q_3020,Multi,Equal,textual,17946; 17947; 17948
+q_3021,Multi,Orientation,cardinal,South East
+q_3022,Multi,Orientation,cardinal,South West
+q_3023,Single,Distance,distance,3.0 \pm 1.0 km
+q_3024,Multi,Within,textual,8
+q_3027,Single,Border,textual,I-80 Gold
+q_3028,Single,Distance,distance,3.3 \pm 0.51 km
+q_3029,Single,Border,textual,Jack's Crack
+q_3030,Multi,Intersect,textual,Lucero Del Sur 12
+q_4001,Single,Border,textual,MC00014559
+q_4002,Multi,Distance,distance,7.8 \pm 0.4 km
+q_4005,Multi,Intersect,textual,867407/2008
+q_4006,Single,Orientation,cardinal,North
+q_4007,Single,Border,textual,Mines Agnico-Eagle Limitee
+q_4008,Multi,Orientation,cardinal,South West
+q_4010,Single,Border,textual,La Zarza
+q_4011,Multi,Border,textual,Los Reyes Tres; Los Reyes Fracc Norte
+q_4013,Single,Orientation,cardinal,North East
+q_4014,Single,Distance,distance,1.0 \pm 0.0 km
+q_4015,Single,Intersect,textual,12
+q_4016,Single,Within,textual,0
+q_4018,Multi,Intersect,textual,1082066
+q_4020,Single,Intersect,textual,Disappointment Syncline
+q_4021,Single,Distance,distance,25000.0 \pm 0.0 
+q_4022,Multi,Border,textual,4
+q_4024,Single,Intersect,textual,Gravity Survey - 2007
+q_4025,Single,Orientation,cardinal,North West
+q_4026,Multi,Equal,textual,Cronin Capital Claims
+q_4027,Single,Orientation,cardinal,South West
+q_4028,Single,Within,textual,2
+q_4029,Single,Distance,distance,0.7 \pm 0.12 km
+q_4030,Single,Border,textual,MLO-10671; MLO-10670
+q_5001,Multi,Equal,textual,Northern Lakes and Forests
+q_5003,Multi,Within,textual,8
+q_5004,Multi,Within,textual,1
+q_5005,Single,Within,textual,6
+q_5007,Multi,Distance,textual,5763-04-91-7009
+q_5009,Single,Distance,distance,1500.0 \pm 0.0 m
+q_5010,Single,Orientation,cardinal,South
+q_5011,Single,Within,textual,112.07
+q_5012,Single,Within,textual,Guadalupe de los Reyes
+q_5013,Multi,Border,textual,M From 85' to 125'/160'
+q_5014,Single,Intersect,textual,2
+q_5015,Single,Border,textual,Huascar
+q_5016,Single,Border,textual,2607225; 2607230; 2607229; 2607226; 2607227; 2607228
+q_5017,Single,Distance,textual,Lac Erasme
+q_5018,Multi,Equal,textual,Marsh Creation Area
+q_5019,Single,Intersect,textual,Porvenir Dos
+q_5020,Multi,Equal,textual,Unpatented single-cell mining claim
+q_5021,Single,Within,textual,Great Divide Basin
+q_5022,Multi,Within,textual,Berenguela 04-09
+q_5023,Multi,Intersect,textual,5
+q_5024,Single,Border,textual,C1-75; LR3
+q_5026,Multi,Distance,textual,Lac Sanies Est
+q_5027,Single,Distance,distance,5.0 \pm 0.0 km
+q_5028,Single,Orientation,cardinal,South West
+q_5029,Single,Distance,distance,21.0 \pm 2.02 km
+q_5030,Single,Orientation,cardinal,East
+q_6001,Single,Within,textual,S-110271
+q_6002,Single,Distance,distance,0.18 \pm 0.05 mile
+q_6004,Multi,Distance,distance,562.0 \pm 81.74 m
+q_6005,Single,Distance,textual,OSP22-08; OSP22-09
+q_6006,Single,Within,textual,5
+q_6007,Multi,Distance,textual,S12
+q_6008,Multi,Equal,textual,Alluvial Deposits
+q_6009,Single,Distance,textual,Lagunillas 08-04
+q_6010,Single,Within,textual,Layered Series
+q_6011,Multi,Within,textual,MCA Cell 1
+q_6012,Multi,Distance,textual,Storheden K nr 1
+q_6013,Multi,Intersect,textual,SCIF; LIF
+q_6014,Single,Intersect,textual,CDE; Grid F; A-2; A-1; Grid G
+q_6015,Single,Orientation,cardinal,South East
+q_6018,Single,Intersect,textual,Deep Min deposit
+q_6019,Single,Distance,distance,215.0 \pm 75.22 m
+q_6022,Multi,Within,textual,Developed Area
+q_6023,Single,Distance,distance,4.3 \pm 1.65 km
+q_6024,Multi,Equal,textual,2
+q_6025,Single,Within,textual,76
+q_6026,Single,Distance,distance,0.25 \pm 0.09 km
+q_6027,Single,Intersect,textual,Roberto Verde 149672
+q_6029,Multi,Intersect,textual,EPeMK
+q_6030,Single,Within,textual,2
+q_7001,Multi,Within,textual,2454254
+q_7002,Single,Distance,textual,La Ramada Shaft
+q_7003,Single,Distance,distance,1523.0 \pm 190.65 feet
+q_7004,Single,Distance,distance,525.0 \pm 112.5 m
+q_7005,Single,Within,textual,Nucleo Agrario: SAN ANTONIO DEl CERRO
+q_7006,Multi,Orientation,cardinal,West
+q_7008,Multi,Intersect,textual,0.185
+q_7009,Single,Intersect,textual,466151; 466340; 466150
+q_7010,Single,Border,textual,Oroville
+q_7011,Single,Within,textual,3
+q_7012,Multi,Within,textual,Cr
+q_7013,Multi,Distance,distance,76.0 \pm 7.9 km
+q_7014,Single,Distance,textual,Tramposa
+q_7015,Multi,Within,textual,1099378
+q_7016,Multi,Distance,textual,Canning Prospect
+q_7017,Single,Within,textual,EOlv
+q_7018,Multi,Equal,textual,CbA; CdA
+q_7019,Multi,Intersect,textual,Géant Dormant-SO
+q_7020,Multi,Equal,textual,Windfall SW
+q_7021,Single,Border,textual,Bonterra Resources
+q_7022,Multi,Distance,textual,Ouro Fino
+q_7023,Single,Intersect,textual,9214 g/t
+q_7025,Multi,Within,textual,Exploration Agreement-Rural Community Santa Cruz de Andamarca
+q_7026,Multi,Equal,textual,ShA; CdA
+q_7027,Single,Within,textual,JMS
+q_7028,Single,Orientation,cardinal,North East
+q_7029,Single,Within,textual,3
+q_7030,Single,Distance,distance,6.0 \pm 1.5 km
+q_8001,Single,Distance,distance,2800.0 \pm 115.47 '
+q_8002,Multi,Border,textual,Sumitomo
+q_8003,Single,Distance,distance,0.75 \pm 0.14 km
+q_8004,Single,Within,textual,MJKFgr
+q_8005,Single,Orientation,textual,Acidic Reagent Store
+q_8006,Single,Border,textual,"1,069,245; 1,059,243"
+q_8007,Single,Within,textual,10
+q_8008,Single,Within,textual,2022 Magnetics
+q_8009,Multi,Equal,textual,CSX Transportation Soo Line
+q_8010,Single,Intersect,textual,2
+q_8012,Multi,Distance,textual,7
+q_8013,Multi,Equal,textual,mc
+q_8014,Multi,Distance,textual,Town of Bowden
+q_8015,Single,Within,textual,Richard M. Colgate
+q_8016,Single,Distance,distance,1.375 \pm 0.12 km
+q_8017,Multi,Within,textual,1083728
+q_8018,Multi,Within,textual,PEM1A; PEM1C; PSS1A
+q_8020,Multi,Distance,distance,8.5 \pm 0.29 km
+q_8021,Single,Intersect,textual,Jasperoide 41
+q_8022,Multi,Orientation,cardinal,South West
+q_8023,Single,Distance,textual,Evergold Corp.
+q_8024,Multi,Within,textual,Zone X
+q_8025,Multi,Distance,textual,"Bombus vosnesenskii Radoszkowski, 1862"
+q_8026,Multi,Within,textual,Main Zone
+q_8027,Multi,Orientation,cardinal,North East
+q_8028,Single,Orientation,cardinal,South West
+q_8029,Single,Within,textual,Rainbow
+q_8030,Single,Within,textual,Tartan Rd; Vann Dr; Stirling Dr
+q_9001,Multi,Equal,textual,Los Reyes Seis
+q_9002,Multi,Intersect,textual,MCT 4; MCT 6
+q_9003,Single,Within,textual,1088616
+q_9004,Multi,Intersect,textual,Russet
+q_9005,Multi,Distance,distance,10.0 \pm 2.36 km
+q_9006,Single,Intersect,textual,Waterfall Creek
+q_9007,Multi,Border,textual,SEV14
+q_9008,Single,Border,textual,UT31; UT32
+q_9010,Single,Orientation,cardinal,South East
+q_9011,Multi,Within,textual,MLCC Exploitation MCs
+q_9012,Single,Within,textual,Lower Cretaceous
+q_9013,Single,Intersect,textual,TN165; TN167; TN169; TN170; TN172; TN174
+q_9014,Single,Orientation,textual,Huracan 4 R1A; T.246910
+q_9015,Single,Distance,textual,Dos Banderas
+q_9016,Single,Intersect,textual,Z19
+q_9017,Multi,Orientation,cardinal,North West
+q_9018,Single,Orientation,cardinal,North West
+q_9019,Single,Within,textual,4
+q_9022,Single,Border,distance,0.5 \pm 0.0 miles
+q_9023,Single,Border,textual,AMATAVA 41KS
+q_9024,Multi,Equal,textual,Patent

@@ -32,3 +32,18 @@ import pickle
 #     pickle.dump(dict_orientation, handle, protocol=pickle.HIGHEST_PROTOCOL) 
 
 # print(dict_orientation)
+
+# with open('/home/yaoyi/pyo00005/p2/carto-reasoning/evaluation/data_file/answer.pkl', 'rb') as handle:
+#     pl_ans = pickle.load(handle)
+
+# pl_ans = pl_ans.with_columns(
+#     pl.col('expected_answer').list.join("; ")
+# )
+# pl_ans.write_csv('/home/yaoyi/pyo00005/p2/carto-reasoning/evaluation/data_file/answer.csv')
+
+# print(pl_ans.item(0, 'expected_answer'))
+
+pl_ans = pl.read_csv('/home/yaoyi/pyo00005/p2/carto-reasoning/evaluation/data_file/answer.csv')
+
+with open('/home/yaoyi/pyo00005/p2/carto-reasoning/evaluation/data_file/answer.pkl', 'wb') as handle:
+    pickle.dump(pl_ans, handle, protocol=pickle.HIGHEST_PROTOCOL)

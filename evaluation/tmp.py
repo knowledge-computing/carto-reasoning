@@ -8,11 +8,11 @@ from scipy.stats import mstats
 
 regex_pattern = r"\d+\.?\d*"
 
-pl_data = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/response_full_d20.json').filter(
+pl_data = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/response_full_d10.json').filter(
     pl.col('answer_type') == 'distance'
 )
 
-def winsorized_bootstrap(data, proportion=0.25, n_boot=1000, bool_out=False):
+def winsorized_bootstrap(data, proportion=0.10, n_boot=100, bool_out=False):
     means = []
     # data = data * 4
     for _ in range(n_boot):
@@ -25,7 +25,10 @@ def winsorized_bootstrap(data, proportion=0.25, n_boot=1000, bool_out=False):
     return means
 
 def std_calculation(expected_answer, annotator_response):
-    expected_answer = float(re.search(regex_pattern, expected_answer).group())
+    tmp_answer = re.search(regex_pattern, expected_answer).group()
+    other_remaining = expected_answer.replace(tmp_answer, "").strip()
+
+    expected_answer = float(tmp_answer)
 
     list_response = []
     for r in annotator_response:
@@ -39,32 +42,66 @@ def std_calculation(expected_answer, annotator_response):
 
     # list_response = 
 
-    std_value = statistics.stdev(list_response)
-
     list_tf = []
 
     flag_bootstrap = False
     count = 0
-    for a in list_response:
-        if (a < expected_answer-(1*std_value)) or (a > expected_answer+(1*std_value)):
-            flag_bootstrap == True
-        else:
-            pass
 
-    winsorized_std = np.std(winsorized_bootstrap(list_annotator, bool_out=flag_bootstrap), ddof=1)
+    while True:
+        std_value = statistics.stdev(list_response)
+
+        count = 0
+        for a in list_response:
+            if (a < expected_answer-(3*std_value)) or (a > expected_answer+(3*std_value)):
+                list_response.remove(a)
+                count += 1
+                flag_bootstrap = True
+            else:
+                pass
+        
+        
+        if count == 0:
+            break
+
+    # std_value = np.std(winsorized_bootstrap(list_annotator, bool_out=flag_bootstrap), ddof=1)
+
+    list_68 = []
+    list_95 = []
+    list_99 = []
+
+    for a in list_annotator:
+        if (a >= expected_answer-(1*std_value)) and (a <= expected_answer+(1*std_value)):
+            list_68.append(True)
+            list_95.append(True)
+            list_99.append(True)
+        elif (a >= expected_answer-(2*std_value)) and (a <= expected_answer+(2*std_value)):
+            list_68.append(False)
+            list_95.append(True)
+            list_99.append(True)
+        elif (a >= expected_answer-(3*std_value)) and (a <= expected_answer+(3*std_value)):
+            list_68.append(False)
+            list_95.append(False)
+            list_99.append(True)
+        else:
+            list_68.append(False)
+            list_95.append(False)
+            list_99.append(False)
 
     # print(mean_value, median_value, std_value)
     
-    if flag_bootstrap:
-        return {'annotator_response': list_annotator, 
-                'std': std_value,
-                'win_std': winsorized_std,
-                'expected_value': expected_answer,}
-    else:
-        return {'annotator_response': list_annotator, 
-                'std': std_value,
-                'win_std': std_value,
-                'expected_value': expected_answer,}
+    # if flag_bootstrap:
+    return {'annotator_response': list_annotator, 
+            'std': round(std_value, 2),
+            'expected_value': expected_answer,
+            'expected_answer': f"{expected_answer} \pm {round(std_value, 2)} {other_remaining}",
+            'list_68': list_68,
+            'list_95': list_95,
+            'list_99': list_99,}
+    # else:
+    #     return {'annotator_response': list_annotator, 
+    #             'std': std_value,
+    #             'win_std': std_value,
+    #             'expected_value': expected_answer,}
 
 pl_annotator = pl.read_json('/home/yaoyi/pyo00005/p2/carto-reasoning/questions/annotator_response/response_all.json')
 
@@ -74,7 +111,13 @@ pl_full = pl.concat(
 ).select(
     pl.col('question_ref'),
     tmp = pl.struct(pl.all()).map_elements(lambda x: std_calculation(x['expected_answer'], x['annotator_response']))
-).unnest('tmp').explode('annotator_response')
+).unnest('tmp').explode(['annotator_response', 'list_68', 'list_95', 'list_99'])
+
+pl_full = pl_full.select(
+    pl.col(['question_ref', 'expected_answer'])
+).group_by('question_ref').agg([pl.all()]).with_columns(
+    pl.col('expected_answer').list.first()
+)
 
 pl_full.write_csv('./tmp_w.csv')
 

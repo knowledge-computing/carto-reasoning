@@ -3,15 +3,15 @@ import fire
 import re
 import pickle
 import polars as pl
-from vllm import LLM
-from vllm.sampling_params import SamplingParams
+# from vllm import LLM
+# from vllm.sampling_params import SamplingParams
 
 SUPPORT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data_file')
 
-# Load Mistral LLM once at the top (optional: lazy load later if speed matters)
-model_name = "mistralai/Ministral-8B-Instruct-2410"
-sampling_params = SamplingParams(max_tokens=1024)
-llm = LLM(model=model_name, tokenizer_mode="mistral", config_format="mistral", load_format="mistral")
+# # Load Mistral LLM once at the top (optional: lazy load later if speed matters)
+# model_name = "mistralai/Ministral-8B-Instruct-2410"
+# sampling_params = SamplingParams(max_tokens=1024)
+# llm = LLM(model=model_name, tokenizer_mode="mistral", config_format="mistral", load_format="mistral")
 
 def _normalize_text_list(lst):
     """Lowercase, remove special chars, and strip spaces from list of strings."""
@@ -32,19 +32,19 @@ def _is_numeric_list(lst):
         return False
     return all(re.fullmatch(r"^\d+(\.\d+)?$", str(x)) for x in lst)
 
-def _llm_eval_mismatch(question_ref, response, expected):
-    """Ask Mistral LLM whether the response matches the expected answer."""
-    prompt = (
-        f"Question reference: {question_ref}\n"
-        f"Expected answer: {expected}\n"
-        f"Given response: {response}\n\n"
-        "Does the response correctly answer the question based on expected answer? "
-        "Answer strictly 'yes' or 'no'."
-    )
-    messages = [{"role": "user", "content": prompt}]
-    outputs = llm.chat(messages, sampling_params=sampling_params)
-    ans = outputs[0].outputs[0].text.strip().lower()
-    return 1 if ans.startswith("yes") else 0
+# def _llm_eval_mismatch(question_ref, response, expected):
+#     """Ask Mistral LLM whether the response matches the expected answer."""
+#     prompt = (
+#         f"Question reference: {question_ref}\n"
+#         f"Expected answer: {expected}\n"
+#         f"Given response: {response}\n\n"
+#         "Does the response correctly answer the question based on expected answer? "
+#         "Answer strictly 'yes' or 'no'."
+#     )
+#     messages = [{"role": "user", "content": prompt}]
+#     outputs = llm.chat(messages, sampling_params=sampling_params)
+#     ans = outputs[0].outputs[0].text.strip().lower()
+#     return 1 if ans.startswith("yes") else 0
 
 def eval_dist(df):
     """
@@ -53,29 +53,31 @@ def eval_dist(df):
     regex_pattern = r"\d+\.?\d*"
 
     def is_correct(row):
-        # Parse numeric response
-        resp_match = re.search(regex_pattern, row["_response"])
-        if not resp_match:
-            return 0
-        response_val = float(resp_match.group())
+        try:
+            # Parse numeric response
+            resp_match = re.search(regex_pattern, row["_response"])
+            if not resp_match:
+                return 0
+            response_val = float(resp_match.group())
 
-        # Parse expected answer (e.g., "38 ± 2 MILES")
-        expected = row["expected_answer"]
-        expected_match = re.findall(regex_pattern, expected)
-        if not expected_match:
-            return 0
+            # Parse expected answer (e.g., "38 \pm 2 MILES")
+            expected = row["expected_answer"]
+            expected_match = re.findall(regex_pattern, expected)
+            if not expected_match:
+                return 0
 
-        expected_val = float(expected_match[0])
-        tolerance = 0
-        if "±" in expected:
-            tol_match = re.findall(regex_pattern, expected)
-            if len(tol_match) >= 2:
-                tolerance = float(tol_match[1])
+            expected_val = float(expected_match[0])
+            tolerance = 0
+            if "\pm" in expected:
+                tol_match = re.findall(regex_pattern, expected)
+                if len(tol_match) >= 2:
+                    tolerance = float(tol_match[1])
 
-        lower_bound = expected_val - tolerance
-        upper_bound = expected_val + tolerance
+            lower_bound = expected_val - tolerance
+            upper_bound = expected_val + tolerance
 
-        return 1 if lower_bound <= response_val <= upper_bound else 0
+            return 1 if lower_bound <= response_val <= upper_bound else 0
+        except: return 0
 
     df = df.with_columns(pl.struct(df.columns).map_elements(is_correct).alias("correct"))
     return df
@@ -86,11 +88,15 @@ def eval_card(df):
     """
     with open(os.path.join(SUPPORT_PATH, 'orientation.pkl'), 'rb') as handle:
         dict_orientation = pickle.load(handle)
+        print(dict_orientation)
 
     def is_correct(row):
-        expected = row["expected_answer"]
+        expected = row["expected_answer"][0]
         response = row["_response"]
+        print(expected, response)
+
         valid_dirs = dict_orientation.get(expected, [expected])
+
         return 1 if response in valid_dirs else 0
 
     df = df.with_columns(pl.struct(df.columns).map_elements(is_correct).alias("correct"))
@@ -113,7 +119,8 @@ def eval_text(df):
             return 1
 
         # If mismatch → fallback to LLM
-        return _llm_eval_mismatch(row["question_ref"], resp_list, exp_list)
+        # return _llm_eval_mismatch(row["question_ref"], resp_list, exp_list)
+        return 0
 
     df = df.with_columns(pl.struct(df.columns).map_elements(is_correct).alias("correct"))
     return df
@@ -159,6 +166,8 @@ def main(output_file: str, response_col: str = None):
             pl_evaled = pl.concat([pl_evaled, eval_text(df)], how="diagonal")
         else:
             pl_evaled = pl.concat([pl_evaled, eval_card(df)], how="diagonal")
+
+    print(pl_evaled)
 
     return pl_evaled
 
