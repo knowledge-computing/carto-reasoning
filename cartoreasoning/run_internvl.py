@@ -12,7 +12,24 @@ import torch
 from transformers import AutoProcessor, AutoModelForImageTextToText
 from transformers import BitsAndBytesConfig             # To reduce memory usage
 
-with open('./instruction.pkl', 'rb') as handle:
+# Memory management
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+torch.cuda.empty_cache()
+torch.cuda.reset_peak_memory_stats()
+
+max_memory = {
+    0: "40GB",
+    1: "40GB",
+    2: "40GB",
+    3: "40GB",
+    4: "40GB",
+    5: "40GB",
+    6: "40GB",
+    7: "40GB",
+    "cpu": "100GB"   # fallback for layers that don't fit
+}
+
+with open('./instruction-default.pkl', 'rb') as handle:
     instructions = pickle.load(handle)
 
 def check_exist(path_dir, bool_create=True):
@@ -33,6 +50,7 @@ def define_model(model_id:str,
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
         bnb_4bit_compute_dtype=torch.float16,
+        bnb_4bit_use_double_quant=True,
     )
 
     if use_flash:
@@ -41,6 +59,9 @@ def define_model(model_id:str,
             quantization_config=quantization_config,
             attn_implementation="flash_attention_2",
             device_map="auto",
+            max_memory=max_memory,
+            torch_dtype=torch.bfloat16,
+            offload_folder="./offload",
             trust_remote_code=True
             )        # Only works under CUDA suppport
     else:
@@ -49,9 +70,14 @@ def define_model(model_id:str,
             model_id,
             quantization_config=quantization_config, 
             device_map="auto",
+            torch_dtype=torch.bfloat16,
             trust_remote_code=True
         )
 
+    model.config.use_cache = True
+    model.config.paged_attention = True
+
+    # model = torch.compile(model, mode="reduce-overhead", fullgraph=True)
     processor = AutoProcessor.from_pretrained(model_id)
 
     return model, processor
@@ -125,8 +151,8 @@ def respond_q(model,
         return_tensors="pt"
     ).to(model.device, torch.float16)
 
-    with torch.no_grad():  
-        generate_ids = model.generate(**inputs, max_new_tokens=256, do_sample=False)
+    with torch.inference_mode():
+        generate_ids = model.generate(**inputs, max_new_tokens=512, do_sample=False, use_cache=True)
 
     output_texts = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
     list_output = []
@@ -137,7 +163,7 @@ def respond_q(model,
             list_output.append(cleaned_response)
             
         except:
-            list_output.append(response)
+            list_output.append(response.split('assistant\n')[1].strip())
 
     return list_output
 
@@ -191,7 +217,11 @@ def main(model_name:str,
     # Running inference in chunks (of 20) in case it crashse in middle
     pl_answered = pl.DataFrame()
 
-    response_cache = os.path.join(cache_dir, 'response_cache.pkl')
+    if bool_distractor:
+        response_cache = os.path.join(cache_dir, 'response_cache_w_distractor.pkl')
+    else:
+        response_cache = os.path.join(cache_dir, 'response_cache_wo_distractor.pkl')
+        
     if check_exist(response_cache, bool_create=False) == 1: 
         with open(response_cache, 'rb') as handle:
             pl_answered = pickle.load(handle)
@@ -225,6 +255,9 @@ def main(model_name:str,
         with open(response_cache, 'wb') as handle:
             pickle.dump(pl_answered, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
+        torch.cuda.empty_cache()
+        torch.cuda.reset_peak_memory_stats()
+
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
 
@@ -242,13 +275,13 @@ def main(model_name:str,
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Cartographical Reasoning Test')
 
-    parser.add_argument('--model', '-m', default='llava-hf/llava-next-72b-hf',
+    parser.add_argument('--model', '-m', default='OpenGVLab/InternVL3_5-38B-HF',
                         help='Model name/type')
 
-    parser.add_argument('--questions', '-q', required=True, 
+    parser.add_argument('--questions', '-q', default='/home/yaoyi/pyo00005/p2/carto-reasoning/questions/response_full_d10.json', 
                         help='Path to questions JSON file')
 
-    parser.add_argument('--images', '-im', required=True, type=str,
+    parser.add_argument('--images', '-im', default='/home/yaoyi/pyo00005/p2/carto-image',
                         help="Directory/link to reporsitory containing images")
     
     parser.add_argument('--distractor', '-d', action="store_true", 
@@ -260,33 +293,33 @@ if __name__ == '__main__':
     parser.add_argument('--cache_dir', '-c', default='./',
                         help="Location to cache directory (cache for image names)")
     
-    parser.add_argument('--flash', action="store_true",
-                        help="Use flash attention")
+    # parser.add_argument('--flash', action="store_true",
+    #                     help="Use flash attention")
     
-    parser.add_argument('--batch_size', default=1,
+    parser.add_argument('--batch_size', type=int, default=12,
                         help="Batch size. Default is 1.")
     
-    parser.add_argument('--max_images', '-max', type=int, default=20,
-                        help="FOR DEVELOPING TEST PURPOSE")
+    # parser.add_argument('--max_images', '-max', type=int, default=10,
+    #                     help="FOR DEVELOPING TEST PURPOSE")
     
     args = parser.parse_args()
     
-    main(model=args.model,
-         question_path=args.questions,
-         image_folder=args.images,
-         bool_distractor=args.distractor,
-         output_dir=args.output_dir,
-         cache_dir=args.cache_dir,
-         use_flash=args.flash,
-         batch_size=args.batch_size,
-         img_limit=args.max_images)
+    # main(model=args.model,
+    #      question_path=args.questions,
+    #      image_folder=args.images,
+    #      bool_distractor=args.distractor,
+    #      output_dir=args.output_dir,
+    #      cache_dir=args.cache_dir,
+    #      use_flash=args.flash,
+    #      batch_size=args.batch_size,
+    #      img_limit=args.max_images)
 
-    # main(model_name='OpenGVLab/InternVL3_5-8B-HF',
-    #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
-    #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
-    #     bool_distractor=True,
-    #     output_dir='./',
-    #     cache_dir='./',
-    #     use_flash=True,
-    #     batch_size=1,
-    #     img_limit=args.max_images)
+    main(model_name=args.model,
+        question_path=args.questions,
+        image_folder=args.images,
+        bool_distractor=args.distractor,
+        output_dir=args.output_dir,
+        cache_dir=args.cache_dir,
+        use_flash=True,
+        batch_size=args.batch_size,
+        img_limit=20)

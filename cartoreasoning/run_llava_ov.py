@@ -12,7 +12,24 @@ import torch
 from transformers import AutoProcessor, LlavaOnevisionForConditionalGeneration
 from transformers import BitsAndBytesConfig             # To reduce memory usage
 
-with open('./instruction.pkl', 'rb') as handle:
+# Memory management
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+torch.cuda.empty_cache()
+torch.cuda.reset_peak_memory_stats()
+
+max_memory = {
+    0: "40GB",
+    1: "40GB",
+    2: "40GB",
+    3: "40GB",
+    # 4: "40GB",
+    # 5: "40GB",
+    # 6: "40GB",
+    # 7: "40GB",
+    "cpu": "100GB"   # fallback for layers that don't fit
+}
+
+with open('./instruction-default.pkl', 'rb') as handle:
     instructions = pickle.load(handle)
 
 def check_exist(path_dir, bool_create=True):
@@ -41,6 +58,9 @@ def define_model(model_id:str,
             quantization_config=quantization_config,
             attn_implementation="flash_attention_2",
             device_map="auto",
+            max_memory=max_memory,
+            torch_dtype=torch.bfloat16,
+            offload_folder="./offload",
             trust_remote_code=True
             )    # Only works under CUDA suppport
     else:
@@ -200,30 +220,35 @@ def main(model_name:str,
         pl_question = pl_question[cache_length:]
 
     for i in tqdm(range(0, pl_question.height, batch_size)):
-        chunk = pl_question.slice(i, batch_size)
+        large_chunk = pl_question.slice(i, batch_size)
 
-        chunk = chunk.with_columns(
-            tmp = pl.struct(pl.col(['question_text', 'image_lists']))
+        large_chunk = large_chunk.with_columns(
+            pl.col('image_lists').list.len().alias('tmp_num_images')
         )
 
-        list_input = chunk['tmp'].to_list()
-        list_output = respond_q(model=model, processor=processor,
-                                input_struct=list_input,
-                                dict_im_data=dict_im_data,
-                                img_limit=img_limit)
-        
-        chunk = chunk.with_columns(
-            pl.col('q_answered').replace({False: True}),
-            llava_ov_response = pl.Series(list_output)
-        ).drop(['tmp', 'image_lists'])
+        for chunk in large_chunk.partition_by('tmp_num_images'):
+            chunk = chunk.with_columns(
+                tmp = pl.struct(pl.col(['question_text', 'image_lists']))
+            )
 
-        pl_answered = pl.concat(
-            [pl_answered, chunk],
-            how='diagonal'
-        )
+            list_input = chunk['tmp'].to_list()
+            list_output = respond_q(model=model, processor=processor,
+                                    input_struct=list_input,
+                                    dict_im_data=dict_im_data,
+                                    img_limit=img_limit)
+            
+            chunk = chunk.with_columns(
+                pl.col('q_answered').replace({False: True}),
+                llava_ov_response = pl.Series(list_output)
+            ).drop(['tmp', 'image_lists', 'tmp_num_images'])
 
-        with open(response_cache, 'wb') as handle:
-            pickle.dump(pl_answered, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            pl_answered = pl.concat(
+                [pl_answered, chunk],
+                how='diagonal'
+            )
+
+            with open(response_cache, 'wb') as handle:
+                pickle.dump(pl_answered, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
     # Saving as JSON with model name appended
     pd_answered = pl_answered.to_pandas()
@@ -260,10 +285,10 @@ if __name__ == '__main__':
     parser.add_argument('--cache_dir', '-c', default='./',
                         help="Location to cache directory (cache for image names)")
     
-    parser.add_argument('--flash', '-im', action="store_true", type=bool,
+    parser.add_argument('--flash', '-f', action="store_true", 
                         help="Use flash attention")
 
-    parser.add_argument('--batch_size', default=1,
+    parser.add_argument('--batch_size', type=int, default=1,
                         help="Batch size. Default is 1.")
     
     parser.add_argument('--max_images', '-max', type=int, default=20,
@@ -271,7 +296,7 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     
-    main(model=args.model,
+    main(model_name=args.model,
          question_path=args.questions,
          image_folder=args.images,
          bool_distractor=args.distractor,
@@ -280,11 +305,11 @@ if __name__ == '__main__':
          use_flash=args.flash,
          batch_size=args.batch_size,
          img_limit=args.max_images)
-
-    # main(model_name='llava-hf/llava-onevision-qwen2-7b-ov-hf',
+    
+    # main(model_name='llava-hf/llava-onevision-qwen2-72b-ov-hf',
     #     question_path='./p2/carto-reasoning/questions/benchmark_data/response_mini.json',
     #     image_folder='https://media.githubusercontent.com/media/YOO-uN-ee/carto-image/main/',
-    #     bool_distractor=True,
+    #     bool_distractor=False,
     #     output_dir='./',
     #     cache_dir='./',
     #     use_flash=True,
