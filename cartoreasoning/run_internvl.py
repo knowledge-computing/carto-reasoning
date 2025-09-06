@@ -278,7 +278,7 @@ if __name__ == '__main__':
     parser.add_argument('--model', '-m', default='OpenGVLab/InternVL3_5-38B-HF',
                         help='Model name/type')
 
-    parser.add_argument('--questions', '-q', default='/home/yaoyi/pyo00005/p2/carto-reasoning/questions/response_full_d10.json', 
+    parser.add_argument('--questions', '-q', default='/home/yaoyi/pyo00005/carto-reasoning/questions/response_full_d10.json', 
                         help='Path to questions JSON file')
 
     parser.add_argument('--images', '-im', default='/home/yaoyi/pyo00005/p2/carto-image',
