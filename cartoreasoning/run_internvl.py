@@ -278,11 +278,11 @@ if __name__ == '__main__':
     parser.add_argument('--model', '-m', default='OpenGVLab/InternVL3_5-38B-HF',
                         help='Model name/type')
 
-    # parser.add_argument('--questions', '-q', required=True, 
-    #                     help='Path to questions JSON file')
+    parser.add_argument('--questions', '-q', default='/home/yaoyi/pyo00005/p2/carto-reasoning/questions/response_full_d10.json', 
+                        help='Path to questions JSON file')
 
-    # parser.add_argument('--images', '-im', required=True, type=str,
-    #                     help="Directory/link to reporsitory containing images")
+    parser.add_argument('--images', '-im', default='/home/yaoyi/pyo00005/p2/carto-image',
+                        help="Directory/link to reporsitory containing images")
     
     parser.add_argument('--distractor', '-d', action="store_true", 
                         help='Use distractor images')
@@ -296,8 +296,8 @@ if __name__ == '__main__':
     # parser.add_argument('--flash', action="store_true",
     #                     help="Use flash attention")
     
-    # parser.add_argument('--batch_size', default=1,
-    #                     help="Batch size. Default is 1.")
+    parser.add_argument('--batch_size', type=int, default=12,
+                        help="Batch size. Default is 1.")
     
     # parser.add_argument('--max_images', '-max', type=int, default=10,
     #                     help="FOR DEVELOPING TEST PURPOSE")
@@ -315,11 +315,11 @@ if __name__ == '__main__':
     #      img_limit=args.max_images)
 
     main(model_name=args.model,
-        question_path='/home/yaoyi/pyo00005/carto-reasoning/cartoreasoning/responses/mini_runs/response_mini.json',
-        image_folder='/home/yaoyi/pyo00005/p2/carto-image',
+        question_path=args.questions,
+        image_folder=args.images,
         bool_distractor=args.distractor,
         output_dir=args.output_dir,
         cache_dir=args.cache_dir,
         use_flash=True,
-        batch_size=12,
+        batch_size=args.batch_size,
         img_limit=20)
